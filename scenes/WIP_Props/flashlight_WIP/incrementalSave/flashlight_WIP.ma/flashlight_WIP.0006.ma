@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: flashlight_WIP.ma
-//Last modified: Mon, Oct 26, 2020 02:22:53 PM
+//Last modified: Mon, Oct 26, 2020 02:13:59 PM
 //Codeset: 1252
 requires maya "2020";
 requires "stereoCamera" "10.0";
@@ -13,11 +13,9 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
-fileInfo "UUID" "8676E380-488A-302C-A42C-4584F87A1337";
+fileInfo "UUID" "D605F3C1-4AE8-154A-28EF-B8941170A83A";
 createNode transform -n "flashlight_grp";
 	rename -uid "7D2C83E6-4185-A959-B39C-08BFD15C2490";
-	setAttr ".rp" -type "double3" 0 -0.49999997019767761 0.12916698679327965 ;
-	setAttr ".sp" -type "double3" 0 -0.49999997019767761 0.12916698679327965 ;
 createNode transform -n "POSITION" -p "flashlight_grp";
 	rename -uid "F33C4A8F-49AB-EDF0-5C65-C5B0E76A41A8";
 createNode transform -n "MOVEMENT" -p "POSITION";
@@ -3022,13 +3020,13 @@ createNode mesh -n "flashlight_geoShape" -p "flashlight_geo";
 createNode transform -s -n "persp";
 	rename -uid "61E432B4-498D-020C-CFC4-DD8DAD4C7B6D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -3.9217982927012782 0.48589296379090818 -1.537392165751589 ;
-	setAttr ".r" -type "double3" 1067.6616472539324 -1553.3999999993655 0 ;
+	setAttr ".t" -type "double3" -1.0288381647040534 0.086697190631178644 -0.75431122870751888 ;
+	setAttr ".r" -type "double3" 1058.6616472520413 -1571.7999999997248 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1BC7F99A-4CC5-D016-B361-1F9590540FA6";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 97;
-	setAttr ".coi" 4.3601333811682146;
+	setAttr ".coi" 1.4634058385046598;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";

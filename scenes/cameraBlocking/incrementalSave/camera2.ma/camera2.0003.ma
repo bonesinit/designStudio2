@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: camera2.ma
-//Last modified: Mon, Oct 26, 2020 01:59:52 PM
+//Last modified: Mon, Oct 26, 2020 01:56:48 PM
 //Codeset: 1252
 file -rdi 1 -ns "bearRug_v0001" -rfn "bearRug_v0001RN" -op "v=0;" -typ "mayaAscii"
 		 "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/bearRug.ma";
@@ -93,7 +93,7 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
-fileInfo "UUID" "8F752E5E-453C-BF6F-FE8D-87BDEE466538";
+fileInfo "UUID" "B2832EF4-4213-9ADB-6095-5B89B49FC828";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "0C5B681B-45E2-19F0-B44F-D1AEDC450353";
@@ -3184,7 +3184,6 @@ createNode camera -n "shot5_cameraShape" -p "shot5_camera";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -n "shot6_camera";
 	rename -uid "B8707C26-4B56-CD0B-8634-6593546D8CBE";
-	setAttr -av ".v" no;
 createNode camera -n "shot6_cameraShape" -p "shot6_camera";
 	rename -uid "8AD71CCE-4B94-DC39-C20E-43A2F68DB9CC";
 	setAttr -k off ".v";
@@ -3202,7 +3201,6 @@ createNode camera -n "shot6_cameraShape" -p "shot6_camera";
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode transform -n "shot7_camera";
 	rename -uid "2703B9AD-490D-CCC4-5CF4-A4BE0C6F25F1";
-	setAttr -av ".v" no;
 createNode camera -n "shot7_cameraShape" -p "shot7_camera";
 	rename -uid "D79409EC-42C2-FCBC-15D5-768C0BDFAB2D";
 	setAttr -k off ".v";

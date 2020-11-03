@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: flashlight_WIP.ma
-//Last modified: Tue, Nov 03, 2020 01:32:41 AM
+//Last modified: Tue, Nov 03, 2020 08:48:06 AM
 //Codeset: 1252
 requires maya "2020";
 requires "stereoCamera" "10.0";
@@ -13,7 +13,7 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
-fileInfo "UUID" "950D1B64-4BC1-CC66-6441-2EB504F594CC";
+fileInfo "UUID" "63C5C1E3-47E8-A5CE-0B72-899FC3A6A944";
 createNode transform -n "flashlight_grp";
 	rename -uid "7D2C83E6-4185-A959-B39C-08BFD15C2490";
 	setAttr ".rp" -type "double3" 0 -0.49999997019767761 0.12916698679327965 ;
@@ -3178,13 +3178,13 @@ createNode mesh -n "polySurfaceShape2" -p "cover_geo";
 createNode transform -s -n "persp";
 	rename -uid "61E432B4-498D-020C-CFC4-DD8DAD4C7B6D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -4.053571830865681 0.93894133796900658 -1.7083270229376812 ;
+	setAttr ".t" -type "double3" -2.6383229495128884 0.61947310327569183 -1.107589514135114 ;
 	setAttr ".r" -type "double3" 1068.2616472516809 -472.99999999998261 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1BC7F99A-4CC5-D016-B361-1F9590540FA6";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 97;
-	setAttr ".coi" 4.5019026996560942;
+	setAttr ".coi" 2.9315922514864607;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -3378,6 +3378,7 @@ createNode place2dTexture -n "place2dTexture3";
 	rename -uid "26CA1727-417B-1964-5563-F2960D282E76";
 createNode aiOptions -s -n "defaultArnoldRenderOptions";
 	rename -uid "1637FF5B-467E-D876-5BA8-8C83A190E1A7";
+	addAttr -ci true -sn "ARV_options" -ln "ARV_options" -dt "string";
 	setAttr ".version" -type "string" "4.0.0";
 createNode aiAOVFilter -s -n "defaultArnoldFilter";
 	rename -uid "403FB9F2-4372-3E45-4F1C-A8844EA6E6C9";
@@ -3434,7 +3435,7 @@ createNode aiStandardSurface -n "aiStandardSurface2";
 	setAttr ".coat_roughness" 0;
 	setAttr ".coat_IOR" 1;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "2FE1A7FB-457D-39CC-EA22-44B3E35DC259";
+	rename -uid "5AFD5E0A-44A2-95CF-E4A9-C8B06DC212AB";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" 47.428480322664214 -66.398877021409177 ;
 	setAttr ".tgi[0].vh" -type "double2" 537.2255966837198 417.10726720289881 ;

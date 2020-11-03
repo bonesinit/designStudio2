@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: filingCabinetSet.ma
-//Last modified: Sun, Nov 01, 2020 03:13:09 PM
+//Last modified: Mon, Nov 02, 2020 05:56:10 PM
 //Codeset: 1252
 requires maya "2020";
 requires "stereoCamera" "10.0";
@@ -12,7 +12,7 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
-fileInfo "UUID" "54E420AB-4F1E-17F1-1126-5290C32E3A32";
+fileInfo "UUID" "8EF43921-473A-1A3C-CD86-FBAF5824B7BB";
 createNode transform -n "filingCabinetSet_grp";
 	rename -uid "882B4ECB-487B-6493-91EB-D6BDDE9212AE";
 createNode transform -n "POSITION" -p "filingCabinetSet_grp";
@@ -546,6 +546,7 @@ createNode mesh -n "filingCabinetSet_geoShape" -p "filingCabinetSet_geo";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
 	setAttr -s 1460 ".vt";
 	setAttr ".vt[0:165]"  -1.15410268 0 -0.32946411 1.13603735 0 -0.32946411
 		 1.13603735 0 0.32946411 -1.15410268 0 0.32946411 -1 0.66937315 0.32946411 -0.38447064 0.66937315 0.32946411
@@ -4815,6 +4816,7 @@ createNode mesh -n "drawer_1_geoShape" -p "drawer_1_geo";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
 	setAttr -s 1288 ".vt";
 	setAttr ".vt[0:165]"  -0.98042011 1.16848922 -0.25575507 -0.97475314 1.16848922 -0.25575507
 		 -0.97475314 1.16848922 -0.2518357 -0.98042011 1.16848922 -0.2518357 -0.9699254 1.16848922 -0.25575507
@@ -8143,6 +8145,7 @@ createNode mesh -n "cabinetStickers_geoShape" -p "cabinetStickers_geo";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
 	setAttr -s 24 ".pt[0:23]" -type "float3"  -0.48977691 1.1734196 -0.16292487 
 		-0.89722615 1.1734196 -0.16292487 -0.48977691 1.6167954 0.83707511 -0.89722615 1.6167954 
 		0.83707511 -0.62663054 1.1734196 -0.16292487 -0.62663054 1.6167954 0.83707511 -0.48977691 
@@ -8660,6 +8663,7 @@ createNode mesh -n "drawer_2_geoShape" -p "drawer_2_geo";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
 	setAttr -s 1288 ".pt";
 	setAttr ".pt[0:165]" -type "float3"  0.67924953 0 0 0.67924953 0 0 0.67924953 
 		0 0 0.67924953 0 0 0.67924953 0 0 0.67924953 0 0 0.67924953 0 0 0.67924953 0 0 0.67924953 
@@ -12652,6 +12656,7 @@ createNode mesh -n "drawer_3_geoShape" -p "drawer_3_geo";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
 	setAttr -s 1288 ".pt";
 	setAttr ".pt[0:165]" -type "float3"  1.3545901 0 0 1.3545901 0 0 1.3545901 
 		0 0 1.3545901 0 0 1.3545901 0 0 1.3545901 0 0 1.3545901 0 0 1.3545901 0 0 1.3545901 
@@ -16644,6 +16649,7 @@ createNode mesh -n "drawer_4_geoShape" -p "drawer_4_geo";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
 	setAttr -s 1288 ".pt";
 	setAttr ".pt[0:165]" -type "float3"  0 -0.49631956 0 0 -0.49631956 0 0 -0.49631956 
 		0 0 -0.49631956 0 0 -0.49631956 0 0 -0.49631956 0 0 -0.49631956 0 0 -0.49631956 0 
@@ -20659,6 +20665,7 @@ createNode mesh -n "drawer_5_geoShape" -p "drawer_5_geo";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
 	setAttr -s 1288 ".pt";
 	setAttr ".pt[0:165]" -type "float3"  0.67881447 -0.49472317 0 0.67881447 
 		-0.49472317 0 0.67881447 -0.49472317 0 0.67881447 -0.49472317 0 0.67881447 -0.49472317 
@@ -24800,6 +24807,7 @@ createNode mesh -n "drawer_6_geoShape" -p "drawer_6_geo";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
 	setAttr -s 1288 ".pt";
 	setAttr ".pt[0:165]" -type "float3"  1.3588359 -0.49531558 0 1.3588359 -0.49531558 
 		0 1.3588359 -0.49531558 0 1.3588359 -0.49531558 0 1.3588359 -0.49531558 0 1.3588359 
@@ -28940,6 +28948,7 @@ createNode mesh -n "drawer_7_geoShape" -p "drawer_7_geo";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
 	setAttr -s 1288 ".pt";
 	setAttr ".pt[0:165]" -type "float3"  0 -1.0098224 0 0 -1.0098224 0 0 -1.0098224 
 		0 0 -1.0098224 0 0 -1.0098224 0 0 -1.0098224 0 0 -1.0098224 0 0 -1.0098224 0 0 -1.0098224 
@@ -32932,6 +32941,7 @@ createNode mesh -n "drawer_8_geoShape" -p "drawer_8_geo";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
 	setAttr -s 1288 ".pt";
 	setAttr ".pt[0:165]" -type "float3"  0.67424965 -1.0090402 0 0.67424965 
 		-1.0090402 0 0.67424965 -1.0090402 0 0.67424965 -1.0090402 0 0.67424965 -1.0090402 
@@ -37073,6 +37083,7 @@ createNode mesh -n "drawer_9_geoShape" -p "drawer_9_geo";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".ofb" 1;
 	setAttr -s 1288 ".pt";
 	setAttr ".pt[0:165]" -type "float3"  1.3551885 -1.0099132 0 1.3551885 -1.0099132 
 		0 1.3551885 -1.0099132 0 1.3551885 -1.0099132 0 1.3551885 -1.0099132 0 1.3551885 
@@ -40740,14 +40751,14 @@ createNode mesh -n "drawer_9_geoShape" -p "drawer_9_geo";
 createNode transform -s -n "persp";
 	rename -uid "FAECB9C3-4F9C-6760-0893-1386F20360CB";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 6.7638456768660538 6.1533783244961899 8.3333873849102993 ;
+	setAttr ".t" -type "double3" 6.6226275604313063 6.4365455693875626 8.2528733988670453 ;
 	setAttr ".r" -type "double3" -27.938352729602361 37.799999999999955 2.0126143805003632e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "F60C2770-4D5E-300E-46A9-429E921BD125";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
 	setAttr ".fcp" 1000000;
-	setAttr ".coi" 12.362675229646232;
+	setAttr ".coi" 12.362675229645866;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -40870,19 +40881,19 @@ createNode file -n "cabinetBody_tex";
 createNode place2dTexture -n "place2dTexture5";
 	rename -uid "431F7C86-404D-245D-A827-5B80DB101B0C";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "C2772FAA-45F8-596F-A844-FB9EB861ACED";
+	rename -uid "76A98363-473D-F862-D912-2AABFAA5178F";
 	setAttr -s 5 ".lnk";
 	setAttr -s 5 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "8AF3E220-4B34-2EC8-2447-06BF844D9EB7";
+	rename -uid "72966DFF-4888-E9BB-1E4B-D9A6F7E95155";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "C5B88AE4-4861-22B0-5748-11A02FA6598D";
+	rename -uid "30A7ED58-4AC0-6123-79C2-5495454CF7A3";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "6B5A2A56-49D0-2C8D-4E99-91A385822BBE";
+	rename -uid "177C5E15-47F7-D1EF-9A0E-B0ADF0BC0168";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "A61B02D5-4F81-D38D-119D-589B5AC53D74";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "C5A6AC7A-4501-1679-ABD0-82A265030432";
+	rename -uid "DCC7C9D2-4EF9-1AD8-BDE3-C0B448DE6B9B";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "22FE35F1-4DE2-6986-AB24-4E8C805C9255";
 	setAttr ".g" yes;
@@ -40972,8 +40983,6 @@ select -ne :defaultResolution;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "aiStandardSurface3SG.msg" "materialInfo26.sg";
 connectAttr "cabinetDrawer_mat.msg" "materialInfo26.m";
 connectAttr "cabinetDrawer_mat.msg" "materialInfo26.t" -na;

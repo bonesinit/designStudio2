@@ -1,19 +1,19 @@
-//Maya ASCII 2020 scene
+//Maya ASCII 2019 scene
 //Name: lightCeiling_WIP_014.ma
-//Last modified: Wed, Nov 04, 2020 03:32:54 PM
+//Last modified: Wed, Nov 04, 2020 01:45:09 PM
 //Codeset: 1252
-requires maya "2020";
-requires "stereoCamera" "10.0";
+requires maya "2019";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" -nodeType "aiStandardSurface"
-		 "mtoa" "4.0.0";
+		 "mtoa" "3.1.2";
+requires "stereoCamera" "10.0";
+requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
-fileInfo "product" "Maya 2020";
-fileInfo "version" "2020";
-fileInfo "cutIdentifier" "201911140446-42a737a01c";
-fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
+fileInfo "product" "Maya 2019";
+fileInfo "version" "2019";
+fileInfo "cutIdentifier" "201812112215-434d8d9c04";
+fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19041)\n";
 fileInfo "license" "student";
-fileInfo "UUID" "B1C91B07-477C-8E17-8B96-DE84AEC73E83";
 createNode transform -s -n "persp";
 	rename -uid "EB25CE13-49E9-F638-BE64-BDB0432DF85B";
 	setAttr ".v" no;
@@ -82,9 +82,7 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".hc" -type "string" "viewSet -s %camera";
 	setAttr ".o" yes;
 	setAttr ".ai_translator" -type "string" "orthographic";
-createNode transform -n "allCeilingLights_grp";
-	rename -uid "B6434695-434C-9854-C7F6-919CB90C57A9";
-createNode transform -n "lightGrid_grp" -p "allCeilingLights_grp";
+createNode transform -n "lightGrid_grp";
 	rename -uid "8A1B5685-4EA0-6F5D-A640-2FB15E650EBA";
 createNode transform -n "Position" -p "lightGrid_grp";
 	rename -uid "64FF8CB7-4B15-8B7C-6DF6-1AA283B0FB80";
@@ -3659,7 +3657,7 @@ createNode mesh -n "lightGrid_geoShape" -p "lightGrid_geo";
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightCeilingMain_grp" -p "allCeilingLights_grp";
+createNode transform -n "lightCeilingMain_grp";
 	rename -uid "CDBD79C5-488B-EB71-ED36-159F45189FD6";
 	setAttr ".rp" -type "double3" 0 7.1330236525790509 0 ;
 	setAttr ".sp" -type "double3" 0 7.1330236525790509 0 ;
@@ -3671,23 +3669,23 @@ createNode transform -n "POSITION" -p "lightCeiling_grp1";
 	rename -uid "471C24EE-4783-0C12-6497-4F9212E0052B";
 	setAttr ".rp" -type "double3" -7 4.9389510208455567 2.5 ;
 	setAttr ".sp" -type "double3" -7 4.9389510208455567 2.5 ;
-createNode transform -n "MOVEMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp1|POSITION";
+createNode transform -n "MOVEMENT" -p "|lightCeilingMain_grp|lightCeiling_grp1|POSITION";
 	rename -uid "2CAB8BA3-448D-DE0A-2FFC-53AC07035C0D";
 	setAttr ".rp" -type "double3" -7 4.9389510208455567 2.5 ;
 	setAttr ".sp" -type "double3" -7 4.9389510208455567 2.5 ;
-createNode transform -n "ADJUSTMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT";
+createNode transform -n "ADJUSTMENT" -p "|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT";
 	rename -uid "D2E694F3-408F-35ED-84DC-7DA66C7525CD";
 	setAttr ".rp" -type "double3" -7 4.9389510208455567 2.5 ;
 	setAttr ".sp" -type "double3" -7 4.9389510208455567 2.5 ;
-createNode transform -n "DO_NOT_TOUCH" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT";
+createNode transform -n "DO_NOT_TOUCH" -p "|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT";
 	rename -uid "9C48C5E2-4505-0A05-6407-85A1E40FB855";
 	setAttr ".rp" -type "double3" -7 4.9389510208455567 2.5 ;
 	setAttr ".sp" -type "double3" -7 4.9389510208455567 2.5 ;
-createNode transform -n "lightHousing_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightHousing_geo" -p "|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "BFF2BCCA-4D73-155F-493B-1F93D805E674";
 	setAttr ".rp" -type "double3" -7 5.9389510208455567 2.5 ;
 	setAttr ".sp" -type "double3" -7 5.9389510208455567 2.5 ;
-createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
+createNode mesh -n "lightHousing_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
 	rename -uid "CBB33D45-433C-58D2-947E-BBA8E01B61D5";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -5731,11 +5729,11 @@ createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilin
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightPole_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightPole_geo" -p "|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "FEE0D90E-46BE-5759-2E65-2AB1565994B2";
 	setAttr ".rp" -type "double3" -7 6.784880719236364 2.5 ;
 	setAttr ".sp" -type "double3" -7 6.784880719236364 2.5 ;
-createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
+createNode mesh -n "lightPole_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
 	rename -uid "AC93047E-4FC5-F7F8-4993-1CA4F7B8E689";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -6007,11 +6005,11 @@ createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMa
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightCover_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightCover_geo" -p "|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "EDB170E5-4F62-C32B-8275-9ABFFBE38FE5";
 	setAttr ".rp" -type "double3" -6.9999997180773441 5.3025013523518236 2.4999999403953552 ;
 	setAttr ".sp" -type "double3" -6.9999997180773441 5.3025013523518236 2.4999999403953552 ;
-createNode mesh -n "lightCover_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
+createNode mesh -n "lightCover_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
 	rename -uid "C62E1E80-47F6-9871-0225-58B910445907";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -6082,23 +6080,23 @@ createNode transform -n "POSITION" -p "lightCeiling_grp2";
 	rename -uid "EA3ABD31-4164-7663-44B0-94AB637A7F15";
 	setAttr ".rp" -type "double3" -7 4.939 -3.5 ;
 	setAttr ".sp" -type "double3" -7 4.939 -3.5 ;
-createNode transform -n "MOVEMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp2|POSITION";
+createNode transform -n "MOVEMENT" -p "|lightCeilingMain_grp|lightCeiling_grp2|POSITION";
 	rename -uid "59D4427E-47A1-D2DB-B1B8-0E9E444271BE";
 	setAttr ".rp" -type "double3" -7 4.939 -3.5 ;
 	setAttr ".sp" -type "double3" -7 4.939 -3.5 ;
-createNode transform -n "ADJUSTMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT";
+createNode transform -n "ADJUSTMENT" -p "|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT";
 	rename -uid "BF70FD7C-47C9-068A-B5FC-258456CAEF54";
 	setAttr ".rp" -type "double3" -7 4.939 -3.5 ;
 	setAttr ".sp" -type "double3" -7 4.939 -3.5 ;
-createNode transform -n "DO_NOT_TOUCH" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT";
+createNode transform -n "DO_NOT_TOUCH" -p "|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT";
 	rename -uid "06566760-453F-7D0D-B0E0-54A59B9D1905";
 	setAttr ".rp" -type "double3" -7 4.939 -3.5 ;
 	setAttr ".sp" -type "double3" -7 4.939 -3.5 ;
-createNode transform -n "lightHousing_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightHousing_geo" -p "|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "9EC87ED6-4B20-D24E-52D9-AA923D598FC7";
 	setAttr ".rp" -type "double3" -7 5.939 -3.5 ;
 	setAttr ".sp" -type "double3" -7 5.939 -3.5 ;
-createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
+createNode mesh -n "lightHousing_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
 	rename -uid "D81247DD-45F8-11F0-B52D-F79E2EF04667";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -8150,11 +8148,11 @@ createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilin
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightPole_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightPole_geo" -p "|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "ED58CF76-418A-251B-6891-15AB2D81F637";
 	setAttr ".rp" -type "double3" -7 6.7849296983908074 -3.5 ;
 	setAttr ".sp" -type "double3" -7 6.7849296983908074 -3.5 ;
-createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
+createNode mesh -n "lightPole_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
 	rename -uid "04CEB4A4-4632-6772-0CCD-EDADA3892F72";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -8427,11 +8425,11 @@ createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMa
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightCover_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightCover_geo" -p "|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "C4E473D2-4D86-9578-730C-3CBCA212D01E";
 	setAttr ".rp" -type "double3" -6.9999997180773441 5.302550331506267 -3.5000000596046448 ;
 	setAttr ".sp" -type "double3" -6.9999997180773441 5.302550331506267 -3.5000000596046448 ;
-createNode mesh -n "lightCover_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
+createNode mesh -n "lightCover_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
 	rename -uid "9ED4E860-4D55-97EF-3AEB-D28125C6A88D";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -8503,23 +8501,23 @@ createNode transform -n "POSITION" -p "lightCeiling_grp3";
 	rename -uid "CB5BF5C0-4BC2-997A-E5DB-299FE4BBD20C";
 	setAttr ".rp" -type "double3" 7 4.939 2.5 ;
 	setAttr ".sp" -type "double3" 7 4.939 2.5 ;
-createNode transform -n "MOVEMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp3|POSITION";
+createNode transform -n "MOVEMENT" -p "|lightCeilingMain_grp|lightCeiling_grp3|POSITION";
 	rename -uid "91F07AF9-42A6-5479-0790-8B8AE23E8025";
 	setAttr ".rp" -type "double3" 7 4.939 2.5 ;
 	setAttr ".sp" -type "double3" 7 4.939 2.5 ;
-createNode transform -n "ADJUSTMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT";
+createNode transform -n "ADJUSTMENT" -p "|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT";
 	rename -uid "4DE66FBD-4589-6348-02B2-1CB4520DA6AF";
 	setAttr ".rp" -type "double3" 7 4.939 2.5 ;
 	setAttr ".sp" -type "double3" 7 4.939 2.5 ;
-createNode transform -n "DO_NOT_TOUCH" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT";
+createNode transform -n "DO_NOT_TOUCH" -p "|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT";
 	rename -uid "07F1D289-4A96-9C85-FEAA-E3B77C2DC128";
 	setAttr ".rp" -type "double3" 7 4.939 2.5 ;
 	setAttr ".sp" -type "double3" 7 4.939 2.5 ;
-createNode transform -n "lightHousing_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightHousing_geo" -p "|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "600FA209-4933-6383-4991-5CB76A1C7292";
 	setAttr ".rp" -type "double3" 7 5.939 2.5 ;
 	setAttr ".sp" -type "double3" 7 5.939 2.5 ;
-createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
+createNode mesh -n "lightHousing_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
 	rename -uid "9B092AFF-4ACE-D64D-BF6D-278418C4E76F";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -10563,11 +10561,11 @@ createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilin
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightPole_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightPole_geo" -p "|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "7BAAAC6A-4EB5-BEA7-0F0A-5FB809C3E00A";
 	setAttr ".rp" -type "double3" 7 6.7849296983908074 2.5 ;
 	setAttr ".sp" -type "double3" 7 6.7849296983908074 2.5 ;
-createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
+createNode mesh -n "lightPole_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
 	rename -uid "E0A8CEDF-4C72-3387-C81D-1587717D5E6E";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -10839,11 +10837,11 @@ createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMa
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightCover_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightCover_geo" -p "|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "B10666B3-49BD-154D-9CE0-9E88BD041CFA";
 	setAttr ".rp" -type "double3" 7.0000002819226559 5.302550331506267 2.4999999403953552 ;
 	setAttr ".sp" -type "double3" 7.0000002819226559 5.302550331506267 2.4999999403953552 ;
-createNode mesh -n "lightCover_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
+createNode mesh -n "lightCover_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
 	rename -uid "68376804-4B13-549F-0F26-52820589E26C";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -10914,23 +10912,23 @@ createNode transform -n "POSITION" -p "lightCeiling_grp4";
 	rename -uid "523DD1E1-4224-B953-648A-F68CE049B95C";
 	setAttr ".rp" -type "double3" 7 4.939 -3.5 ;
 	setAttr ".sp" -type "double3" 7 4.939 -3.5 ;
-createNode transform -n "MOVEMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp4|POSITION";
+createNode transform -n "MOVEMENT" -p "|lightCeilingMain_grp|lightCeiling_grp4|POSITION";
 	rename -uid "83877FBD-4D9D-91F7-A694-06BFC83B6D25";
 	setAttr ".rp" -type "double3" 7 4.939 -3.5 ;
 	setAttr ".sp" -type "double3" 7 4.939 -3.5 ;
-createNode transform -n "ADJUSTMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT";
+createNode transform -n "ADJUSTMENT" -p "|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT";
 	rename -uid "244E1D9C-46BC-7346-E0B7-61909157C153";
 	setAttr ".rp" -type "double3" 7 4.939 -3.5 ;
 	setAttr ".sp" -type "double3" 7 4.939 -3.5 ;
-createNode transform -n "DO_NOT_TOUCH" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT";
+createNode transform -n "DO_NOT_TOUCH" -p "|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT";
 	rename -uid "66605AB2-4DB7-98B2-A80D-5594116EDF71";
 	setAttr ".rp" -type "double3" 7 4.939 -3.5 ;
 	setAttr ".sp" -type "double3" 7 4.939 -3.5 ;
-createNode transform -n "lightHousing_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightHousing_geo" -p "|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "60BD0472-4D2B-13A1-BA36-3DB1EA08A492";
 	setAttr ".rp" -type "double3" 7 5.939 -3.5 ;
 	setAttr ".sp" -type "double3" 7 5.939 -3.5 ;
-createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
+createNode mesh -n "lightHousing_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
 	rename -uid "3ED1C51C-4A4B-2B6B-804D-ABAB8B0EB75B";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -12982,11 +12980,11 @@ createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilin
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightPole_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightPole_geo" -p "|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "2A6480F0-400F-7C93-24A9-5C99849541AD";
 	setAttr ".rp" -type "double3" 7 6.7849296983908074 -3.5 ;
 	setAttr ".sp" -type "double3" 7 6.7849296983908074 -3.5 ;
-createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
+createNode mesh -n "lightPole_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
 	rename -uid "C6C1A0F2-46DC-8F9E-8A66-F2A84E16C644";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -13259,11 +13257,11 @@ createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMa
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightCover_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightCover_geo" -p "|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "4A2397E1-45C9-1E71-F187-5D9B5409956A";
 	setAttr ".rp" -type "double3" 7.0000002819226559 5.302550331506267 -3.5000000596046448 ;
 	setAttr ".sp" -type "double3" 7.0000002819226559 5.302550331506267 -3.5000000596046448 ;
-createNode mesh -n "lightCover_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
+createNode mesh -n "lightCover_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
 	rename -uid "54347F24-4D27-8CCB-7B18-81BC1DF32AEB";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -13335,23 +13333,23 @@ createNode transform -n "POSITION" -p "lightCeiling_grp5";
 	rename -uid "FC3E6D8B-41D6-7A66-FBD3-9F80F99B0B99";
 	setAttr ".rp" -type "double3" -3 4.939 -7.5 ;
 	setAttr ".sp" -type "double3" -3 4.939 -7.5 ;
-createNode transform -n "MOVEMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp5|POSITION";
+createNode transform -n "MOVEMENT" -p "|lightCeilingMain_grp|lightCeiling_grp5|POSITION";
 	rename -uid "14964736-45A4-A8F4-70B0-45B85CF363ED";
 	setAttr ".rp" -type "double3" -3 4.939 -7.5 ;
 	setAttr ".sp" -type "double3" -3 4.939 -7.5 ;
-createNode transform -n "ADJUSTMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT";
+createNode transform -n "ADJUSTMENT" -p "|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT";
 	rename -uid "B87374B5-4ABD-AAEC-E0D9-32A6BC2B4795";
 	setAttr ".rp" -type "double3" -3 4.939 -7.5 ;
 	setAttr ".sp" -type "double3" -3 4.939 -7.5 ;
-createNode transform -n "DO_NOT_TOUCH" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT";
+createNode transform -n "DO_NOT_TOUCH" -p "|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT";
 	rename -uid "C15985C6-4CFD-22DD-E0C2-1BA0575E82C7";
 	setAttr ".rp" -type "double3" -3 4.939 -7.5 ;
 	setAttr ".sp" -type "double3" -3 4.939 -7.5 ;
-createNode transform -n "lightHousing_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightHousing_geo" -p "|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "BD2C57A0-4A31-586E-0E5F-8485A9508E31";
 	setAttr ".rp" -type "double3" -3 5.939 -7.5 ;
 	setAttr ".sp" -type "double3" -3 5.939 -7.5 ;
-createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
+createNode mesh -n "lightHousing_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
 	rename -uid "43E8B3C3-494B-113F-5F1E-B890E364BF93";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -15403,11 +15401,11 @@ createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilin
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightPole_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightPole_geo" -p "|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "3B7259DA-498A-67BD-15BF-BCA015BDC77B";
 	setAttr ".rp" -type "double3" -3 6.7849296983908074 -7.5 ;
 	setAttr ".sp" -type "double3" -3 6.7849296983908074 -7.5 ;
-createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
+createNode mesh -n "lightPole_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
 	rename -uid "6A06D17C-46C7-5AED-B784-808039F5DDBE";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -15680,11 +15678,11 @@ createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMa
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightCover_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightCover_geo" -p "|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "D6A7F636-46B6-F95E-D202-14BDC19F0BF1";
 	setAttr ".rp" -type "double3" -2.9999997180773441 5.302550331506267 -7.5000000596046448 ;
 	setAttr ".sp" -type "double3" -2.9999997180773441 5.302550331506267 -7.5000000596046448 ;
-createNode mesh -n "lightCover_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
+createNode mesh -n "lightCover_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
 	rename -uid "BAB5D151-4F2B-6B02-3D38-949E9FD2433A";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -15756,23 +15754,23 @@ createNode transform -n "POSITION" -p "lightCeiling_grp6";
 	rename -uid "B6317FE2-4F66-D9B9-3C2F-B598D2401889";
 	setAttr ".rp" -type "double3" 3 4.939 -7.5 ;
 	setAttr ".sp" -type "double3" 3 4.939 -7.5 ;
-createNode transform -n "MOVEMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp6|POSITION";
+createNode transform -n "MOVEMENT" -p "|lightCeilingMain_grp|lightCeiling_grp6|POSITION";
 	rename -uid "3CC7E3E1-49E0-A01D-6A10-8DA19FA1F02C";
 	setAttr ".rp" -type "double3" 3 4.939 -7.5 ;
 	setAttr ".sp" -type "double3" 3 4.939 -7.5 ;
-createNode transform -n "ADJUSTMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT";
+createNode transform -n "ADJUSTMENT" -p "|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT";
 	rename -uid "D7FA6189-4213-03DE-639E-A58084679FAE";
 	setAttr ".rp" -type "double3" 3 4.939 -7.5 ;
 	setAttr ".sp" -type "double3" 3 4.939 -7.5 ;
-createNode transform -n "DO_NOT_TOUCH" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT";
+createNode transform -n "DO_NOT_TOUCH" -p "|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT";
 	rename -uid "78E406F8-4D72-9304-614D-99A369BED7E5";
 	setAttr ".rp" -type "double3" 3 4.939 -7.5 ;
 	setAttr ".sp" -type "double3" 3 4.939 -7.5 ;
-createNode transform -n "lightHousing_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightHousing_geo" -p "|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "76298CEF-4FA2-6197-E20A-4798E0BA7383";
 	setAttr ".rp" -type "double3" 3 5.939 -7.5 ;
 	setAttr ".sp" -type "double3" 3 5.939 -7.5 ;
-createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
+createNode mesh -n "lightHousing_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
 	rename -uid "795321F4-4C27-4AFD-E432-21AABDCE4E4E";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -17824,11 +17822,11 @@ createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilin
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightPole_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightPole_geo" -p "|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "9FC66B11-447F-501C-76F9-D4977C169551";
 	setAttr ".rp" -type "double3" 3 6.7849296983908074 -7.5 ;
 	setAttr ".sp" -type "double3" 3 6.7849296983908074 -7.5 ;
-createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
+createNode mesh -n "lightPole_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
 	rename -uid "3937E846-494E-5336-A097-BA910502F1D8";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -18101,11 +18099,11 @@ createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMa
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightCover_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightCover_geo" -p "|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "913B8350-436D-ED66-2368-5193C3C99F86";
 	setAttr ".rp" -type "double3" 3.0000002819226559 5.302550331506267 -7.5000000596046448 ;
 	setAttr ".sp" -type "double3" 3.0000002819226559 5.302550331506267 -7.5000000596046448 ;
-createNode mesh -n "lightCover_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
+createNode mesh -n "lightCover_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
 	rename -uid "BAA04A1E-4109-CBF6-F02D-34A2750E0979";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -18177,23 +18175,23 @@ createNode transform -n "POSITION" -p "lightCeiling_grp7";
 	rename -uid "5442E835-4C2F-69A0-60AC-3781DAA739FD";
 	setAttr ".rp" -type "double3" -3 4.939 6.5 ;
 	setAttr ".sp" -type "double3" -3 4.939 6.5 ;
-createNode transform -n "MOVEMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp7|POSITION";
+createNode transform -n "MOVEMENT" -p "|lightCeilingMain_grp|lightCeiling_grp7|POSITION";
 	rename -uid "E8CF9584-46DA-576D-1E78-C5BC6BE50263";
 	setAttr ".rp" -type "double3" -3 4.939 6.5 ;
 	setAttr ".sp" -type "double3" -3 4.939 6.5 ;
-createNode transform -n "ADJUSTMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT";
+createNode transform -n "ADJUSTMENT" -p "|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT";
 	rename -uid "2DDC38D4-4B4B-BDEF-751B-EFA85C7D9F80";
 	setAttr ".rp" -type "double3" -3 4.939 6.5 ;
 	setAttr ".sp" -type "double3" -3 4.939 6.5 ;
-createNode transform -n "DO_NOT_TOUCH" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT";
+createNode transform -n "DO_NOT_TOUCH" -p "|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT";
 	rename -uid "9BD40462-4B46-595E-83DB-F5A5A0E933C3";
 	setAttr ".rp" -type "double3" -3 4.939 6.5 ;
 	setAttr ".sp" -type "double3" -3 4.939 6.5 ;
-createNode transform -n "lightHousing_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightHousing_geo" -p "|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "A65E41BE-454A-3AB7-F209-D6BE514B2B6C";
 	setAttr ".rp" -type "double3" -3 5.939 6.5 ;
 	setAttr ".sp" -type "double3" -3 5.939 6.5 ;
-createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
+createNode mesh -n "lightHousing_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
 	rename -uid "6EA7C765-42CB-D944-3296-F69E0D144C81";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -20245,11 +20243,11 @@ createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilin
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightPole_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightPole_geo" -p "|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "257DABA9-4900-92CC-1F78-A6A3FE35D91F";
 	setAttr ".rp" -type "double3" -3 6.7849296983908074 6.5 ;
 	setAttr ".sp" -type "double3" -3 6.7849296983908074 6.5 ;
-createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
+createNode mesh -n "lightPole_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
 	rename -uid "00CFB8FD-4176-2AB3-6B16-CDAEECE58E5D";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -20522,11 +20520,11 @@ createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMa
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightCover_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightCover_geo" -p "|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "9728B4CA-44D0-C43E-9A8C-A09A7BE5D3E8";
 	setAttr ".rp" -type "double3" -2.9999997180773441 5.302550331506267 6.4999999403953552 ;
 	setAttr ".sp" -type "double3" -2.9999997180773441 5.302550331506267 6.4999999403953552 ;
-createNode mesh -n "lightCover_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
+createNode mesh -n "lightCover_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
 	rename -uid "56FA2DCE-4E97-F8C3-5BF2-2A8908A52D90";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -20598,23 +20596,23 @@ createNode transform -n "POSITION" -p "lightCeiling_grp8";
 	rename -uid "E0898F79-4B68-3B28-863C-51B8F8733C04";
 	setAttr ".rp" -type "double3" 3 4.939 6.5 ;
 	setAttr ".sp" -type "double3" 3 4.939 6.5 ;
-createNode transform -n "MOVEMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp8|POSITION";
+createNode transform -n "MOVEMENT" -p "|lightCeilingMain_grp|lightCeiling_grp8|POSITION";
 	rename -uid "C08609AD-4EED-3A9C-3682-9FBCB9F2F9AB";
 	setAttr ".rp" -type "double3" 3 4.939 6.5 ;
 	setAttr ".sp" -type "double3" 3 4.939 6.5 ;
-createNode transform -n "ADJUSTMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT";
+createNode transform -n "ADJUSTMENT" -p "|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT";
 	rename -uid "F1810B1D-432E-C4B4-2419-F9B5D6671321";
 	setAttr ".rp" -type "double3" 3 4.939 6.5 ;
 	setAttr ".sp" -type "double3" 3 4.939 6.5 ;
-createNode transform -n "DO_NOT_TOUCH" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT";
+createNode transform -n "DO_NOT_TOUCH" -p "|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT";
 	rename -uid "55CE41FB-4635-6C47-68D1-72A59436EF05";
 	setAttr ".rp" -type "double3" 3 4.939 6.5 ;
 	setAttr ".sp" -type "double3" 3 4.939 6.5 ;
-createNode transform -n "lightHousing_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightHousing_geo" -p "|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "5CE51A13-41E5-40D8-D7A9-E7BF749C85D0";
 	setAttr ".rp" -type "double3" 3 5.939 6.5 ;
 	setAttr ".sp" -type "double3" 3 5.939 6.5 ;
-createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
+createNode mesh -n "lightHousing_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
 	rename -uid "90FEE73F-47B7-EEAC-F321-9BAFFE64A1A6";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -22658,11 +22656,11 @@ createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilin
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightPole_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightPole_geo" -p "|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "7F836704-4978-F99F-4630-A28F515E0356";
 	setAttr ".rp" -type "double3" 3 6.7849296983908074 6.5 ;
 	setAttr ".sp" -type "double3" 3 6.7849296983908074 6.5 ;
-createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
+createNode mesh -n "lightPole_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
 	rename -uid "9ABABAC2-4645-C85F-2991-77AADDA82C0A";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -22934,11 +22932,11 @@ createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMa
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightCover_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightCover_geo" -p "|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "B5BACFB3-43DF-2935-0B37-30B785328C9B";
 	setAttr ".rp" -type "double3" 3.0000002819226559 5.302550331506267 6.4999999403953552 ;
 	setAttr ".sp" -type "double3" 3.0000002819226559 5.302550331506267 6.4999999403953552 ;
-createNode mesh -n "lightCover_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
+createNode mesh -n "lightCover_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
 	rename -uid "E81B0748-4EB4-DE86-7C7B-F6BBF60DD6EC";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -23009,23 +23007,23 @@ createNode transform -n "POSITION" -p "lightCeiling_grp9";
 	rename -uid "D1635A01-47F4-6E4D-3461-39B2DA5A6E62";
 	setAttr ".rp" -type "double3" -3 4.939 2.5 ;
 	setAttr ".sp" -type "double3" -3 4.939 2.5 ;
-createNode transform -n "MOVEMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp9|POSITION";
+createNode transform -n "MOVEMENT" -p "|lightCeilingMain_grp|lightCeiling_grp9|POSITION";
 	rename -uid "54075CB3-49E3-CEF4-BB14-94849DBBA57F";
 	setAttr ".rp" -type "double3" -3 4.939 2.5 ;
 	setAttr ".sp" -type "double3" -3 4.939 2.5 ;
-createNode transform -n "ADJUSTMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT";
+createNode transform -n "ADJUSTMENT" -p "|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT";
 	rename -uid "70B6D442-401B-DBC3-9CA5-CEA0CA2BAC50";
 	setAttr ".rp" -type "double3" -3 4.939 2.5 ;
 	setAttr ".sp" -type "double3" -3 4.939 2.5 ;
-createNode transform -n "DO_NOT_TOUCH" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT";
+createNode transform -n "DO_NOT_TOUCH" -p "|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT";
 	rename -uid "90EB494C-4AC5-C1F5-1A92-61B47548C981";
 	setAttr ".rp" -type "double3" -3 4.939 2.5 ;
 	setAttr ".sp" -type "double3" -3 4.939 2.5 ;
-createNode transform -n "lightHousing_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightHousing_geo" -p "|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "2488A4C1-4CE4-29FD-77D8-95913A4CF4E9";
 	setAttr ".rp" -type "double3" -3 5.939 2.5 ;
 	setAttr ".sp" -type "double3" -3 5.939 2.5 ;
-createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
+createNode mesh -n "lightHousing_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
 	rename -uid "7304DD53-4E5C-D0DC-4DF7-3FA392F8D637";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -25077,11 +25075,11 @@ createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilin
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightPole_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightPole_geo" -p "|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "E4091464-49BE-9BAB-9F48-D7BE5186A3BF";
 	setAttr ".rp" -type "double3" -3 6.7849296983908074 2.5 ;
 	setAttr ".sp" -type "double3" -3 6.7849296983908074 2.5 ;
-createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
+createNode mesh -n "lightPole_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
 	rename -uid "744839FE-46E6-E1AC-E1C8-4396C80C813A";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -25354,11 +25352,11 @@ createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMa
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightCover_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightCover_geo" -p "|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "077D0C37-4078-FF61-9546-AA835C898100";
 	setAttr ".rp" -type "double3" -2.9999997180773441 5.302550331506267 2.4999999403953552 ;
 	setAttr ".sp" -type "double3" -2.9999997180773441 5.302550331506267 2.4999999403953552 ;
-createNode mesh -n "lightCover_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
+createNode mesh -n "lightCover_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
 	rename -uid "18B47287-4FF8-1F35-85FA-27A326FCECAF";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -25430,23 +25428,23 @@ createNode transform -n "POSITION" -p "lightCeiling_grp10";
 	rename -uid "9003CCF8-437D-7428-BF6E-75AB920CB899";
 	setAttr ".rp" -type "double3" 3 4.939 2.5 ;
 	setAttr ".sp" -type "double3" 3 4.939 2.5 ;
-createNode transform -n "MOVEMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp10|POSITION";
+createNode transform -n "MOVEMENT" -p "|lightCeilingMain_grp|lightCeiling_grp10|POSITION";
 	rename -uid "EA863810-4C16-63F4-73A6-888BA7608D1D";
 	setAttr ".rp" -type "double3" 3 4.939 2.5 ;
 	setAttr ".sp" -type "double3" 3 4.939 2.5 ;
-createNode transform -n "ADJUSTMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT";
+createNode transform -n "ADJUSTMENT" -p "|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT";
 	rename -uid "585C37FE-49F8-79D1-FAC2-5B9CEF819919";
 	setAttr ".rp" -type "double3" 3 4.939 2.5 ;
 	setAttr ".sp" -type "double3" 3 4.939 2.5 ;
-createNode transform -n "DO_NOT_TOUCH" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT";
+createNode transform -n "DO_NOT_TOUCH" -p "|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT";
 	rename -uid "E9AC387D-4B97-24D2-EEE4-34B0E8F499F2";
 	setAttr ".rp" -type "double3" 3 4.939 2.5 ;
 	setAttr ".sp" -type "double3" 3 4.939 2.5 ;
-createNode transform -n "lightHousing_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightHousing_geo" -p "|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "D8D9D631-4501-99E1-D255-AB9AED3D449B";
 	setAttr ".rp" -type "double3" 3 5.939 2.5 ;
 	setAttr ".sp" -type "double3" 3 5.939 2.5 ;
-createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
+createNode mesh -n "lightHousing_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
 	rename -uid "B0E58B9C-4459-ACB2-5D47-C7945AF30F4C";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -27490,11 +27488,11 @@ createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilin
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightPole_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightPole_geo" -p "|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "87A8A25C-4938-7FD6-07B2-C29FECE9AA3B";
 	setAttr ".rp" -type "double3" 3 6.7849296983908074 2.5 ;
 	setAttr ".sp" -type "double3" 3 6.7849296983908074 2.5 ;
-createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
+createNode mesh -n "lightPole_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
 	rename -uid "6364C45C-4FB4-0453-B940-3A80E8E67B2A";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -27766,11 +27764,11 @@ createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMa
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightCover_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightCover_geo" -p "|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "77CE6A1F-420A-4EB7-EBDD-6795B2F113EE";
 	setAttr ".rp" -type "double3" 3.0000002819226559 5.302550331506267 2.4999999403953552 ;
 	setAttr ".sp" -type "double3" 3.0000002819226559 5.302550331506267 2.4999999403953552 ;
-createNode mesh -n "lightCover_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
+createNode mesh -n "lightCover_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
 	rename -uid "9F7977AD-45EF-5D97-A2F6-D08D3D6379DF";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -27841,23 +27839,23 @@ createNode transform -n "POSITION" -p "lightCeiling_grp11";
 	rename -uid "E234748B-4727-0D3A-6330-B6A0399A6279";
 	setAttr ".rp" -type "double3" 3 4.939 -3.5 ;
 	setAttr ".sp" -type "double3" 3 4.939 -3.5 ;
-createNode transform -n "MOVEMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp11|POSITION";
+createNode transform -n "MOVEMENT" -p "|lightCeilingMain_grp|lightCeiling_grp11|POSITION";
 	rename -uid "0FE45DC1-468B-62A1-7B9F-34899B5534D4";
 	setAttr ".rp" -type "double3" 3 4.939 -3.5 ;
 	setAttr ".sp" -type "double3" 3 4.939 -3.5 ;
-createNode transform -n "ADJUSTMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT";
+createNode transform -n "ADJUSTMENT" -p "|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT";
 	rename -uid "03BE0F7F-432D-1740-E7AA-2FA90A10AA55";
 	setAttr ".rp" -type "double3" 3 4.939 -3.5 ;
 	setAttr ".sp" -type "double3" 3 4.939 -3.5 ;
-createNode transform -n "DO_NOT_TOUCH" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT";
+createNode transform -n "DO_NOT_TOUCH" -p "|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT";
 	rename -uid "57E7A36E-411B-3358-CBAF-B7A5BC4C5A0B";
 	setAttr ".rp" -type "double3" 3 4.939 -3.5 ;
 	setAttr ".sp" -type "double3" 3 4.939 -3.5 ;
-createNode transform -n "lightHousing_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightHousing_geo" -p "|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "39B8A2A3-46B1-8FC0-40A5-CE86800B19AB";
 	setAttr ".rp" -type "double3" 3 5.939 -3.5 ;
 	setAttr ".sp" -type "double3" 3 5.939 -3.5 ;
-createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
+createNode mesh -n "lightHousing_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
 	rename -uid "44516D82-4D66-C24E-461E-D3BE62DD1D7A";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -29909,11 +29907,11 @@ createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilin
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightPole_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightPole_geo" -p "|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "B11A0427-4E0B-A48B-E2D7-1384ECD304F5";
 	setAttr ".rp" -type "double3" 3 6.7849296983908074 -3.5 ;
 	setAttr ".sp" -type "double3" 3 6.7849296983908074 -3.5 ;
-createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
+createNode mesh -n "lightPole_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
 	rename -uid "DFCE2B47-4239-028A-A50A-49AD8E45FD0A";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -30186,11 +30184,11 @@ createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMa
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightCover_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightCover_geo" -p "|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "EC7707D9-408D-433A-0ED2-AEA93477B7B2";
 	setAttr ".rp" -type "double3" 3.0000002819226559 5.302550331506267 -3.5000000596046448 ;
 	setAttr ".sp" -type "double3" 3.0000002819226559 5.302550331506267 -3.5000000596046448 ;
-createNode mesh -n "lightCover_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
+createNode mesh -n "lightCover_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
 	rename -uid "8E371485-45C4-5419-B733-E681BFA81992";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -30262,23 +30260,23 @@ createNode transform -n "POSITION" -p "lightCeiling_grp12";
 	rename -uid "5C262F26-4CF5-A44B-A675-758E97FBAD48";
 	setAttr ".rp" -type "double3" -3 4.939 -3.5 ;
 	setAttr ".sp" -type "double3" -3 4.939 -3.5 ;
-createNode transform -n "MOVEMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp12|POSITION";
+createNode transform -n "MOVEMENT" -p "|lightCeilingMain_grp|lightCeiling_grp12|POSITION";
 	rename -uid "5B0F1C4B-4036-87A7-4D70-84A8FBC816C2";
 	setAttr ".rp" -type "double3" -3 4.939 -3.5 ;
 	setAttr ".sp" -type "double3" -3 4.939 -3.5 ;
-createNode transform -n "ADJUSTMENT" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT";
+createNode transform -n "ADJUSTMENT" -p "|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT";
 	rename -uid "FA3721C2-48E6-F1DF-C379-B0A8D46E7298";
 	setAttr ".rp" -type "double3" -3 4.939 -3.5 ;
 	setAttr ".sp" -type "double3" -3 4.939 -3.5 ;
-createNode transform -n "DO_NOT_TOUCH" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT";
+createNode transform -n "DO_NOT_TOUCH" -p "|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT";
 	rename -uid "8E5B934B-460B-0409-5FAF-058F71CBD10C";
 	setAttr ".rp" -type "double3" -3 4.939 -3.5 ;
 	setAttr ".sp" -type "double3" -3 4.939 -3.5 ;
-createNode transform -n "lightHousing_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightHousing_geo" -p "|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "0C997D52-489B-6F83-6701-5E9323A10FFA";
 	setAttr ".rp" -type "double3" -3 5.939 -3.5 ;
 	setAttr ".sp" -type "double3" -3 5.939 -3.5 ;
-createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
+createNode mesh -n "lightHousing_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo";
 	rename -uid "D156A91D-4EF9-67A0-8B1B-7A9DC4988C5A";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -32330,11 +32328,11 @@ createNode mesh -n "lightHousing_geoShape" -p "|allCeilingLights_grp|lightCeilin
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightPole_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightPole_geo" -p "|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "0BD682DF-4E38-B785-DCB1-56857EEE56D6";
 	setAttr ".rp" -type "double3" -3 6.7849296983908074 -3.5 ;
 	setAttr ".sp" -type "double3" -3 6.7849296983908074 -3.5 ;
-createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
+createNode mesh -n "lightPole_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo";
 	rename -uid "D0BA991E-475E-72DA-473B-528D28A46D28";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -32607,11 +32605,11 @@ createNode mesh -n "lightPole_geoShape" -p "|allCeilingLights_grp|lightCeilingMa
 	setAttr ".dr" 3;
 	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
-createNode transform -n "lightCover_geo" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
+createNode transform -n "lightCover_geo" -p "|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH";
 	rename -uid "C3A4D34D-4095-E515-9EA4-B380D3FA2E64";
 	setAttr ".rp" -type "double3" -2.9999997180773441 5.302550331506267 -3.5000000596046448 ;
 	setAttr ".sp" -type "double3" -2.9999997180773441 5.302550331506267 -3.5000000596046448 ;
-createNode mesh -n "lightCover_geoShape" -p "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
+createNode mesh -n "lightCover_geoShape" -p "|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo";
 	rename -uid "232B8A4F-4C41-C659-EB8C-F789B6C3C9E6";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
@@ -32676,21 +32674,21 @@ createNode mesh -n "lightCover_geoShape" -p "|allCeilingLights_grp|lightCeilingM
 	setAttr ".ai_opaque" no;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "870DD0D4-4AB7-B0FF-2384-41AAF1AE3993";
+	rename -uid "3B67664F-415F-53CE-485F-F8A4D57C9B3D";
 	setAttr -s 11 ".lnk";
 	setAttr -s 11 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "E896E422-42AE-2FAB-B305-A2BA7490B990";
+	rename -uid "69D7F577-4B61-3D3C-851B-3680F5F79620";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "73A8C7AF-4B63-4793-5244-628F055E243A";
+	rename -uid "3A250545-4462-D412-2B60-90B4D28B4CAD";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "6EC31430-47F7-6BCF-A6D2-729278E17BE0";
-	setAttr -s 2 ".dli[1]"  1;
+	rename -uid "A4510A5A-4E49-C69C-F804-4D886981D9E0";
+	setAttr ".dli[1]"  1;
 	setAttr -s 2 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "4E9F9969-46C5-3E48-682D-D4921D656A8C";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "D0D21F13-4289-863D-E135-1B959D364719";
+	rename -uid "9387E661-44F5-6F7C-F1F9-BCBC0F77538B";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "83D27133-461A-73A0-C6E5-F5B1E41B960C";
 	setAttr ".g" yes;
@@ -32707,38 +32705,39 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
 		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
 		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
-		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1118\n            -height 697\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
+		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
 		+ "            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n"
 		+ "            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n"
-		+ "            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1118\n            -height 697\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1315\n            -height 688\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -docTag \"isolOutln_fromSeln\" \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 1\n            -showReferenceMembers 1\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n"
 		+ "            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -isSet 0\n            -isSetMember 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            -renderFilterIndex 0\n            -selectionOrder \"chronological\" \n"
 		+ "            -expandAttribute 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"Outliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"Outliner\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        outlinerEditor -e \n            -showShapes 0\n            -showAssignedMaterials 0\n            -showTimeEditor 1\n            -showReferenceNodes 0\n            -showReferenceMembers 0\n            -showAttributes 0\n            -showConnected 0\n            -showAnimCurvesOnly 0\n            -showMuteInfo 0\n            -organizeByLayer 1\n            -organizeByClip 1\n            -showAnimLayerWeight 1\n            -autoExpandLayers 1\n            -autoExpand 0\n            -showDagOnly 1\n            -showAssets 1\n            -showContainedOnly 1\n            -showPublishedAsConnected 0\n            -showParentContainers 0\n"
 		+ "            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n"
 		+ "            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n"
 		+ "                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n"
-		+ "                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n                -lockPlayRangeShades \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n"
-		+ "                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -valueLinesToggle 1\n                -highlightAffectedCurves 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n"
-		+ "                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 1\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n"
-		+ "                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n"
-		+ "                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n"
-		+ "                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
-		+ "\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n"
-		+ "                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n"
-		+ "\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n"
-		+ "                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n"
-		+ "                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
-		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 1\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 1\n                -autoFitTime 0\n                -snapTime \"integer\" \n"
+		+ "                -snapValue \"none\" \n                -showResults \"off\" \n                -showBufferCurves \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -showCurveNames 0\n                -showActiveCurveNames 0\n                -stackedCurves 0\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -displayNormalized 0\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -classicMode 1\n                -valueLinesToggle 1\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 1\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n"
+		+ "                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n"
+		+ "                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n            dopeSheetEditor -e \n                -displayKeys 1\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -outliner \"dopeSheetPanel1OutlineEd\" \n                -showSummary 1\n                -showScene 0\n                -hierarchyBelow 0\n                -showTicks 1\n                -selectionWindow 0 0 0 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"timeEditorPanel\" (localizedPanelLabel(\"Time Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Time Editor\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"clipEditorPanel\" (localizedPanelLabel(\"Trax Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Trax Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = clipEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 0 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"sequenceEditorPanel\" (localizedPanelLabel(\"Camera Sequencer\")) `;\n"
+		+ "\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Camera Sequencer\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = sequenceEditorNameFromPanel($panelName);\n            clipEditor -e \n                -displayKeys 0\n                -displayTangents 0\n                -displayActiveKeys 0\n                -displayActiveKeyTangents 0\n                -displayInfinities 0\n                -displayValues 0\n                -autoFit 0\n                -autoFitTime 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -initialized 0\n                -manageSequencer 1 \n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperGraphPanel\" (localizedPanelLabel(\"Hypergraph Hierarchy\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypergraph Hierarchy\")) -mbv $menusOkayInPanels  $panelName;\n"
+		+ "\n\t\t\t$editorName = ($panelName+\"HyperGraphEd\");\n            hyperGraph -e \n                -graphLayoutStyle \"hierarchicalLayout\" \n                -orientation \"horiz\" \n                -mergeConnections 0\n                -zoom 1\n                -animateTransition 0\n                -showRelationships 1\n                -showShapes 0\n                -showDeformers 0\n                -showExpressions 0\n                -showConstraints 0\n                -showConnectionFromSelected 0\n                -showConnectionToSelected 0\n                -showConstraintLabels 0\n                -showUnderworld 0\n                -showInvisible 0\n                -transitionFrames 1\n                -opaqueContainers 0\n                -freeform 0\n                -imagePosition 0 0 \n                -imageScale 1\n                -imageEnabled 0\n                -graphType \"DAG\" \n                -heatMapDisplay 0\n                -updateSelection 1\n                -updateNodeAdded 1\n                -useDrawOverrideColor 0\n                -limitGraphTraversal -1\n"
+		+ "                -range 0 0 \n                -iconSize \"smallIcons\" \n                -showCachedConnections 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"hyperShadePanel\" (localizedPanelLabel(\"Hypershade\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Hypershade\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"visorPanel\" (localizedPanelLabel(\"Visor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Visor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"nodeEditorPanel\" (localizedPanelLabel(\"Node Editor\")) `;\n\tif ($nodeEditorPanelVisible || $nodeEditorWorkspaceControlOpen) {\n"
+		+ "\t\tif (\"\" == $panelName) {\n\t\t\tif ($useSceneConfig) {\n\t\t\t\t$panelName = `scriptedPanel -unParent  -type \"nodeEditorPanel\" -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels `;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n"
+		+ "                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\t}\n\t\t} else {\n\t\t\t$label = `panel -q -label $panelName`;\n\t\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Node Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"NodeEditorEd\");\n            nodeEditor -e \n                -allAttributes 0\n                -allNodes 0\n                -autoSizeNodes 1\n                -consistentNameSize 1\n                -createNodeCommand \"nodeEdCreateNodeCommand\" \n                -connectNodeOnCreation 0\n                -connectOnDrop 0\n                -copyConnectionsOnPaste 0\n                -connectionStyle \"bezier\" \n                -defaultPinnedState 0\n                -additiveGraphingMode 0\n                -settingsChangedCallback \"nodeEdSyncControls\" \n"
+		+ "                -traversalDepthLimit -1\n                -keyPressCommand \"nodeEdKeyPressCommand\" \n                -nodeTitleMode \"name\" \n                -gridSnap 0\n                -gridVisibility 1\n                -crosshairOnEdgeDragging 0\n                -popupMenuScript \"nodeEdBuildPanelMenus\" \n                -showNamespace 1\n                -showShapes 1\n                -showSGShapes 0\n                -showTransforms 1\n                -useAssets 1\n                -syncedSelection 1\n                -extendToShapes 1\n                -editorMode \"default\" \n                -hasWatchpoint 0\n                $editorName;\n\t\t\tif (!$useSceneConfig) {\n\t\t\t\tpanel -e -l $label $panelName;\n\t\t\t}\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"createNodePanel\" (localizedPanelLabel(\"Create Node\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Create Node\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"polyTexturePlacementPanel\" (localizedPanelLabel(\"UV Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"UV Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"renderWindowPanel\" (localizedPanelLabel(\"Render View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Render View\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"shapePanel\" (localizedPanelLabel(\"Shape Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tshapePanel -edit -l (localizedPanelLabel(\"Shape Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
+		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"posePanel\" (localizedPanelLabel(\"Pose Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tposePanel -edit -l (localizedPanelLabel(\"Pose Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynRelEdPanel\" (localizedPanelLabel(\"Dynamic Relationships\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dynamic Relationships\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"relationshipPanel\" (localizedPanelLabel(\"Relationship Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Relationship Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n"
+		+ "\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"referenceEditorPanel\" (localizedPanelLabel(\"Reference Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Reference Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"componentEditorPanel\" (localizedPanelLabel(\"Component Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Component Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dynPaintScriptedPanelType\" (localizedPanelLabel(\"Paint Effects\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Paint Effects\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"scriptEditorPanel\" (localizedPanelLabel(\"Script Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Script Editor\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"profilerPanel\" (localizedPanelLabel(\"Profiler Tool\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Profiler Tool\")) -mbv $menusOkayInPanels  $panelName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"contentBrowserPanel\" (localizedPanelLabel(\"Content Browser\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Content Browser\")) -mbv $menusOkayInPanels  $panelName;\n"
 		+ "\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"Stereo\" (localizedPanelLabel(\"Stereo\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Stereo\")) -mbv $menusOkayInPanels  $panelName;\n{ string $editorName = ($panelName+\"Editor\");\n            stereoCameraView -e \n                -camera \"persp\" \n                -useInteractiveMode 0\n                -displayLights \"default\" \n                -displayAppearance \"wireframe\" \n                -activeOnly 0\n                -ignorePanZoom 0\n                -wireframeOnShaded 0\n                -headsUpDisplay 1\n                -holdOuts 1\n                -selectionHiliteDisplay 1\n                -useDefaultMaterial 0\n                -bufferMode \"double\" \n                -twoSidedLighting 1\n                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n"
 		+ "                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 16384\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n"
 		+ "                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n"
 		+ "                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n"
 		+ "\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1118\\n    -height 697\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1118\\n    -height 697\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1315\\n    -height 688\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1315\\n    -height 688\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -32926,7 +32925,7 @@ select -ne :renderPartition;
 	setAttr -s 11 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 14 ".s";
+	setAttr -s 13 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
@@ -32947,6 +32946,8 @@ select -ne :defaultResolution;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :ikSystem;
+	setAttr -s 4 ".sol";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "aiStandardSurface1SG.message" ":defaultLightSet.message";
@@ -33025,86 +33026,86 @@ connectAttr "aiStandardSurface3SG.msg" "materialInfo5.sg";
 connectAttr "lightCover_mat.msg" "materialInfo5.m";
 connectAttr "lightCover_mat.msg" "materialInfo5.t" -na;
 connectAttr "lightPole_mat.out" "aiStandardSurface4SG.ss";
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightPole_geo|lightPole_geoShape.iog" "aiStandardSurface4SG.dsm"
 		 -na;
 connectAttr "aiStandardSurface4SG.msg" "materialInfo6.sg";
 connectAttr "lightPole_mat.msg" "materialInfo6.m";
 connectAttr "lightPole_mat.msg" "materialInfo6.t" -na;
 connectAttr "layerManager.dli[1]" "lighting.id";
 connectAttr "aiStandardSurface5.out" "aiStandardSurface5SG.ss";
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightHousing_geo|lightHousing_geoShape.iog" "aiStandardSurface5SG.dsm"
 		 -na;
 connectAttr "aiStandardSurface5SG.msg" "materialInfo7.sg";
 connectAttr "aiStandardSurface5.msg" "materialInfo7.m";
 connectAttr "aiStandardSurface5.msg" "materialInfo7.t" -na;
 connectAttr "lightCover_mat.out" "aiStandardSurface6SG.ss";
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp1|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp2|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp3|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp4|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp5|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp6|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp7|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp8|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp9|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp10|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp11|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
 		 -na;
-connectAttr "|allCeilingLights_grp|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
+connectAttr "|lightCeilingMain_grp|lightCeiling_grp12|POSITION|MOVEMENT|ADJUSTMENT|DO_NOT_TOUCH|lightCover_geo|lightCover_geoShape.iog" "aiStandardSurface6SG.dsm"
 		 -na;
 connectAttr "aiStandardSurface6SG.msg" "materialInfo8.sg";
 connectAttr "lightCover_mat.msg" "materialInfo8.m";

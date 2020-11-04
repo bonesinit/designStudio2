@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: flashlight.ma
-//Last modified: Tue, Nov 03, 2020 02:41:11 PM
+//Last modified: Wed, Nov 04, 2020 04:51:57 AM
 //Codeset: 1252
 requires maya "2020";
 requires "stereoCamera" "10.0";
@@ -12,7 +12,7 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
-fileInfo "UUID" "ABDE04A0-4AC6-6BBD-1851-D18E8F76CBA2";
+fileInfo "UUID" "4D55E81F-410D-1A5C-D87F-2CA8669AB550";
 createNode transform -n "flashlight_grp";
 	rename -uid "7D2C83E6-4185-A959-B39C-08BFD15C2490";
 	setAttr ".rp" -type "double3" 0 -0.49999997019767761 0.12916698679327965 ;
@@ -65,12 +65,12 @@ createNode nurbsCurve -n "flashlight_ctrlShape" -p "flashlight_ctrl";
 		;
 createNode transform -n "spotLight1" -p "flashlight_ctrl";
 	rename -uid "54D97913-4F6E-5F8A-3B0B-9BA16325726F";
-	setAttr ".t" -type "double3" 0 0.042861610515937412 -0.099819829806557112 ;
-	setAttr ".r" -type "double3" 0.050214176741908631 0 0 ;
+	setAttr ".t" -type "double3" 0 0.042861610515937412 -0.1020185082177861 ;
+	setAttr ".r" -type "double3" 0.050214176741908638 0 0 ;
 createNode spotLight -n "spotLightShape1" -p "spotLight1";
 	rename -uid "8EABB751-49FD-BA18-E595-9AA762BED055";
 	setAttr -k off ".v";
-	setAttr ".in" 8.2467536926269531;
+	setAttr ".in" 9.6103897094726563;
 	setAttr ".col" 4.9992244977383944;
 createNode transform -n "flashlight_geo" -p "flashlight_ctrl";
 	rename -uid "A8CBAA9A-42C0-E573-62C9-FE87FC6911FA";
@@ -81,7 +81,7 @@ createNode mesh -n "flashlight_geoShape" -p "flashlight_geo";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.57966715097427368 0.51847007870674133 ;
+	setAttr ".pv" -type "double2" 0.91721522808074951 0.64001893997192383 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr -s 1942 ".uvst[0].uvsp";
 	setAttr ".uvst[0].uvsp[0:249]" -type "float2" 0.29315668 0.35440522 0.056457318
@@ -579,7 +579,7 @@ createNode mesh -n "flashlight_geoShape" -p "flashlight_geo";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 36 ".pt";
+	setAttr -s 40 ".pt";
 	setAttr ".pt[78]" -type "float3" 9.3132257e-10 0 0 ;
 	setAttr ".pt[669]" -type "float3" 9.3132257e-10 0 0 ;
 	setAttr ".pt[670]" -type "float3" 9.3132257e-10 0 0 ;
@@ -3114,131 +3114,98 @@ createNode mesh -n "flashlight_geoShape" -p "flashlight_geo";
 		1387 0 
 		1584 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 1;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "cover_geo" -p "flashlight_ctrl";
 	rename -uid "F425B277-4447-6131-FF50-D8AAF9289942";
-	setAttr ".rp" -type "double3" 0 0.04292194806154731 -0.11173068661493629 ;
-	setAttr ".sp" -type "double3" 0 0.04292194806154731 -0.11173068661493629 ;
+	setAttr ".rp" -type "double3" 0 0.04292194806154731 -0.10934737002567738 ;
+	setAttr ".sp" -type "double3" 0 0.04292194806154731 -0.10934737002567738 ;
 createNode mesh -n "cover_geoShape" -p "cover_geo";
 	rename -uid "C159BF3B-426D-7F87-E4C9-93AC2705D0C9";
 	setAttr -k off ".v";
-	setAttr -s 2 ".iog[0].og";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 1.5010923147201538 0.4999999925494194 ;
+	setAttr ".pv" -type "double2" 1.501092791557312 0.99800795316696167 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
+	setAttr -s 9 ".uvst[0].uvsp[0:8]" -type "float2" 1.50109279 0.99800795
+		 1.14894807 0.85214472 1.0030846596 0.5 1.50109279 0.5 1.14894807 0.1478553 1.50109279
+		 0.0019920319 1.99909997 0.5 1.85323727 0.85214472 1.85323727 0.1478553;
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".dr" 1;
-	setAttr ".ai_translator" -type "string" "polymesh";
-createNode mesh -n "polySurfaceShape2" -p "cover_geo";
-	rename -uid "98F71AA3-4109-961D-EC59-1CB38875A685";
-	setAttr -k off ".v";
-	setAttr ".io" yes;
-	setAttr ".vir" yes;
-	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 1.5012328028678894 0.49999998509883881 ;
-	setAttr ".uvst[0].uvsn" -type "string" "map1";
-	setAttr -s 9 ".uvst[0].uvsp[0:8]" -type "float2" 1.17345941 0.17222652
-		 1.82900631 0.17222655 1.8290062 0.82777345 1.17345941 0.82777345 1.50123286 0.036458343
-		 1.96477449 0.5 1.50123286 0.96354163 1.037691116 0.5 1.50123286 0.5;
-	setAttr ".cuvs" -type "string" "map1";
-	setAttr ".dcc" -type "string" "Ambient+Diffuse";
-	setAttr ".covm[0]"  0 1 1;
-	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 9 ".pt[0:8]" -type "float3"  0.68020594 0.069822848 -0.81883752 
-		-0.68020594 0.069822848 -0.81883746 -0.68020582 0.016021073 0.59537613 0.68020594 
-		0.016021073 0.59537613 -4.054343e-08 0.080965579 -1.1117307 -0.96195638 0.04292196 
-		-0.11173065 4.0543426e-08 0.0048784018 0.88826931 0.96195638 0.04292196 -0.11173069 
-		0 0.04292196 -0.1208065;
-	setAttr -s 9 ".vt[0:8]"  -0.70710683 0 0.70710683 0.70710683 0 0.70710677
-		 0.70710671 0 -0.70710683 -0.70710683 0 -0.70710683 4.2146848e-08 0 1 1 0 -4.2146848e-08
-		 -4.2146844e-08 0 -1 -1 0 0 0 0 -1.4901161e-08;
+	setAttr -s 9 ".pt[0:8]" -type "float3"  0 -0.0032965525 0.0023833166 
+		-0.0027748162 -0.0015253087 0.0023833166 0 0.0024754955 0.0023833166 0.0028887319 
+		0.0013133645 0.0023833166 0 0.0032229922 0.0023833166 0.0021753586 0 0.0023833166 
+		0 -0.0015303753 0.0023833166 -0.0032499109 0 0.0023833166 0 0 0.0023833166;
+	setAttr -s 9 ".vt[0:8]"  -0.026900887 0.069822848 -0.11173069 0.026900887 0.069822848 -0.11173069
+		 0.026900887 0.016021073 -0.11173069 -0.026900887 0.016021073 -0.11173069 1.6034178e-09 0.080965579 -0.11173069
+		 0.038043618 0.04292196 -0.11173069 -1.6034178e-09 0.0048784018 -0.11173069 -0.038043618 0.04292196 -0.11173069
+		 0 0.04292196 -0.12080652;
 	setAttr -s 12 ".ed[0:11]"  7 0 0 0 4 0 4 8 1 8 7 1 4 1 0 1 5 0 5 8 1
 		 5 2 0 2 6 0 6 8 1 6 3 0 3 7 0;
 	setAttr -s 4 -ch 16 ".fc[0:3]" -type "polyFaces" 
 		f 4 0 1 2 3
-		mu 0 4 7 0 4 8
+		mu 0 4 0 1 2 3
 		f 4 4 5 6 -3
-		mu 0 4 4 1 5 8
+		mu 0 4 2 4 5 3
 		f 4 7 8 9 -7
-		mu 0 4 5 2 6 8
+		mu 0 4 5 8 6 3
 		f 4 10 11 -4 -10
-		mu 0 4 6 3 7 8;
+		mu 0 4 6 7 0 3;
 	setAttr ".cd" -type "dataPolyComponent" Index_Data Edge 0 ;
 	setAttr ".cvd" -type "dataPolyComponent" Index_Data Vertex 0 ;
 	setAttr ".pd[0]" -type "dataPolyComponent" Index_Data UV 0 ;
 	setAttr ".hfd" -type "dataPolyComponent" Index_Data Face 0 ;
-	setAttr ".dr" 1;
+	setAttr ".dr" 3;
+	setAttr ".dsm" 2;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode materialInfo -n "materialInfo3";
-	rename -uid "29589837-4E84-40BE-168F-6CAEE1250572";
-createNode shadingEngine -n "aiStandardSurface1SG";
-	rename -uid "3FCF3B8A-4A56-FE35-D4DE-59A09E2F2D5D";
+	rename -uid "00A33603-451B-EB8A-A792-418743F26156";
+createNode shadingEngine -n "aiFlashlight_matSG";
+	rename -uid "D8F115D7-419D-6B16-350D-7C8A9BE57DFF";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
-createNode aiStandardSurface -n "metal_mat";
-	rename -uid "59D314F9-43BB-398A-30A6-429615369E80";
+createNode aiStandardSurface -n "aiFlashlight_mat";
+	rename -uid "6C5A754A-4A6F-7AD0-D145-F98EF8CBE5E2";
 	setAttr ".base" 1;
-	setAttr ".specular_color" -type "float3" 1.0000241 0.98225331 0.75295413 ;
-	setAttr ".specular_roughness" 0.15000000596046448;
+	setAttr ".specular" 0;
+	setAttr ".specular_color" -type "float3" 0 0 0 ;
+	setAttr ".specular_roughness" 0.25;
 	setAttr ".specular_IOR" 1.5199999809265137;
+	setAttr ".specular_rotation" 0.5;
 	setAttr ".metalness" 1;
 	setAttr ".transmission_depth" 1;
+	setAttr ".coat_color" -type "float3" 0 0 0 ;
 	setAttr ".coat_roughness" 0;
-	setAttr ".coat_IOR" 4;
-createNode file -n "file4";
-	rename -uid "B05EF27B-4117-F28C-EC54-D68762A32D49";
+createNode file -n "Flashlight_file";
+	rename -uid "E8929122-410E-1EF4-7AE2-67B19F6127F0";
 	setAttr ".ftn" -type "string" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//sourceimages/WIP_Textures/flashlight_texture/textures_U1_V1.png";
 	setAttr ".cs" -type "string" "sRGB";
-createNode place2dTexture -n "place2dTexture5";
-	rename -uid "EA4AA498-4C09-44E1-720C-DD8507D9E8C6";
-createNode groupId -n "groupId1";
-	rename -uid "1328EDB1-4934-E68F-AC0B-9EA24EC532A7";
-	setAttr ".ihi" 0;
-createNode shadingEngine -n "lambert2SG";
-	rename -uid "884B21CF-4A8B-3F6A-6886-9F9574AA0F53";
+createNode place2dTexture -n "Flashlight_texture2D";
+	rename -uid "2335EB92-4DAE-354E-6909-558E940B9109";
+createNode materialInfo -n "materialInfo4";
+	rename -uid "AB935CBC-4939-A8E1-920F-2DA2AD0BC71D";
+createNode shadingEngine -n "aiFlashlight_SG";
+	rename -uid "EB574EE8-42BE-7E9F-7BF2-C2A544245885";
 	setAttr ".ihi" 0;
 	setAttr ".ro" yes;
-createNode materialInfo -n "materialInfo1";
-	rename -uid "835322F3-44A6-328D-6F25-33B6BF22E1BA";
-createNode aiStandardSurface -n "aiStandardSurface2";
-	rename -uid "1CDF9BD0-44BD-32E2-DB1E-EFBA41687CB3";
+createNode aiStandardSurface -n "aiCover_mat";
+	rename -uid "1AE564BE-4B76-ABAF-28EA-6B876302FAAA";
 	setAttr ".base" 0;
-	setAttr ".specular_roughness" 0;
+	setAttr ".specular_roughness" 0.037172500044107437;
 	setAttr ".specular_IOR" 1.5199999809265137;
 	setAttr ".specular_anisotropy" 0.5;
-	setAttr ".transmission" 1;
-	setAttr ".coat_roughness" 0;
+	setAttr ".transmission" 0.62827503681182861;
+	setAttr ".coat_roughness" 0.037172500044107437;
 	setAttr ".coat_IOR" 1;
-createNode groupParts -n "groupParts1";
-	rename -uid "CF57EA68-4EBD-59B4-3F2F-DDB5C36F94B7";
-	setAttr ".ihi" 0;
-	setAttr ".ic" -type "componentList" 1 "f[0:3]";
-createNode polyTweakUV -n "polyTweakUV30";
-	rename -uid "93353257-44F5-957C-8994-C7896A885E5F";
-	setAttr ".uopa" yes;
-	setAttr -s 9 ".uvtk[0:8]" -type "float2" 1.0010926723 0 1.0010926723
-		 0 1.0010926723 0 1.0010926723 0 1.0010926723 0 1.0010926723 0 1.0010929108 0 1.0010926723
-		 0 1.0010926723 0;
-createNode polyAutoProj -n "polyAutoProj2";
-	rename -uid "5BAD5504-4C20-270B-1034-D5A4A10CCC6C";
-	setAttr ".uopa" yes;
-	setAttr ".ics" -type "componentList" 1 "f[0:3]";
-	setAttr ".ix" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
-	setAttr ".s" -type "double3" 0.076087236404418945 0.076087236404418945 1 ;
-	setAttr ".ps" 0.20000000298023224;
-	setAttr ".dl" yes;
-createNode groupId -n "groupId2";
-	rename -uid "177D73C2-46F7-7B64-794A-9AB3D8D24669";
-	setAttr ".ihi" 0;
+	setAttr ".emission" 0.37172499299049377;
+	setAttr ".emission_color" -type "float3" 0.99758625 0.97475922 0.910698 ;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "347463C7-44B4-9581-B41B-19A92725017F";
-	setAttr -s 5 ".lnk";
-	setAttr -s 5 ".slnk";
+	rename -uid "FC9135B9-4712-8DCD-6324-18B9A29EBB2E";
+	setAttr -s 4 ".lnk";
+	setAttr -s 4 ".slnk";
 select -ne :time1;
 	setAttr ".o" 1;
 	setAttr ".unw" 1;
@@ -3249,97 +3216,85 @@ select -ne :hardwareRenderingGlobals;
 		 0 0 0 0 ;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 5 ".st";
+	setAttr -s 4 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 8 ".s";
+	setAttr -s 7 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 5 ".u";
+	setAttr -s 4 ".u";
 select -ne :defaultRenderingList1;
 select -ne :lightList1;
-	setAttr -s 3 ".l";
+	setAttr -s 2 ".l";
 select -ne :defaultTextureList1;
-	setAttr -s 5 ".tx";
+	setAttr -s 3 ".tx";
 select -ne :initialShadingGroup;
 	setAttr ".ro" yes;
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
-select -ne :initialMaterialInfo;
 select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
 	setAttr ".ren" -type "string" "arnold";
+	setAttr ".outf" 51;
+	setAttr ".imfkey" -type "string" "exr";
 	setAttr ".dss" -type "string" "lambert1";
 select -ne :defaultResolution;
 	setAttr ".pa" 1;
 select -ne :defaultLightSet;
-	setAttr -s 3 ".dsm";
+	setAttr -s 2 ".dsm";
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
 	setAttr -s 4 ".sol";
-connectAttr "groupId1.id" "cover_geoShape.iog.og[0].gid";
-connectAttr "lambert2SG.mwc" "cover_geoShape.iog.og[0].gco";
-connectAttr "groupParts1.og" "cover_geoShape.i";
-connectAttr "polyTweakUV30.uvtk[0]" "cover_geoShape.uvst[0].uvtw";
-connectAttr "groupId2.id" "cover_geoShape.ciog.cog[0].cgid";
-connectAttr "aiStandardSurface1SG.msg" "materialInfo3.sg";
-connectAttr "metal_mat.msg" "materialInfo3.m";
-connectAttr "metal_mat.msg" "materialInfo3.t" -na;
-connectAttr "metal_mat.out" "aiStandardSurface1SG.ss";
-connectAttr "flashlight_geoShape.iog" "aiStandardSurface1SG.dsm" -na;
-connectAttr "file4.oc" "metal_mat.base_color";
-connectAttr ":defaultColorMgtGlobals.cme" "file4.cme";
-connectAttr ":defaultColorMgtGlobals.cfe" "file4.cmcf";
-connectAttr ":defaultColorMgtGlobals.cfp" "file4.cmcp";
-connectAttr ":defaultColorMgtGlobals.wsn" "file4.ws";
-connectAttr "place2dTexture5.c" "file4.c";
-connectAttr "place2dTexture5.tf" "file4.tf";
-connectAttr "place2dTexture5.rf" "file4.rf";
-connectAttr "place2dTexture5.mu" "file4.mu";
-connectAttr "place2dTexture5.mv" "file4.mv";
-connectAttr "place2dTexture5.s" "file4.s";
-connectAttr "place2dTexture5.wu" "file4.wu";
-connectAttr "place2dTexture5.wv" "file4.wv";
-connectAttr "place2dTexture5.re" "file4.re";
-connectAttr "place2dTexture5.of" "file4.of";
-connectAttr "place2dTexture5.r" "file4.ro";
-connectAttr "place2dTexture5.n" "file4.n";
-connectAttr "place2dTexture5.vt1" "file4.vt1";
-connectAttr "place2dTexture5.vt2" "file4.vt2";
-connectAttr "place2dTexture5.vt3" "file4.vt3";
-connectAttr "place2dTexture5.vc1" "file4.vc1";
-connectAttr "place2dTexture5.o" "file4.uv";
-connectAttr "place2dTexture5.ofs" "file4.fs";
-connectAttr "aiStandardSurface2.out" "lambert2SG.ss";
-connectAttr "cover_geoShape.iog.og[0]" "lambert2SG.dsm" -na;
-connectAttr "groupId1.msg" "lambert2SG.gn" -na;
-connectAttr "lambert2SG.msg" "materialInfo1.sg";
-connectAttr "aiStandardSurface2.msg" "materialInfo1.m";
-connectAttr "aiStandardSurface2.msg" "materialInfo1.t" -na;
-connectAttr "polyTweakUV30.out" "groupParts1.ig";
-connectAttr "groupId1.id" "groupParts1.gi";
-connectAttr "polyAutoProj2.out" "polyTweakUV30.ip";
-connectAttr "polySurfaceShape2.o" "polyAutoProj2.ip";
-connectAttr "cover_geoShape.wm" "polyAutoProj2.mp";
+connectAttr "aiFlashlight_matSG.msg" "materialInfo3.sg";
+connectAttr "aiFlashlight_mat.msg" "materialInfo3.m";
+connectAttr "aiFlashlight_mat.msg" "materialInfo3.t" -na;
+connectAttr "aiFlashlight_mat.out" "aiFlashlight_matSG.ss";
+connectAttr "flashlight_geoShape.iog" "aiFlashlight_matSG.dsm" -na;
+connectAttr "Flashlight_file.oc" "aiFlashlight_mat.base_color";
+connectAttr ":defaultColorMgtGlobals.cme" "Flashlight_file.cme";
+connectAttr ":defaultColorMgtGlobals.cfe" "Flashlight_file.cmcf";
+connectAttr ":defaultColorMgtGlobals.cfp" "Flashlight_file.cmcp";
+connectAttr ":defaultColorMgtGlobals.wsn" "Flashlight_file.ws";
+connectAttr "Flashlight_texture2D.c" "Flashlight_file.c";
+connectAttr "Flashlight_texture2D.tf" "Flashlight_file.tf";
+connectAttr "Flashlight_texture2D.rf" "Flashlight_file.rf";
+connectAttr "Flashlight_texture2D.mu" "Flashlight_file.mu";
+connectAttr "Flashlight_texture2D.mv" "Flashlight_file.mv";
+connectAttr "Flashlight_texture2D.s" "Flashlight_file.s";
+connectAttr "Flashlight_texture2D.wu" "Flashlight_file.wu";
+connectAttr "Flashlight_texture2D.wv" "Flashlight_file.wv";
+connectAttr "Flashlight_texture2D.re" "Flashlight_file.re";
+connectAttr "Flashlight_texture2D.of" "Flashlight_file.of";
+connectAttr "Flashlight_texture2D.r" "Flashlight_file.ro";
+connectAttr "Flashlight_texture2D.n" "Flashlight_file.n";
+connectAttr "Flashlight_texture2D.vt1" "Flashlight_file.vt1";
+connectAttr "Flashlight_texture2D.vt2" "Flashlight_file.vt2";
+connectAttr "Flashlight_texture2D.vt3" "Flashlight_file.vt3";
+connectAttr "Flashlight_texture2D.vc1" "Flashlight_file.vc1";
+connectAttr "Flashlight_texture2D.o" "Flashlight_file.uv";
+connectAttr "Flashlight_texture2D.ofs" "Flashlight_file.fs";
+connectAttr "aiFlashlight_SG.msg" "materialInfo4.sg";
+connectAttr "aiCover_mat.msg" "materialInfo4.m";
+connectAttr "aiCover_mat.msg" "materialInfo4.t" -na;
+connectAttr "aiCover_mat.out" "aiFlashlight_SG.ss";
+connectAttr "cover_geoShape.iog" "aiFlashlight_SG.dsm" -na;
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
-relationship "link" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
-relationship "link" ":lightLinker1" "aiStandardSurface1SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "aiFlashlight_SG.message" ":defaultLightSet.message";
+relationship "link" ":lightLinker1" "aiFlashlight_matSG.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
-relationship "shadowLink" ":lightLinker1" "lambert2SG.message" ":defaultLightSet.message";
-relationship "shadowLink" ":lightLinker1" "aiStandardSurface1SG.message" ":defaultLightSet.message";
-connectAttr "lambert2SG.pa" ":renderPartition.st" -na;
-connectAttr "aiStandardSurface1SG.pa" ":renderPartition.st" -na;
-connectAttr "aiStandardSurface2.msg" ":defaultShaderList1.s" -na;
-connectAttr "metal_mat.msg" ":defaultShaderList1.s" -na;
-connectAttr "place2dTexture5.msg" ":defaultRenderUtilityList1.u" -na;
+relationship "shadowLink" ":lightLinker1" "aiFlashlight_SG.message" ":defaultLightSet.message";
+relationship "shadowLink" ":lightLinker1" "aiFlashlight_matSG.message" ":defaultLightSet.message";
+connectAttr "aiFlashlight_matSG.pa" ":renderPartition.st" -na;
+connectAttr "aiFlashlight_SG.pa" ":renderPartition.st" -na;
+connectAttr "aiFlashlight_mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "aiCover_mat.msg" ":defaultShaderList1.s" -na;
+connectAttr "Flashlight_texture2D.msg" ":defaultRenderUtilityList1.u" -na;
 connectAttr "spotLightShape1.ltd" ":lightList1.l" -na;
-connectAttr "file4.msg" ":defaultTextureList1.tx" -na;
-connectAttr "cover_geoShape.ciog.cog[0]" ":initialShadingGroup.dsm" -na;
-connectAttr "groupId2.msg" ":initialShadingGroup.gn" -na;
+connectAttr "Flashlight_file.msg" ":defaultTextureList1.tx" -na;
 connectAttr "spotLight1.iog" ":defaultLightSet.dsm" -na;
 // End of flashlight.ma

@@ -1,99 +1,98 @@
 //Maya ASCII 2020 scene
 //Name: camera2.ma
-//Last modified: Tue, Nov 03, 2020 01:47:26 AM
+//Last modified: Wed, Nov 04, 2020 05:54:49 AM
 //Codeset: 1252
 file -rdi 1 -ns "bearRug_v0001" -rfn "bearRug_v0001RN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bearRug.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bearRug.ma";
 file -rdi 1 -ns "bigDesk_v0001" -rfn "bigDesk_v0001RN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bigDesk.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bigDesk.ma";
 file -rdi 1 -ns "bigEvilChair_v0001" -rfn "bigEvilChair_v0001RN" -op "v=0;"
-		 -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bigEvilChair.ma";
+		 -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bigEvilChair.ma";
 file -rdi 1 -ns "bookcase_v0001" -rfn "bookcase_v0001RN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bookcase.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bookcase.ma";
 file -rdi 1 -ns "fileFolder_v0001" -rfn "fileFolder_v0001RN" -op "v=0;" -typ
-		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/fileFolder.ma";
+		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/fileFolder.ma";
 file -rdi 1 -ns "filingCabinetSet_v0001" -rfn "filingCabinetSet_v0001RN" -op
-		 "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/filingCabinetSet.ma";
+		 "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/filingCabinetSet.ma";
 file -rdi 1 -ns "flashlight_v0001" -rfn "flashlight_v0001RN" -op "v=0;" -typ
-		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/flashlight.ma";
+		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/flashlight.ma";
 file -rdi 1 -ns "giantFlyTrap_v0001" -rfn "giantFlyTrap_v0001RN" -op "v=0;"
-		 -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/giantFlyTrap.ma";
+		 -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/giantFlyTrap.ma";
 file -rdi 1 -ns "swivelChair_v0001" -rfn "swivelChair_v0001RN" -op "v=0;" -typ
-		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/swivelChair.ma";
+		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/swivelChair.ma";
 file -rdi 1 -ns "swivelChair_v0002" -rfn "swivelChair_v0001RN1" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/swivelChair.ma";
-file -rdi 1 -ns "bookcase_v0002" -rfn "bookcase_v0001RN1" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bookcase.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/swivelChair.ma";
+file -rdi 1 -ns "bookcase_v0002" -rfn "bookcase_v0001RN1" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bookcase.ma";
 file -rdi 1 -ns "swivelChair_v0003" -rfn "swivelChair_v0002RN" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/swivelChair.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/swivelChair.ma";
 file -rdi 1 -ns "swivelChair_v0004" -rfn "swivelChair_v0002RN1" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/swivelChair.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/swivelChair.ma";
 file -rdi 1 -ns "swivelChair_v0005" -rfn "swivelChair_v0002RN2" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/swivelChair.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/swivelChair.ma";
 file -rdi 1 -ns "swivelChair_v0006" -rfn "swivelChair_v0002RN3" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/swivelChair.ma";
-file -rdi 1 -ns "painting" -rfn "paintingRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/painting.ma";
-file -rdi 1 -ns "room" -rfn "roomRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/room.ma";
-file -rdi 1 -ns "bigDoor" -rfn "bigDoorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bigDoor.ma";
-file -rdi 1 -ns "window" -rfn "windowRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/window.ma";
-file -rdi 1 -ns "giantMap" -rfn "giantMapRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/giantMap.ma";
-file -rdi 1 -ns "bookcase_v0003" -rfn "bookcase_v0002RN" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bookcase.ma";
-file -rdi 1 -ns "bookcase_v0004" -rfn "bookcase_v0001RN2" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bookcase.ma";
-file -rdi 1 -ns "bookcase_v0005" -rfn "bookcase_v0001RN3" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bookcase.ma";
-file -rdi 1 -ns "bookcase_v0006" -rfn "bookcase_v0001RN4" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bookcase.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/swivelChair.ma";
+file -rdi 1 -ns "painting" -rfn "paintingRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/painting.ma";
+file -rdi 1 -ns "room" -rfn "roomRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/room.ma";
+file -rdi 1 -ns "bigDoor" -rfn "bigDoorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bigDoor.ma";
+file -rdi 1 -ns "window" -rfn "windowRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/window.ma";
+file -rdi 1 -ns "giantMap" -rfn "giantMapRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/giantMap.ma";
+file -rdi 1 -ns "bookcase_v0003" -rfn "bookcase_v0002RN" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bookcase.ma";
+file -rdi 1 -ns "bookcase_v0004" -rfn "bookcase_v0001RN2" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bookcase.ma";
+file -rdi 1 -ns "bookcase_v0005" -rfn "bookcase_v0001RN3" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bookcase.ma";
+file -rdi 1 -ns "bookcase_v0006" -rfn "bookcase_v0001RN4" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bookcase.ma";
 file -rdi 1 -ns "filingCabinetSet_v0002" -rfn "filingCabinetSet_v0001RN1" -typ
-		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/filingCabinetSet.ma";
+		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/filingCabinetSet.ma";
 file -rdi 1 -ns "sideDoor_WIP" -rfn "sideDoor_WIPRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/WIP_Props/sideDoor_WIP/sideDoor_WIP.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/WIP_Props/sideDoor_WIP/sideDoor_WIP.ma";
 file -rdi 1 -ns "sideDoor_WIP_0018" -rfn "sideDoor_WIP_0018RN" -op "v=0;" -typ
-		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/WIP_Props/sideDoor_WIP/sideDoor_WIP.0018.ma";
+		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/sideDoor.ma";
 file -r -ns "bearRug_v0001" -dr 1 -rfn "bearRug_v0001RN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bearRug.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bearRug.ma";
 file -r -ns "bigDesk_v0001" -dr 1 -rfn "bigDesk_v0001RN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bigDesk.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bigDesk.ma";
 file -r -ns "bigEvilChair_v0001" -dr 1 -rfn "bigEvilChair_v0001RN" -op "v=0;" -typ
-		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bigEvilChair.ma";
+		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bigEvilChair.ma";
 file -r -ns "bookcase_v0001" -dr 1 -rfn "bookcase_v0001RN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bookcase.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bookcase.ma";
 file -r -ns "fileFolder_v0001" -dr 1 -rfn "fileFolder_v0001RN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/fileFolder.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/fileFolder.ma";
 file -r -ns "filingCabinetSet_v0001" -dr 1 -rfn "filingCabinetSet_v0001RN" -op "v=0;"
-		 -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/filingCabinetSet.ma";
+		 -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/filingCabinetSet.ma";
 file -r -ns "flashlight_v0001" -dr 1 -rfn "flashlight_v0001RN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/flashlight.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/flashlight.ma";
 file -r -ns "giantFlyTrap_v0001" -dr 1 -rfn "giantFlyTrap_v0001RN" -op "v=0;" -typ
-		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/giantFlyTrap.ma";
+		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/giantFlyTrap.ma";
 file -r -ns "swivelChair_v0001" -dr 1 -rfn "swivelChair_v0001RN" -op "v=0;" -typ
-		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/swivelChair.ma";
+		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/swivelChair.ma";
 file -r -ns "swivelChair_v0002" -dr 1 -rfn "swivelChair_v0001RN1" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/swivelChair.ma";
-file -r -ns "bookcase_v0002" -dr 1 -rfn "bookcase_v0001RN1" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bookcase.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/swivelChair.ma";
+file -r -ns "bookcase_v0002" -dr 1 -rfn "bookcase_v0001RN1" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bookcase.ma";
 file -r -ns "swivelChair_v0003" -dr 1 -rfn "swivelChair_v0002RN" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/swivelChair.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/swivelChair.ma";
 file -r -ns "swivelChair_v0004" -dr 1 -rfn "swivelChair_v0002RN1" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/swivelChair.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/swivelChair.ma";
 file -r -ns "swivelChair_v0005" -dr 1 -rfn "swivelChair_v0002RN2" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/swivelChair.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/swivelChair.ma";
 file -r -ns "swivelChair_v0006" -dr 1 -rfn "swivelChair_v0002RN3" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/swivelChair.ma";
-file -r -ns "painting" -dr 1 -rfn "paintingRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/painting.ma";
-file -r -ns "room" -dr 1 -rfn "roomRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/room.ma";
-file -r -ns "bigDoor" -dr 1 -rfn "bigDoorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bigDoor.ma";
-file -r -ns "window" -dr 1 -rfn "windowRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/window.ma";
-file -r -ns "giantMap" -dr 1 -rfn "giantMapRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/giantMap.ma";
-file -r -ns "bookcase_v0003" -dr 1 -rfn "bookcase_v0002RN" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bookcase.ma";
-file -r -ns "bookcase_v0004" -dr 1 -rfn "bookcase_v0001RN2" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bookcase.ma";
-file -r -ns "bookcase_v0005" -dr 1 -rfn "bookcase_v0001RN3" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bookcase.ma";
-file -r -ns "bookcase_v0006" -dr 1 -rfn "bookcase_v0001RN4" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bookcase.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/swivelChair.ma";
+file -r -ns "painting" -dr 1 -rfn "paintingRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/painting.ma";
+file -r -ns "room" -dr 1 -rfn "roomRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/room.ma";
+file -r -ns "bigDoor" -dr 1 -rfn "bigDoorRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bigDoor.ma";
+file -r -ns "window" -dr 1 -rfn "windowRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/window.ma";
+file -r -ns "giantMap" -dr 1 -rfn "giantMapRN" -op "v=0;" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/giantMap.ma";
+file -r -ns "bookcase_v0003" -dr 1 -rfn "bookcase_v0002RN" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bookcase.ma";
+file -r -ns "bookcase_v0004" -dr 1 -rfn "bookcase_v0001RN2" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bookcase.ma";
+file -r -ns "bookcase_v0005" -dr 1 -rfn "bookcase_v0001RN3" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bookcase.ma";
+file -r -ns "bookcase_v0006" -dr 1 -rfn "bookcase_v0001RN4" -typ "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bookcase.ma";
 file -r -ns "filingCabinetSet_v0002" -dr 1 -rfn "filingCabinetSet_v0001RN1" -typ
-		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/filingCabinetSet.ma";
+		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/filingCabinetSet.ma";
 file -r -ns "sideDoor_WIP" -dr 1 -rfn "sideDoor_WIPRN" -op "v=0;" -typ "mayaAscii"
-		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/WIP_Props/sideDoor_WIP/sideDoor_WIP.ma";
+		 "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/WIP_Props/sideDoor_WIP/sideDoor_WIP.ma";
 file -r -ns "sideDoor_WIP_0018" -dr 1 -rfn "sideDoor_WIP_0018RN" -op "v=0;" -typ
-		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/WIP_Props/sideDoor_WIP/sideDoor_WIP.0018.ma";
+		 "mayaAscii" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/sideDoor.ma";
 requires maya "2020";
 requires "stereoCamera" "10.0";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "4.0.0";
-requires "mtoa" "4.0.0";
 requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
@@ -101,13 +100,13 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
-fileInfo "UUID" "39F1648C-4983-5BA7-E4A3-D58E98C3D6A2";
+fileInfo "UUID" "2328B90C-471F-B5F7-A644-FB874B4AB82B";
 fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "0C5B681B-45E2-19F0-B44F-D1AEDC450353";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -3.6589340515989051 5.0233725499569868 -0.68214153488028662 ;
-	setAttr ".r" -type "double3" -24.338352725913424 2318.9999999996166 0 ;
+	setAttr ".t" -type "double3" -7.7394588666845445 2.4629667638230575 -6.1076937806165974 ;
+	setAttr ".r" -type "double3" -12.938352725777261 2577.3999999990169 1.4758385058581407e-15 ;
 	setAttr ".rp" -type "double3" 0 0 3.5527136788005009e-15 ;
 	setAttr ".rpt" -type "double3" -2.1779715589116286e-15 -8.1130967848429076e-15 3.8863982166450185e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -115,7 +114,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
 	setAttr ".fcp" 1000000;
-	setAttr ".coi" 8.9937006330249929;
+	setAttr ".coi" 9.9999997473787516e-06;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -3073,7 +3072,7 @@ createNode camera -n "fullBlast_cameraShape" -p "fullBlast_camera";
 	setAttr ".ovr" 1.3;
 	setAttr ".fl" 34.999999999999993;
 	setAttr ".fcp" 1000000;
-	setAttr ".coi" 12.151007497890593;
+	setAttr ".coi" 13.77535680262991;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -61216,23 +61215,23 @@ createNode spotLight -n "spotLightShape1" -p "spotLight1";
 	setAttr -k off ".v";
 	setAttr ".in" 7;
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "207DCE45-4DC0-6308-3B9E-EA84170DAEB6";
-	setAttr -s 104 ".lnk";
-	setAttr -s 104 ".slnk";
+	rename -uid "8E893B10-48F8-EB66-28F6-2C84D247A873";
+	setAttr -s 91 ".lnk";
+	setAttr -s 91 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "9B62DA8B-45E9-88A3-6156-40BAD368CDE3";
+	rename -uid "7636D079-4DBB-893E-DD8F-C792BD6D06C1";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 1 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "9E83F54A-4F6F-38D3-45DA-9E97A6DC2ECF";
+	rename -uid "E6725B27-4BEA-3799-9DAF-F78100409AAA";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "DAF7A84D-41B1-0008-F969-E29F5ADD731C";
+	rename -uid "482D85CC-40E7-3011-9760-4DB3F57B1E8E";
 	setAttr ".cdl" 5;
 	setAttr -s 7 ".dli[1:6]"  1 7 2 4 5 6;
 	setAttr -s 4 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "9E5DB152-449B-4C1D-9A5D-2E895D946C5C";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "00B64EB1-4162-F6D2-06D9-04B9A7033622";
+	rename -uid "066E2FDA-46E2-49E0-6E58-CE869F7933AC";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "1D552BF8-403E-4BE8-10C9-4A9EBEA9A4B2";
 	setAttr ".g" yes;
@@ -61245,11 +61244,11 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n"
 		+ "\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Side View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Side View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n"
 		+ "            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n"
-		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1319\n            -height 670\n"
+		+ "            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 0\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n"
 		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"fullBlast_camera\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 1\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n"
 		+ "            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n"
 		+ "            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n"
-		+ "            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1319\n            -height 670\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n"
+		+ "            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 656\n            -height 670\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n"
 		+ "            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 1\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 32768\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n"
 		+ "            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n"
 		+ "            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 656\n            -height 670\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n"
@@ -61278,9 +61277,12 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -backfaceCulling 0\n                -xray 0\n                -jointXray 0\n                -activeComponentsXray 0\n                -displayTextures 0\n                -smoothWireframe 0\n                -lineWidth 1\n                -textureAnisotropic 0\n                -textureHilight 1\n                -textureSampling 2\n                -textureDisplay \"modulate\" \n                -textureMaxSize 32768\n                -fogging 0\n                -fogSource \"fragment\" \n                -fogMode \"linear\" \n                -fogStart 0\n                -fogEnd 100\n                -fogDensity 0.1\n                -fogColor 0.5 0.5 0.5 1 \n                -depthOfFieldPreview 1\n                -maxConstantTransparency 1\n                -objectFilterShowInHUD 1\n                -isFiltered 0\n                -colorResolution 4 4 \n                -bumpResolution 4 4 \n                -textureCompression 0\n                -transparencyAlgorithm \"frontAndBackCull\" \n                -transpInShadows 0\n                -cullingOverride \"none\" \n"
 		+ "                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n"
 		+ "                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n"
-		+ "        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Front View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Front View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"fullBlast_camera\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1319\\n    -height 670\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Front View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"fullBlast_camera\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1319\\n    -height 670\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"vertical2\\\" -ps 1 50 100 -ps 2 50 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Front View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Front View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"fullBlast_camera\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 656\\n    -height 670\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Front View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"fullBlast_camera\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 656\\n    -height 670\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 656\\n    -height 670\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 1\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 0\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 32768\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 656\\n    -height 670\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -61317,7 +61319,7 @@ createNode materialInfo -n "materialInfo1";
 	rename -uid "70C22705-4BA4-0475-66B3-668A9F8E10F1";
 createNode file -n "file1";
 	rename -uid "23F6B829-4EB4-4C85-6FBE-CF9A97DD1B19";
-	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Body-TM_u0_v0.tif";
+	setAttr ".ftn" -type "string" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Body-TM_u0_v0.tif";
 	setAttr ".ft" 0;
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "place2dTexture1";
@@ -61332,14 +61334,14 @@ createNode materialInfo -n "materialInfo4";
 	rename -uid "719BFAFE-42AD-18E3-612A-B0A3CC616637";
 createNode file -n "file2";
 	rename -uid "72F127EE-4930-865E-1311-9B9C25B44D91";
-	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Other-TM_u0_v0.tif";
+	setAttr ".ftn" -type "string" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Other-TM_u0_v0.tif";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "place2dTexture2";
 	rename -uid "46530A25-4C97-CE16-D4AF-589C897773C2";
 createNode file -n "file3";
 	rename -uid "64146ACE-4EFE-A936-47CC-C4A7F517C2DA";
 	setAttr ".ail" yes;
-	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Other-NM_u0_v0.tif";
+	setAttr ".ftn" -type "string" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Other-NM_u0_v0.tif";
 	setAttr ".cp" 2;
 	setAttr ".cs" -type "string" "scene-linear Rec 709/sRGB";
 createNode place2dTexture -n "place2dTexture3";
@@ -61352,7 +61354,7 @@ createNode bump2d -n "bump2d1";
 createNode file -n "file4";
 	rename -uid "1C03FB3F-4B24-DDF7-1758-4384E591DE23";
 	setAttr ".ail" yes;
-	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Body-NM_u0_v0.tif";
+	setAttr ".ftn" -type "string" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Body-NM_u0_v0.tif";
 	setAttr ".ft" 0;
 	setAttr ".cp" 2;
 	setAttr ".cs" -type "string" "scene-linear Rec 709/sRGB";
@@ -61495,7 +61497,7 @@ createNode phong -n "blinn1SG2";
 	setAttr ".cp" 2.059999942779541;
 createNode file -n "blinn1SG1F";
 	rename -uid "37E9A016-4A29-07CB-D4E4-A4855F99521B";
-	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Body-TM_u0_v0.tif";
+	setAttr ".ftn" -type "string" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Body-TM_u0_v0.tif";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "blinn1SG1P2D";
 	rename -uid "89CAE359-4E08-769F-D312-37B3E57C91C5";
@@ -62257,7 +62259,7 @@ createNode phong -n "blinn2SG2";
 	setAttr ".cp" 2.059999942779541;
 createNode file -n "blinn2SG1F";
 	rename -uid "382FD2FB-4414-0537-13E2-DF9ED8A9A424";
-	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Other-TM_u0_v0.tif";
+	setAttr ".ftn" -type "string" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Other-TM_u0_v0.tif";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "blinn2SG1P2D";
 	rename -uid "818A5ECB-48BF-45D3-C471-008FB663C4E3";
@@ -63931,7 +63933,7 @@ createNode materialInfo -n "Mike_Freeman_rig_materialInfo1";
 	rename -uid "2431F6FC-4201-37E4-F456-88B5489CDDCE";
 createNode file -n "Mike_Freeman_rig_file1";
 	rename -uid "2FA9F920-40FC-AC7F-EF3A-B2AE50621696";
-	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Body-TM_u0_v0.tif";
+	setAttr ".ftn" -type "string" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Body-TM_u0_v0.tif";
 	setAttr ".ft" 0;
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Mike_Freeman_rig_place2dTexture1";
@@ -63946,14 +63948,14 @@ createNode materialInfo -n "Mike_Freeman_rig_materialInfo4";
 	rename -uid "766DEC60-454B-D135-FBAB-7C987210204C";
 createNode file -n "Mike_Freeman_rig_file2";
 	rename -uid "EB8D359A-4821-227F-8EC0-869490CB86C5";
-	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Other-TM_u0_v0.tif";
+	setAttr ".ftn" -type "string" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Other-TM_u0_v0.tif";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Mike_Freeman_rig_place2dTexture2";
 	rename -uid "A8FA3D95-4C9B-CF37-95BB-33BE452EF848";
 createNode file -n "Mike_Freeman_rig_file3";
 	rename -uid "62820A70-4CC8-F37D-F10B-B4991AABF63F";
 	setAttr ".ail" yes;
-	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Other-NM_u0_v0.tif";
+	setAttr ".ftn" -type "string" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Other-NM_u0_v0.tif";
 	setAttr ".cp" 2;
 	setAttr ".cs" -type "string" "scene-linear Rec 709/sRGB";
 createNode place2dTexture -n "Mike_Freeman_rig_place2dTexture3";
@@ -63966,7 +63968,7 @@ createNode bump2d -n "Mike_Freeman_rig_bump2d1";
 createNode file -n "Mike_Freeman_rig_file4";
 	rename -uid "3E827B5A-41D3-4E28-8758-FFAEA873D5E8";
 	setAttr ".ail" yes;
-	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Body-NM_u0_v0.tif";
+	setAttr ".ftn" -type "string" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Body-NM_u0_v0.tif";
 	setAttr ".ft" 0;
 	setAttr ".cp" 2;
 	setAttr ".cs" -type "string" "scene-linear Rec 709/sRGB";
@@ -64109,7 +64111,7 @@ createNode phong -n "Mike_Freeman_rig_blinn1SG2";
 	setAttr ".cp" 2.059999942779541;
 createNode file -n "Mike_Freeman_rig_blinn1SG1F";
 	rename -uid "BEC3EB56-4600-DF15-DA4C-80BC69F1447C";
-	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Body-TM_u0_v0.tif";
+	setAttr ".ftn" -type "string" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Body-TM_u0_v0.tif";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Mike_Freeman_rig_blinn1SG1P2D";
 	rename -uid "63CA6F65-4CE4-2AC7-0076-D0B00306B944";
@@ -64871,7 +64873,7 @@ createNode phong -n "Mike_Freeman_rig_blinn2SG2";
 	setAttr ".cp" 2.059999942779541;
 createNode file -n "Mike_Freeman_rig_blinn2SG1F";
 	rename -uid "7909F3F8-4941-CDAA-993F-308F413A351F";
-	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Other-TM_u0_v0.tif";
+	setAttr ".ftn" -type "string" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/RIGS/Mike_Freeman_v2/Mike_Freeman/texture/Other-TM_u0_v0.tif";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "Mike_Freeman_rig_blinn2SG1P2D";
 	rename -uid "B241791F-44E4-6A6E-277B-D8A10927FFAF";
@@ -66507,7 +66509,7 @@ createNode groupId -n "groupId467";
 	setAttr ".ihi" 0;
 createNode reference -n "bearRug_v0001RN";
 	rename -uid "C6FD8E5C-4665-04E5-8309-128FFC0881CF";
-	setAttr ".fn[0]" -type "string" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2/scenes/Prop_Database/bearRug.ma";
+	setAttr ".fn[0]" -type "string" "C:/Users/Anna Scheidl/Documents/GitHub/designStudio2//scenes/Prop_Database/bearRug.ma";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bearRug_v0001RN"
 		"bearRug_v0001RN" 0
@@ -66555,7 +66557,7 @@ createNode reference -n "bigEvilChair_v0001RN";
 		2 "|group1|bigEvilChair_v0001:bigEvilChair_grp" "translateX" " -av"
 		2 "|group1|bigEvilChair_v0001:bigEvilChair_grp" "translateY" " -av"
 		2 "|group1|bigEvilChair_v0001:bigEvilChair_grp" "translateZ" " -av"
-		2 "|group1|bigEvilChair_v0001:bigEvilChair_grp" "rotate" " -type \"double3\" 0 68.92023711559701837 0"
+		2 "|group1|bigEvilChair_v0001:bigEvilChair_grp" "rotate" " -type \"double3\" 0 -58.16267444414256005 0"
 		
 		2 "|group1|bigEvilChair_v0001:bigEvilChair_grp" "rotateX" " -av"
 		2 "|group1|bigEvilChair_v0001:bigEvilChair_grp" "rotateY" " -av"
@@ -66607,19 +66609,19 @@ createNode reference -n "bookcase_v0001RN";
 	rename -uid "15943C8D-487D-1A75-AE9C-AA87813F9E0F";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bookcase_v0001RN"
-		"bookcase_v0001RN" 0
 		"bookcase_v0001RN" 2
 		2 "|bookcase_v0001:bookcase_grp|bookcase_v0001:POSITION|bookcase_v0001:MOVEMENT|bookcase_v0001:ADJUSTMENTS|bookcase_v0001:DO_NOT_TOUCH|bookcase_v0001:bookcase_geo" 
 		"translate" " -type \"double3\" -10.201782211146881 0 1.63365334091934633"
 		2 "|bookcase_v0001:bookcase_grp|bookcase_v0001:POSITION|bookcase_v0001:MOVEMENT|bookcase_v0001:ADJUSTMENTS|bookcase_v0001:DO_NOT_TOUCH|bookcase_v0001:bookcase_geo" 
-		"rotate" " -type \"double3\" 0 90 0";
+		"rotate" " -type \"double3\" 0 90 0"
+		"bookcase_v0001RN" 1
+		2 "|bookcase_v0001:BOOKSHELF_GROUP" "translate" " -type \"double3\" 8.50199620968452585 0 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "fileFolder_v0001RN";
 	rename -uid "65F59DBD-402A-F347-74C1-F9A8D2240E72";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"fileFolder_v0001RN"
-		"fileFolder_v0001RN" 0
 		"fileFolder_v0001RN" 2
 		2 "|fileFolder_v0001:fileFolder_grp|fileFolder_v0001:POSITION|fileFolder_v0001:MOVEMENT|fileFolder_v0001:ADJUSTMENTS|fileFolder_v0001:DO_NOT_TOUCH|fileFolder_v0001:fileFolder_geo" 
 		"translate" " -type \"double3\" -8.70550994679732604 1.7180974283568351 -5.92169087935970939"
@@ -66650,7 +66652,7 @@ createNode reference -n "filingCabinetSet_v0001RN";
 		2 "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:filingCabinetSet_geo" 
 		"rotate" " -type \"double3\" 0 45 0"
 		2 "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:drawer_ctrl" 
-		"translate" " -type \"double3\" -7.60572086306317097 0 -6.03376290177475028"
+		"translate" " -type \"double3\" -7.40442314141052371 0 -5.81470361644686928"
 		2 "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:drawer_ctrl" 
 		"translateX" " -av"
 		2 "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:drawer_ctrl" 
@@ -66658,9 +66660,9 @@ createNode reference -n "filingCabinetSet_v0001RN";
 		2 "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:drawer_ctrl" 
 		"rotate" " -type \"double3\" 0 46.96828059131905775 0"
 		2 "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:drawer_ctrl" 
-		"rotateY" " -av"
-		2 "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:drawer_ctrl" 
 		"rotateX" " -av"
+		2 "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:drawer_ctrl" 
+		"rotateY" " -av"
 		2 "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:drawer_ctrl" 
 		"rotateZ" " -av"
 		2 "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:drawer_ctrl|filingCabinetSet_v0001:drawer_1_geo" 
@@ -66701,13 +66703,13 @@ createNode reference -n "filingCabinetSet_v0001RN";
 		"rotate" " -type \"double3\" 0 43.65087271033534932 0"
 		5 4 "filingCabinetSet_v0001RN" "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:drawer_ctrl.translateX" 
 		"filingCabinetSet_v0001RN.placeHolderList[1]" ""
-		5 4 "filingCabinetSet_v0001RN" "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:drawer_ctrl.translateZ" 
-		"filingCabinetSet_v0001RN.placeHolderList[2]" ""
 		5 4 "filingCabinetSet_v0001RN" "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:drawer_ctrl.translateY" 
+		"filingCabinetSet_v0001RN.placeHolderList[2]" ""
+		5 4 "filingCabinetSet_v0001RN" "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:drawer_ctrl.translateZ" 
 		"filingCabinetSet_v0001RN.placeHolderList[3]" ""
-		5 4 "filingCabinetSet_v0001RN" "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:drawer_ctrl.rotateY" 
-		"filingCabinetSet_v0001RN.placeHolderList[4]" ""
 		5 4 "filingCabinetSet_v0001RN" "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:drawer_ctrl.rotateX" 
+		"filingCabinetSet_v0001RN.placeHolderList[4]" ""
+		5 4 "filingCabinetSet_v0001RN" "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:drawer_ctrl.rotateY" 
 		"filingCabinetSet_v0001RN.placeHolderList[5]" ""
 		5 4 "filingCabinetSet_v0001RN" "|filingCabinetSet_v0001:filingCabinetSet_grp|filingCabinetSet_v0001:POSITION|filingCabinetSet_v0001:MOVEMENT|filingCabinetSet_v0001:ADJUSTMENTS|filingCabinetSet_v0001:DO_NOT_TOUCH|filingCabinetSet_v0001:drawer_ctrl.rotateZ" 
 		"filingCabinetSet_v0001RN.placeHolderList[6]" ""
@@ -66727,7 +66729,7 @@ createNode reference -n "flashlight_v0001RN";
 		"flashlight_v0001RN"
 		"flashlight_v0001RN" 0
 		"flashlight_v0001RN" 1
-		2 "|flashlight_v0001:flashlight_grp|flashlight_v0001:POSITION|flashlight_v0001:MOVEMENT|flashlight_v0001:ADJUSTMENTS|flashlight_v0001:DO_NOT_TOUCH|flashlight_v0001:flashlight_geo" 
+		2 "|flashlight_v0001:flashlight_grp|flashlight_v0001:POSITION|flashlight_v0001:MOVEMENT|flashlight_v0001:ADJUSTMENTS|flashlight_v0001:DO_NOT_TOUCH|flashlight_v0001:flashlight_ctrl|flashlight_v0001:flashlight_geo" 
 		"translate" " -type \"double3\" -8.17872653916445636 2.26476877478654171 -6.34985597469938146";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
@@ -66787,21 +66789,25 @@ createNode reference -n "bookcase_v0001RN1";
 	rename -uid "CFBB7A4E-49DE-2A67-6A1B-9DB0D1F0BBBE";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bookcase_v0001RN1"
-		"bookcase_v0001RN1" 0
-		"bookcase_v0001RN1" 7
+		"bookcase_v0001RN1" 4
 		2 "|bookcase_v0002:bookcase_grp" "translate" " -type \"double3\" 0 0 0"
-		2 "|bookcase_v0002:bookcase_grp|bookcase_v0002:POSITION" "translate" " -type \"double3\" 0 0 0"
-		
 		2 "|bookcase_v0002:bookcase_grp|bookcase_v0002:POSITION|bookcase_v0002:MOVEMENT" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|bookcase_v0002:bookcase_grp|bookcase_v0002:POSITION|bookcase_v0002:MOVEMENT|bookcase_v0002:ADJUSTMENTS" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|bookcase_v0002:bookcase_grp|bookcase_v0002:POSITION|bookcase_v0002:MOVEMENT|bookcase_v0002:ADJUSTMENTS|bookcase_v0002:DO_NOT_TOUCH" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|bookcase_v0002:bookcase_grp|bookcase_v0002:POSITION|bookcase_v0002:MOVEMENT|bookcase_v0002:ADJUSTMENTS|bookcase_v0002:DO_NOT_TOUCH|bookcase_v0002:bookcase_geo" 
 		"translate" " -type \"double3\" 10.27959397353473392 0 -2.97546790407954997"
 		2 "|bookcase_v0002:bookcase_grp|bookcase_v0002:POSITION|bookcase_v0002:MOVEMENT|bookcase_v0002:ADJUSTMENTS|bookcase_v0002:DO_NOT_TOUCH|bookcase_v0002:bookcase_geo" 
-		"rotate" " -type \"double3\" 0 -90 0";
+		"rotate" " -type \"double3\" 0 -90 0"
+		"bookcase_v0001RN1" 5
+		2 "|bookcase_v0002:BOOKSHELF_GROUP" "translate" " -type \"double3\" 7.55774724555899713 0 -8.50227767369984555"
+		
+		2 "|bookcase_v0002:BOOKSHELF_GROUP" "rotate" " -type \"double3\" 0 136.70622431402017583 0"
+		
+		2 "|bookcase_v0002:BOOKSHELF_GROUP|bookcase_v0002:POSITION" "translate" " -type \"double3\" 0 0 0"
+		
+		2 "|bookcase_v0002:BOOKSHELF_GROUP|bookcase_v0002:POSITION|bookcase_v0002:MOVEMENTS|bookcase_v0002:ADJUSTMENTS" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|bookcase_v0002:BOOKSHELF_GROUP|bookcase_v0002:POSITION|bookcase_v0002:MOVEMENTS|bookcase_v0002:ADJUSTMENTS|bookcase_v0002:DO_NOT_TOUCH" 
+		"translate" " -type \"double3\" 0 0 0";
 lockNode -l 1 ;
 createNode reference -n "swivelChair_v0002RN";
 	rename -uid "272F3C0F-406D-007F-57B9-3BB6EEAA4A5B";
@@ -66865,37 +66871,30 @@ createNode reference -n "paintingRN";
 		"paintingRN"
 		"paintingRN" 0
 		"paintingRN" 5
-		2 "|painting:painting_grp|painting:POSITION|painting:MOVEMENT|painting:ADJUSTMENTS|painting:DO_NOT_TOUCH|painting:painting_geo" 
+		2 "|painting:painting_grp|painting:POSITION|painting:MOVEMENT|painting:ADJUSTMENTS|painting:DO_NOT_TOUCH|painting:painting_geo1|painting:painting_geo" 
 		"translate" " -type \"double3\" 8.18409062721359426 2.48150621415840256 -6.83601046698477521"
 		
-		2 "|painting:painting_grp|painting:POSITION|painting:MOVEMENT|painting:ADJUSTMENTS|painting:DO_NOT_TOUCH|painting:painting_geo" 
+		2 "|painting:painting_grp|painting:POSITION|painting:MOVEMENT|painting:ADJUSTMENTS|painting:DO_NOT_TOUCH|painting:painting_geo1|painting:painting_geo" 
 		"rotate" " -type \"double3\" 0 -45 0"
-		2 "|painting:painting_grp|painting:POSITION|painting:MOVEMENT|painting:ADJUSTMENTS|painting:DO_NOT_TOUCH|painting:painting_geo" 
+		2 "|painting:painting_grp|painting:POSITION|painting:MOVEMENT|painting:ADJUSTMENTS|painting:DO_NOT_TOUCH|painting:painting_geo1|painting:painting_geo" 
 		"rotatePivot" " -type \"double3\" 0 0 -0.044846774316507521"
-		2 "|painting:painting_grp|painting:POSITION|painting:MOVEMENT|painting:ADJUSTMENTS|painting:DO_NOT_TOUCH|painting:painting_geo" 
+		2 "|painting:painting_grp|painting:POSITION|painting:MOVEMENT|painting:ADJUSTMENTS|painting:DO_NOT_TOUCH|painting:painting_geo1|painting:painting_geo" 
 		"rotatePivotTranslate" " -type \"double3\" 0 0 0"
-		2 "|painting:painting_grp|painting:POSITION|painting:MOVEMENT|painting:ADJUSTMENTS|painting:DO_NOT_TOUCH|painting:painting_geo" 
+		2 "|painting:painting_grp|painting:POSITION|painting:MOVEMENT|painting:ADJUSTMENTS|painting:DO_NOT_TOUCH|painting:painting_geo1|painting:painting_geo" 
 		"scalePivot" " -type \"double3\" 0 0 -0.044846774316507521";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "roomRN";
 	rename -uid "AB3E6A5E-4293-62D8-321C-DA87EA8581BD";
 	setAttr -s 2 ".phl";
-	setAttr ".phl[1]" 0;
-	setAttr ".phl[2]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"roomRN"
-		"roomRN" 0
-		"roomRN" 9
+		"roomRN" 7
 		2 "|room:room_grp|room:POSITION|room:MOVEMENT|room:ADJUSTMENTS|room:DO_NOT_TOUCH|room:entryWall_geo" 
 		"rotate" " -type \"double3\" 0 -22.5 0"
 		2 "|room:room_grp|room:POSITION|room:MOVEMENT|room:ADJUSTMENTS|room:DO_NOT_TOUCH|room:entryWall_geo" 
 		"scale" " -type \"double3\" 0.90494361460492689 0.66456543373805843 0.90494361460492689"
 		
-		2 "|room:room_grp|room:POSITION|room:MOVEMENT|room:ADJUSTMENTS|room:DO_NOT_TOUCH|room:floor_geo" 
-		"rotate" " -type \"double3\" 0 -22.5 0"
-		2 "|room:room_grp|room:POSITION|room:MOVEMENT|room:ADJUSTMENTS|room:DO_NOT_TOUCH|room:floor_geo|room:floor_geoShape" 
-		"uvPivot" " -type \"double2\" 0.5 0.3125"
 		2 "|room:room_grp|room:POSITION|room:MOVEMENT|room:ADJUSTMENTS|room:DO_NOT_TOUCH|room:backWall_geo" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|room:room_grp|room:POSITION|room:MOVEMENT|room:ADJUSTMENTS|room:DO_NOT_TOUCH|room:backWall_geo" 
@@ -66906,7 +66905,12 @@ createNode reference -n "roomRN";
 		5 4 "roomRN" "|room:room_grp|room:POSITION|room:MOVEMENT|room:ADJUSTMENTS|room:DO_NOT_TOUCH|room:entryWall_geo.drawOverride" 
 		"roomRN.placeHolderList[1]" ""
 		5 4 "roomRN" "|room:room_grp|room:POSITION|room:MOVEMENT|room:ADJUSTMENTS|room:DO_NOT_TOUCH|room:backWall_geo.drawOverride" 
-		"roomRN.placeHolderList[2]" "";
+		"roomRN.placeHolderList[2]" ""
+		"roomRN" 2
+		2 "|room:room_grp|room:POSITION|room:MOVEMENT|room:ADJUSTMENTS|room:DO_NOT_TOUCH|room:Room_group|room:floor_geo" 
+		"rotate" " -type \"double3\" 0 -22.5 0"
+		2 "|room:room_grp|room:POSITION|room:MOVEMENT|room:ADJUSTMENTS|room:DO_NOT_TOUCH|room:Room_group|room:floor_geo|room:floor_geoShape" 
+		"uvPivot" " -type \"double2\" 0.5 0.3125";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "bigDoorRN";
@@ -66926,10 +66930,10 @@ createNode reference -n "windowRN";
 		"windowRN" 0
 		"windowRN" 2
 		2 "|window:window_grp|window:POSITION|window:MOVEMENT|window:ADJUSTMENTS|window:DO_NOT_TOUCH|window:window_geo" 
-		"translate" " -type \"double3\" -7.42820375124215371 0.80436480927735987 6.4722533998891203"
+		"translate" " -type \"double3\" -11.46764549874185768 0.80436480927735987 1.57973325516867469"
 		
 		2 "|window:window_grp|window:POSITION|window:MOVEMENT|window:ADJUSTMENTS|window:DO_NOT_TOUCH|window:window_geo" 
-		"rotate" " -type \"double3\" 0 -45 0";
+		"rotate" " -type \"double3\" 0 -80.90394781862327989 0";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "giantMapRN";
@@ -66937,107 +66941,128 @@ createNode reference -n "giantMapRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"giantMapRN"
 		"giantMapRN" 0
-		"giantMapRN" 3
-		2 "|giantMap:giantMap_grp|giantMap:POSITION|giantMap:MOVEMENT|giantMap:ADJUSTMENTS|giantMap:DO_NOT_TOUCH|giantMap:giantMap_geo" 
+		"giantMapRN" 5
+		2 "|giantMap:giantMap_grp" "translate" " -type \"double3\" 0 0 0"
+		2 "|giantMap:giantMap_grp|giantMap:POSITION|giantMap:MOVEMENT|giantMap:ADJUSTMENTS|giantMap:DO_NOT_TOUCH|giantMap:map_ctrl|giantMap:giantMap_geo" 
 		"translate" " -type \"double3\" 0 1.71632067354184903 -10.6412762864208581"
-		2 "|giantMap:giantMap_grp|giantMap:POSITION|giantMap:MOVEMENT|giantMap:ADJUSTMENTS|giantMap:DO_NOT_TOUCH|giantMap:giantMap_geo" 
+		2 "|giantMap:giantMap_grp|giantMap:POSITION|giantMap:MOVEMENT|giantMap:ADJUSTMENTS|giantMap:DO_NOT_TOUCH|giantMap:map_ctrl|giantMap:giantMap_geo" 
 		"rotatePivot" " -type \"double3\" 0 0 -0.038242413225137994"
-		2 "|giantMap:giantMap_grp|giantMap:POSITION|giantMap:MOVEMENT|giantMap:ADJUSTMENTS|giantMap:DO_NOT_TOUCH|giantMap:giantMap_geo" 
-		"scalePivot" " -type \"double3\" 0 0 -0.038242413225137994";
+		2 "|giantMap:giantMap_grp|giantMap:POSITION|giantMap:MOVEMENT|giantMap:ADJUSTMENTS|giantMap:DO_NOT_TOUCH|giantMap:map_ctrl|giantMap:giantMap_geo" 
+		"scalePivot" " -type \"double3\" 0 0 -0.038242413225137994"
+		2 "|giantMap:redpin_grp" "translate" " -type \"double3\" 0 0 -10.99140307812891493";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "bookcase_v0002RN";
 	rename -uid "126F8408-4B4E-25EB-1C2F-33BA4D22C661";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bookcase_v0002RN"
-		"bookcase_v0002RN" 0
-		"bookcase_v0002RN" 7
+		"bookcase_v0002RN" 4
 		2 "|bookcase_v0003:bookcase_grp" "translate" " -type \"double3\" 1.2648926909331264 0 0"
 		
-		2 "|bookcase_v0003:bookcase_grp|bookcase_v0003:POSITION" "translate" " -type \"double3\" 1.2648926909331264 0 0"
-		
 		2 "|bookcase_v0003:bookcase_grp|bookcase_v0003:POSITION|bookcase_v0003:MOVEMENT" 
-		"translate" " -type \"double3\" 1.2648926909331264 0 0"
-		2 "|bookcase_v0003:bookcase_grp|bookcase_v0003:POSITION|bookcase_v0003:MOVEMENT|bookcase_v0003:ADJUSTMENTS" 
-		"translate" " -type \"double3\" 1.2648926909331264 0 0"
-		2 "|bookcase_v0003:bookcase_grp|bookcase_v0003:POSITION|bookcase_v0003:MOVEMENT|bookcase_v0003:ADJUSTMENTS|bookcase_v0003:DO_NOT_TOUCH" 
 		"translate" " -type \"double3\" 1.2648926909331264 0 0"
 		2 "|bookcase_v0003:bookcase_grp|bookcase_v0003:POSITION|bookcase_v0003:MOVEMENT|bookcase_v0003:ADJUSTMENTS|bookcase_v0003:DO_NOT_TOUCH|bookcase_v0003:bookcase_geo" 
 		"translate" " -type \"double3\" 3.98157933496024263 0 -0.60744246579992667"
 		2 "|bookcase_v0003:bookcase_grp|bookcase_v0003:POSITION|bookcase_v0003:MOVEMENT|bookcase_v0003:ADJUSTMENTS|bookcase_v0003:DO_NOT_TOUCH|bookcase_v0003:bookcase_geo" 
-		"rotate" " -type \"double3\" 0 -90 0";
+		"rotate" " -type \"double3\" 0 -90 0"
+		"bookcase_v0002RN" 5
+		2 "|bookcase_v0003:BOOKSHELF_GROUP" "translate" " -type \"double3\" 10.28048291450806673 0 1.47717132596356748"
+		
+		2 "|bookcase_v0003:BOOKSHELF_GROUP" "rotate" " -type \"double3\" 0 89.272348529620416 0"
+		
+		2 "|bookcase_v0003:BOOKSHELF_GROUP|bookcase_v0003:POSITION" "translate" " -type \"double3\" 1.2648926909331264 0 0"
+		
+		2 "|bookcase_v0003:BOOKSHELF_GROUP|bookcase_v0003:POSITION|bookcase_v0003:MOVEMENTS|bookcase_v0003:ADJUSTMENTS" 
+		"translate" " -type \"double3\" 1.2648926909331264 0 0"
+		2 "|bookcase_v0003:BOOKSHELF_GROUP|bookcase_v0003:POSITION|bookcase_v0003:MOVEMENTS|bookcase_v0003:ADJUSTMENTS|bookcase_v0003:DO_NOT_TOUCH" 
+		"translate" " -type \"double3\" 1.2648926909331264 0 0";
 lockNode -l 1 ;
 createNode reference -n "bookcase_v0001RN2";
 	rename -uid "861417CA-403D-6576-254F-1F9A6C3C0D6D";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bookcase_v0001RN2"
-		"bookcase_v0001RN2" 0
-		"bookcase_v0001RN2" 12
+		"bookcase_v0001RN2" 6
 		2 "|bookcase_v0004:bookcase_grp" "translate" " -type \"double3\" 1.38564153034991921 0 0"
 		
 		2 "|bookcase_v0004:bookcase_grp" "rotate" " -type \"double3\" 0 0 0"
-		2 "|bookcase_v0004:bookcase_grp|bookcase_v0004:POSITION" "translate" " -type \"double3\" 1.38564153034991921 0 0"
-		
-		2 "|bookcase_v0004:bookcase_grp|bookcase_v0004:POSITION" "rotate" " -type \"double3\" 0 0 0"
-		
 		2 "|bookcase_v0004:bookcase_grp|bookcase_v0004:POSITION|bookcase_v0004:MOVEMENT" 
 		"translate" " -type \"double3\" 1.38564153034991921 0 0"
 		2 "|bookcase_v0004:bookcase_grp|bookcase_v0004:POSITION|bookcase_v0004:MOVEMENT" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|bookcase_v0004:bookcase_grp|bookcase_v0004:POSITION|bookcase_v0004:MOVEMENT|bookcase_v0004:ADJUSTMENTS" 
-		"translate" " -type \"double3\" 1.38564153034991921 0 0"
-		2 "|bookcase_v0004:bookcase_grp|bookcase_v0004:POSITION|bookcase_v0004:MOVEMENT|bookcase_v0004:ADJUSTMENTS" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|bookcase_v0004:bookcase_grp|bookcase_v0004:POSITION|bookcase_v0004:MOVEMENT|bookcase_v0004:ADJUSTMENTS|bookcase_v0004:DO_NOT_TOUCH" 
-		"translate" " -type \"double3\" 1.38564153034991921 0 0"
-		2 "|bookcase_v0004:bookcase_grp|bookcase_v0004:POSITION|bookcase_v0004:MOVEMENT|bookcase_v0004:ADJUSTMENTS|bookcase_v0004:DO_NOT_TOUCH" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|bookcase_v0004:bookcase_grp|bookcase_v0004:POSITION|bookcase_v0004:MOVEMENT|bookcase_v0004:ADJUSTMENTS|bookcase_v0004:DO_NOT_TOUCH|bookcase_v0004:bookcase_geo" 
 		"translate" " -type \"double3\" 3.41972841385554993 0 1.71927502888197292"
 		2 "|bookcase_v0004:bookcase_grp|bookcase_v0004:POSITION|bookcase_v0004:MOVEMENT|bookcase_v0004:ADJUSTMENTS|bookcase_v0004:DO_NOT_TOUCH|bookcase_v0004:bookcase_geo" 
-		"rotate" " -type \"double3\" 0 -90 0";
+		"rotate" " -type \"double3\" 0 -90 0"
+		"bookcase_v0001RN2" 10
+		2 "|bookcase_v0004:BOOKSHELF_GROUP" "translate" " -type \"double3\" 10.39737470153070831 0 4.49367854163797809"
+		
+		2 "|bookcase_v0004:BOOKSHELF_GROUP" "rotate" " -type \"double3\" 0 86.21731141507335394 0"
+		
+		2 "|bookcase_v0004:BOOKSHELF_GROUP|bookcase_v0004:POSITION" "translate" " -type \"double3\" 1.38564153034991921 0 0"
+		
+		2 "|bookcase_v0004:BOOKSHELF_GROUP|bookcase_v0004:POSITION" "rotate" " -type \"double3\" 0 0 0"
+		
+		2 "|bookcase_v0004:BOOKSHELF_GROUP|bookcase_v0004:POSITION|bookcase_v0004:MOVEMENTS|bookcase_v0004:ADJUSTMENTS" 
+		"translate" " -type \"double3\" 1.38564153034991921 0 0"
+		2 "|bookcase_v0004:BOOKSHELF_GROUP|bookcase_v0004:POSITION|bookcase_v0004:MOVEMENTS|bookcase_v0004:ADJUSTMENTS" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|bookcase_v0004:BOOKSHELF_GROUP|bookcase_v0004:POSITION|bookcase_v0004:MOVEMENTS|bookcase_v0004:ADJUSTMENTS|bookcase_v0004:DO_NOT_TOUCH" 
+		"translate" " -type \"double3\" 1.38564153034991921 0 0"
+		2 "|bookcase_v0004:BOOKSHELF_GROUP|bookcase_v0004:POSITION|bookcase_v0004:MOVEMENTS|bookcase_v0004:ADJUSTMENTS|bookcase_v0004:DO_NOT_TOUCH" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|bookcase_v0004:BOOKSHELF_GROUP|bookcase_v0004:POSITION|bookcase_v0004:MOVEMENTS|bookcase_v0004:ADJUSTMENTS|bookcase_v0004:DO_NOT_TOUCH|bookcase_v0004:Bookcase_Geo" 
+		"translate" " -type \"double3\" 0.32587176387504013 1.25 -0.021545487010063393"
+		2 "|bookcase_v0004:BOOKSHELF_GROUP|bookcase_v0004:POSITION|bookcase_v0004:MOVEMENTS|bookcase_v0004:ADJUSTMENTS|bookcase_v0004:DO_NOT_TOUCH|bookcase_v0004:Bookcase_Geo" 
+		"rotate" " -type \"double3\" 0 6.49513338763197634 0";
 lockNode -l 1 ;
 createNode reference -n "bookcase_v0001RN3";
 	rename -uid "F7368D90-4D2F-ED01-F3FE-B598BF2002B8";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bookcase_v0001RN3"
-		"bookcase_v0001RN3" 0
 		"bookcase_v0001RN3" 3
 		2 "|bookcase_v0005:bookcase_grp" "translate" " -type \"double3\" -9.66169847708646223 0 0"
 		
 		2 "|bookcase_v0005:bookcase_grp" "rotate" " -type \"double3\" 0 90 0"
 		2 "|bookcase_v0005:bookcase_grp|bookcase_v0005:POSITION|bookcase_v0005:MOVEMENT|bookcase_v0005:ADJUSTMENTS|bookcase_v0005:DO_NOT_TOUCH|bookcase_v0005:bookcase_geo" 
-		"translate" " -type \"double3\" 0.85853683661001567 0 -0.50744168767017328";
+		"translate" " -type \"double3\" 0.85853683661001567 0 -0.50744168767017328"
+		"bookcase_v0001RN3" 2
+		2 "|bookcase_v0005:BOOKSHELF_GROUP" "translate" " -type \"double3\" 9.48305834741919007 0 -6.44310209197630979"
+		
+		2 "|bookcase_v0005:BOOKSHELF_GROUP" "rotate" " -type \"double3\" 0 124.16069339060504717 0";
 lockNode -l 1 ;
 createNode reference -n "bookcase_v0001RN4";
 	rename -uid "6D82D201-4DC5-B96F-F97C-3CA3A986BD34";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"bookcase_v0001RN4"
-		"bookcase_v0001RN4" 0
-		"bookcase_v0001RN4" 12
+		"bookcase_v0001RN4" 6
 		2 "|bookcase_v0006:bookcase_grp" "translate" " -type \"double3\" -1.01469915514423725 0 0"
 		
 		2 "|bookcase_v0006:bookcase_grp" "rotate" " -type \"double3\" 0 90 0"
-		2 "|bookcase_v0006:bookcase_grp|bookcase_v0006:POSITION" "translate" " -type \"double3\" -1.01469915514423725 0 0"
-		
-		2 "|bookcase_v0006:bookcase_grp|bookcase_v0006:POSITION" "rotate" " -type \"double3\" 0 90 0"
-		
 		2 "|bookcase_v0006:bookcase_grp|bookcase_v0006:POSITION|bookcase_v0006:MOVEMENT" 
 		"translate" " -type \"double3\" -1.01469915514423725 0 0"
 		2 "|bookcase_v0006:bookcase_grp|bookcase_v0006:POSITION|bookcase_v0006:MOVEMENT" 
-		"rotate" " -type \"double3\" 0 90 0"
-		2 "|bookcase_v0006:bookcase_grp|bookcase_v0006:POSITION|bookcase_v0006:MOVEMENT|bookcase_v0006:ADJUSTMENTS" 
-		"translate" " -type \"double3\" -1.01469915514423725 0 0"
-		2 "|bookcase_v0006:bookcase_grp|bookcase_v0006:POSITION|bookcase_v0006:MOVEMENT|bookcase_v0006:ADJUSTMENTS" 
-		"rotate" " -type \"double3\" 0 90 0"
-		2 "|bookcase_v0006:bookcase_grp|bookcase_v0006:POSITION|bookcase_v0006:MOVEMENT|bookcase_v0006:ADJUSTMENTS|bookcase_v0006:DO_NOT_TOUCH" 
-		"translate" " -type \"double3\" -1.01469915514423725 0 0"
-		2 "|bookcase_v0006:bookcase_grp|bookcase_v0006:POSITION|bookcase_v0006:MOVEMENT|bookcase_v0006:ADJUSTMENTS|bookcase_v0006:DO_NOT_TOUCH" 
 		"rotate" " -type \"double3\" 0 90 0"
 		2 "|bookcase_v0006:bookcase_grp|bookcase_v0006:POSITION|bookcase_v0006:MOVEMENT|bookcase_v0006:ADJUSTMENTS|bookcase_v0006:DO_NOT_TOUCH|bookcase_v0006:bookcase_geo" 
 		"translate" " -type \"double3\" 2.98670373494972674 0 -9.23975376192417741"
 		2 "|bookcase_v0006:bookcase_grp|bookcase_v0006:POSITION|bookcase_v0006:MOVEMENT|bookcase_v0006:ADJUSTMENTS|bookcase_v0006:DO_NOT_TOUCH|bookcase_v0006:bookcase_geo" 
-		"rotate" " -type \"double3\" 0 179.99999999999991473 0";
+		"rotate" " -type \"double3\" 0 179.99999999999991473 0"
+		"bookcase_v0001RN4" 8
+		2 "|bookcase_v0006:BOOKSHELF_GROUP" "translate" " -type \"double3\" 10.69299018247135002 0 3.57074052589842195"
+		
+		2 "|bookcase_v0006:BOOKSHELF_GROUP" "rotate" " -type \"double3\" 0 179.52077762683981632 0"
+		
+		2 "|bookcase_v0006:BOOKSHELF_GROUP|bookcase_v0006:POSITION" "translate" " -type \"double3\" -1.01469915514423725 0 0"
+		
+		2 "|bookcase_v0006:BOOKSHELF_GROUP|bookcase_v0006:POSITION" "rotate" " -type \"double3\" 0 90 0"
+		
+		2 "|bookcase_v0006:BOOKSHELF_GROUP|bookcase_v0006:POSITION|bookcase_v0006:MOVEMENTS|bookcase_v0006:ADJUSTMENTS" 
+		"translate" " -type \"double3\" -1.01469915514423725 0 0"
+		2 "|bookcase_v0006:BOOKSHELF_GROUP|bookcase_v0006:POSITION|bookcase_v0006:MOVEMENTS|bookcase_v0006:ADJUSTMENTS" 
+		"rotate" " -type \"double3\" 0 90 0"
+		2 "|bookcase_v0006:BOOKSHELF_GROUP|bookcase_v0006:POSITION|bookcase_v0006:MOVEMENTS|bookcase_v0006:ADJUSTMENTS|bookcase_v0006:DO_NOT_TOUCH" 
+		"translate" " -type \"double3\" -1.01469915514423725 0 0"
+		2 "|bookcase_v0006:BOOKSHELF_GROUP|bookcase_v0006:POSITION|bookcase_v0006:MOVEMENTS|bookcase_v0006:ADJUSTMENTS|bookcase_v0006:DO_NOT_TOUCH" 
+		"rotate" " -type \"double3\" 0 90 0";
 lockNode -l 1 ;
 createNode reference -n "filingCabinetSet_v0001RN1";
 	rename -uid "09E9F24A-4315-5520-39D3-B69DD5AE94F3";
@@ -67195,67 +67220,70 @@ createNode animCurveTA -n "nurbsCircle1_rotateX";
 	rename -uid "6D503BDF-48E3-7A2E-B486-D0B91EBEF171";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 0 72 0 123 0 153 0 360 0 361 0 480 0 624 0
-		 648 0 672 0;
+	setAttr -s 12 ".ktv[0:11]"  1 0 99 0 123 0 153 0 279 0 280 0 360 0 361 0
+		 480 0 624 0 648 0 672 0;
 createNode animCurveTA -n "nurbsCircle1_rotateY";
 	rename -uid "E9DE0A8C-47A8-7F69-D18F-E29D3A2866BD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 137.79815887269004 72 137.79815887269004
-		 123 137.79815887269004 153 137.79815887269004 360 137.79815887269004 361 189.06085313461318
-		 480 189.06085313461318 624 189.06085313461318 648 189.06085313461318 672 99.489836532560915;
+	setAttr -s 12 ".ktv[0:11]"  1 137.79815887269004 99 137.79815887269004
+		 123 137.79815887269004 153 137.79815887269004 279 137.79815887269004 280 137.798
+		 360 137.79815887269004 361 189.06085313461318 480 189.06085313461318 624 189.06085313461318
+		 648 189.06085313461318 672 99.489836532560915;
 createNode animCurveTA -n "nurbsCircle1_rotateZ";
 	rename -uid "366943A0-49BC-7B38-7784-1997474539E2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 0 72 0 123 0 153 0 360 0 361 0 480 0 624 0
-		 648 0 672 0;
+	setAttr -s 12 ".ktv[0:11]"  1 0 99 0 123 0 153 0 279 0 280 0 360 0 361 0
+		 480 0 624 0 648 0 672 0;
 createNode animCurveTU -n "nurbsCircle1_visibility";
 	rename -uid "6C46F832-46A4-7DC7-B4D5-03A2779E6D64";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 1 72 1 123 1 153 1 360 1 361 1 480 1 624 1
-		 648 1 672 1;
-	setAttr -s 10 ".kot[0:9]"  5 5 5 5 5 5 5 5 
-		5 5;
+	setAttr -s 12 ".ktv[0:11]"  1 1 99 1 123 1 153 1 279 1 280 1 360 1 361 1
+		 480 1 624 1 648 1 672 1;
+	setAttr -s 12 ".kot[0:11]"  5 5 5 5 5 5 5 5 
+		5 5 5 5;
 createNode animCurveTL -n "nurbsCircle1_translateX";
 	rename -uid "D021317B-4BBB-36D0-D622-DF95EDEC51A2";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 -9.7975710266703153 72 -9.7975710266703153
-		 123 -9.7975710266703153 153 -9.0680609025680603 360 -9.0680609025680603 361 -11.048515867103351
-		 480 -10.916485536134335 624 -10.916485536134335 648 -10.916485536134335 672 -10.608414763873292;
+	setAttr -s 12 ".ktv[0:11]"  1 -11.694171134834905 99 -11.833083220819702
+		 123 -11.103693015899564 153 -10.529263437912061 279 -10.521 280 -10.520149194819108
+		 360 -9.0680609025680603 361 -11.048515867103351 480 -10.916485536134335 624 -10.916485536134335
+		 648 -10.916485536134335 672 -10.608414763873292;
 createNode animCurveTL -n "nurbsCircle1_translateY";
 	rename -uid "7FD24EA9-483A-EA43-C7C2-6093AEA4344E";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 0 72 0 123 0 153 0 360 0 361 0 480 0 624 0
-		 648 0 672 0;
+	setAttr -s 12 ".ktv[0:11]"  1 0 99 0 123 0 153 0 279 0 280 0 360 0 361 0
+		 480 0 624 0 648 0 672 0;
 createNode animCurveTL -n "nurbsCircle1_translateZ";
 	rename -uid "27D4AF33-47EB-CBE7-90E1-599E8EA1AABD";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 7.7833410399762855 72 7.7833410399762855
-		 123 7.7833410399762855 153 6.9135405073928347 360 6.9135405073928347 361 -1.8004613365624564
-		 480 -4.9691892798189272 624 -4.9691892798189272 648 -4.9691892798189272 672 -5.3652802727259843;
+	setAttr -s 12 ".ktv[0:11]"  1 8.6823529528459478 99 8.4362662324694178
+		 123 7.3587291248645581 153 6.9135405073928347 279 6.9135405073928347 280 6.9135405073928347
+		 360 6.9135405073928347 361 -1.8004613365624564 480 -4.9691892798189272 624 -4.9691892798189272
+		 648 -4.9691892798189272 672 -5.3652802727259843;
 createNode animCurveTU -n "nurbsCircle1_scaleX";
 	rename -uid "716AA357-4162-EC64-07B3-E5B613EC26C9";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 1 72 1 123 1 153 1 360 1 361 1 480 1 624 1
-		 648 1 672 1;
+	setAttr -s 12 ".ktv[0:11]"  1 1 99 1 123 1 153 1 279 1 280 1 360 1 361 1
+		 480 1 624 1 648 1 672 1;
 createNode animCurveTU -n "nurbsCircle1_scaleY";
 	rename -uid "66CD0B1F-4E88-0700-4A12-CB8E90924ACE";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 1 72 1 123 1 153 1 360 1 361 1 480 1 624 1
-		 648 1 672 1;
+	setAttr -s 12 ".ktv[0:11]"  1 1 99 1 123 1 153 1 279 1 280 1 360 1 361 1
+		 480 1 624 1 648 1 672 1;
 createNode animCurveTU -n "nurbsCircle1_scaleZ";
 	rename -uid "4869E77E-4BDD-E94A-43D0-5991C0D09F7D";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 10 ".ktv[0:9]"  1 1 72 1 123 1 153 1 360 1 361 1 480 1 624 1
-		 648 1 672 1;
+	setAttr -s 12 ".ktv[0:11]"  1 1 99 1 123 1 153 1 279 1 280 1 360 1 361 1
+		 480 1 624 1 648 1 672 1;
 createNode materialInfo -n "pasted__HumanBody_materialInfo2";
 	rename -uid "2920BBBD-4F15-6D57-1566-E0860AE2BAFC";
 createNode shadingEngine -n "pasted__HumanBody_blinn1SG";
@@ -67635,15 +67663,15 @@ createNode animCurveTL -n "fullBlast_camera_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 16 ".ktv[0:15]"  1 1.5969350699186948 66 1.597 72 1.5969350699186948
-		 73 1.597 264 1.597 265 1.734 360 1.734 361 1.001 480 1.001 481 1.759 671 1.759 760 1.623
-		 768 1.623 769 1.533 840 1.533 841 1.8808374915077668;
+		 73 1.659 264 1.6591901544791077 265 1.734 360 1.734 361 1.001 480 1.001 481 1.759
+		 671 1.759 760 1.623 768 1.623 769 1.533 840 1.533 841 1.8808374915077668;
 createNode animCurveTL -n "fullBlast_camera_translateX";
 	rename -uid "73C27795-46F7-87FE-4160-82BC3336EEE8";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 16 ".ktv[0:15]"  1 -1.8282841422429188 66 -1.828 72 -1.8282841422429188
-		 73 -5.282 264 -5.282 265 -5.049 360 -5.049 361 -2.42 480 -2.42 481 -6.87 671 -6.87
-		 760 3.182 768 3.182 769 1.405 840 1.405 841 -7.0557105688424384;
+		 73 -6.908 264 -6.9082661345076213 265 -5.049 360 -5.049 361 -2.42 480 -2.42 481 -6.87
+		 671 -6.87 760 3.182 768 3.182 769 1.405 840 1.405 841 -7.0557105688424384;
 	setAttr -s 16 ".kit[7:15]"  1 18 18 18 18 18 18 18 
 		18;
 	setAttr -s 16 ".kot[7:15]"  1 18 18 18 18 18 18 18 
@@ -67696,16 +67724,15 @@ createNode animCurveTA -n "fullBlast_camera_rotateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 16 ".ktv[0:15]"  1 2353.1258763348533 66 2316.6849999999999
-		 72 2316.68495179006 73 2255.8000000000002 264 2255.8000000000002 265 2157.2510000000002
-		 360 2157.2510000000002 361 91 480 91 481 91.8 671 91.8 760 89.8 768 89.8 769 -54.6
-		 840 -54.6 841 104.35408711344952;
+		 72 2316.68495179006 73 2269.6225980356912 264 2269.623 265 2157.2510000000002 360 2157.2510000000002
+		 361 91 480 91 481 91.8 671 91.8 760 89.8 768 89.8 769 -54.6 840 -54.6 841 104.35408711344952;
 createNode animCurveTA -n "fullBlast_camera_rotateX";
 	rename -uid "4E5BF818-4B76-7DD5-B076-A7B42349585A";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 16 ".ktv[0:15]"  1 0.90211134744205923 66 0.957 72 0.95666583978868125
-		 73 2.4 264 2.4 265 3.122 360 3.122 361 -1.538 480 -1.538 481 -8.738 671 -8.738 760 -6.938
-		 768 -6.938 769 -7.2 840 -7.2 841 -180.52738560618363;
+		 73 0.72201885798227916 264 0.722 265 3.122 360 3.122 361 -1.538 480 -1.538 481 -8.738
+		 671 -8.738 760 -6.938 768 -6.938 769 -7.2 840 -7.2 841 -180.52738560618363;
 createNode animCurveTU -n "shot7_camera_visibility";
 	rename -uid "0453A74A-4139-9685-5897-71B344E47486";
 	setAttr ".tan" 9;
@@ -67735,20 +67762,19 @@ createNode reference -n "sideDoor_WIPRN";
 lockNode -l 1 ;
 createNode reference -n "sideDoor_WIP_0018RN";
 	rename -uid "FCED9611-4543-13C3-0E4E-0981F97FD5B5";
-	setAttr -s 10 ".phl";
-	setAttr ".phl[1]" 0;
-	setAttr ".phl[2]" 0;
-	setAttr ".phl[3]" 0;
-	setAttr ".phl[4]" 0;
-	setAttr ".phl[5]" 0;
-	setAttr ".phl[6]" 0;
-	setAttr ".phl[7]" 0;
-	setAttr ".phl[8]" 0;
-	setAttr ".phl[9]" 0;
-	setAttr ".phl[10]" 0;
+	setAttr -s 20 ".phl";
+	setAttr ".phl[11]" 0;
+	setAttr ".phl[12]" 0;
+	setAttr ".phl[13]" 0;
+	setAttr ".phl[14]" 0;
+	setAttr ".phl[15]" 0;
+	setAttr ".phl[16]" 0;
+	setAttr ".phl[17]" 0;
+	setAttr ".phl[18]" 0;
+	setAttr ".phl[19]" 0;
+	setAttr ".phl[20]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"sideDoor_WIP_0018RN"
-		"sideDoor_WIP_0018RN" 0
 		"sideDoor_WIP_0018RN" 14
 		2 "|sideDoor_WIP_0018:door_grp" "translate" " -type \"double3\" -6.61092174652943854 0 6.98265911358479219"
 		
@@ -67777,7 +67803,58 @@ createNode reference -n "sideDoor_WIP_0018RN";
 		5 4 "sideDoor_WIP_0018RN" "|sideDoor_WIP_0018:door_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_geo.scaleY" 
 		"sideDoor_WIP_0018RN.placeHolderList[9]" ""
 		5 4 "sideDoor_WIP_0018RN" "|sideDoor_WIP_0018:door_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_geo.scaleZ" 
-		"sideDoor_WIP_0018RN.placeHolderList[10]" "";
+		"sideDoor_WIP_0018RN.placeHolderList[10]" ""
+		"sideDoor_WIP_0018RN" 25
+		2 "|sideDoor_WIP_0018:sideDoor_grp" "translate" " -type \"double3\" -8.5652589507432495 0 8.16864884062867347"
+		
+		2 "|sideDoor_WIP_0018:sideDoor_grp" "rotate" " -type \"double3\" 0 137.80810621021774409 0"
+		
+		2 "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl" 
+		"visibility" " -av 1"
+		2 "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl" 
+		"translate" " -type \"double3\" 0 0 0"
+		2 "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl" 
+		"translateX" " -av"
+		2 "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl" 
+		"translateY" " -av"
+		2 "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl" 
+		"translateZ" " -av"
+		2 "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl" 
+		"rotate" " -type \"double3\" 0 -66.43134578005162894 0"
+		2 "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl" 
+		"rotateX" " -av"
+		2 "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl" 
+		"rotateY" " -av"
+		2 "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl" 
+		"rotateZ" " -av"
+		2 "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl" 
+		"scaleX" " -av"
+		2 "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl" 
+		"scaleY" " -av"
+		2 "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl" 
+		"scaleZ" " -av"
+		5 4 "sideDoor_WIP_0018RN" "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl.translateX" 
+		"sideDoor_WIP_0018RN.placeHolderList[11]" ""
+		5 4 "sideDoor_WIP_0018RN" "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl.translateY" 
+		"sideDoor_WIP_0018RN.placeHolderList[12]" ""
+		5 4 "sideDoor_WIP_0018RN" "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl.translateZ" 
+		"sideDoor_WIP_0018RN.placeHolderList[13]" ""
+		5 4 "sideDoor_WIP_0018RN" "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl.visibility" 
+		"sideDoor_WIP_0018RN.placeHolderList[14]" ""
+		5 4 "sideDoor_WIP_0018RN" "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl.rotateX" 
+		"sideDoor_WIP_0018RN.placeHolderList[15]" ""
+		5 4 "sideDoor_WIP_0018RN" "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl.rotateY" 
+		"sideDoor_WIP_0018RN.placeHolderList[16]" ""
+		5 4 "sideDoor_WIP_0018RN" "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl.rotateZ" 
+		"sideDoor_WIP_0018RN.placeHolderList[17]" ""
+		5 4 "sideDoor_WIP_0018RN" "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl.scaleX" 
+		"sideDoor_WIP_0018RN.placeHolderList[18]" ""
+		5 4 "sideDoor_WIP_0018RN" "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl.scaleY" 
+		"sideDoor_WIP_0018RN.placeHolderList[19]" ""
+		5 4 "sideDoor_WIP_0018RN" "|sideDoor_WIP_0018:sideDoor_grp|sideDoor_WIP_0018:POSITION|sideDoor_WIP_0018:MOVEMENT|sideDoor_WIP_0018:ADJUSTMENT|sideDoor_WIP_0018:DO_NOT_TOUCH|sideDoor_WIP_0018:door_ctrl.scaleZ" 
+		"sideDoor_WIP_0018RN.placeHolderList[20]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode aiOptions -s -n "defaultArnoldRenderOptions";
@@ -67965,9 +68042,60 @@ createNode animCurveTU -n "door_geo_scaleZ";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 2 ".ktv[0:1]"  133 1 152 1;
+createNode animCurveTL -n "door_ctrl_translateX";
+	rename -uid "5A85D2B4-4AA7-C2E7-0C64-DD97208F45CC";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  106 0 123 0;
+createNode animCurveTL -n "door_ctrl_translateY";
+	rename -uid "F78BB087-4966-295B-1629-4BB17FA40B39";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  106 0 123 0;
+createNode animCurveTL -n "door_ctrl_translateZ";
+	rename -uid "274CD52E-44B7-8841-BB72-5D8E0CD2F0D7";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  106 0 123 0;
+createNode animCurveTU -n "door_ctrl_visibility";
+	rename -uid "A20FEE86-4010-7188-D632-3BB93815756D";
+	setAttr ".tan" 9;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  106 1 123 1;
+	setAttr -s 2 ".kot[0:1]"  5 5;
+createNode animCurveTA -n "door_ctrl_rotateX";
+	rename -uid "E288428A-4425-3FDE-42F1-B689B2481C6A";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  106 0 123 0;
+createNode animCurveTA -n "door_ctrl_rotateY";
+	rename -uid "62861D64-4B83-B983-1C11-379EA1EEF187";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  106 0 123 -66.431345780051629;
+createNode animCurveTA -n "door_ctrl_rotateZ";
+	rename -uid "6B55D042-41B1-1112-FC6D-B780C127E1F5";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  106 0 123 0;
+createNode animCurveTU -n "door_ctrl_scaleX";
+	rename -uid "49CDAA05-4C2C-3FB9-A9B3-80A1A48E6082";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  106 1 123 1;
+createNode animCurveTU -n "door_ctrl_scaleY";
+	rename -uid "0D289775-4413-5CC7-A8C0-20B35B5E03BB";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  106 1 123 1;
+createNode animCurveTU -n "door_ctrl_scaleZ";
+	rename -uid "E62A83D9-4E74-F996-6DD4-F48171DDE34B";
+	setAttr ".tan" 18;
+	setAttr ".wgt" no;
+	setAttr -s 2 ".ktv[0:1]"  106 1 123 1;
 select -ne :time1;
-	setAttr ".o" 141;
-	setAttr ".unw" 141;
+	setAttr ".o" 888;
+	setAttr ".unw" 888;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -67975,23 +68103,24 @@ select -ne :hardwareRenderingGlobals;
 		 0 0 0 0 ;
 	setAttr ".fprt" yes;
 select -ne :renderPartition;
-	setAttr -s 104 ".st";
+	setAttr -s 90 ".st";
 select -ne :renderGlobalsList1;
 select -ne :defaultShaderList1;
-	setAttr -s 106 ".s";
+	setAttr -s 92 ".s";
 select -ne :postProcessList1;
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 57 ".u";
+	setAttr -s 94 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 3 ".r";
+	setAttr -s 11 ".r";
 select -ne :lightList1;
+	setAttr -s 3 ".l";
 select -ne :defaultTextureList1;
-	setAttr -s 41 ".tx";
+	setAttr -s 80 ".tx";
 select -ne :initialShadingGroup;
-	setAttr -s 56 ".dsm";
+	setAttr -s 39 ".dsm";
 	setAttr ".ro" yes;
-	setAttr -s 3 ".gn";
+	setAttr -s 2 ".gn";
 select -ne :initialParticleSE;
 	setAttr ".ro" yes;
 select -ne :defaultRenderGlobals;
@@ -68001,6 +68130,7 @@ select -ne :defaultRenderGlobals;
 select -ne :defaultResolution;
 	setAttr ".pa" 1;
 select -ne :defaultLightSet;
+	setAttr -s 3 ".dsm";
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
@@ -68017,27 +68147,25 @@ connectAttr "bigEvilChair_grp_scaleX.o" "bigEvilChair_v0001RN.phl[8]";
 connectAttr "bigEvilChair_grp_scaleY.o" "bigEvilChair_v0001RN.phl[9]";
 connectAttr "bigEvilChair_grp_scaleZ.o" "bigEvilChair_v0001RN.phl[10]";
 connectAttr "drawer_ctrl_translateX.o" "filingCabinetSet_v0001RN.phl[1]";
-connectAttr "drawer_ctrl_translateZ.o" "filingCabinetSet_v0001RN.phl[2]";
-connectAttr "drawer_ctrl_translateY.o" "filingCabinetSet_v0001RN.phl[3]";
-connectAttr "drawer_ctrl_rotateY.o" "filingCabinetSet_v0001RN.phl[4]";
-connectAttr "drawer_ctrl_rotateX.o" "filingCabinetSet_v0001RN.phl[5]";
+connectAttr "drawer_ctrl_translateY.o" "filingCabinetSet_v0001RN.phl[2]";
+connectAttr "drawer_ctrl_translateZ.o" "filingCabinetSet_v0001RN.phl[3]";
+connectAttr "drawer_ctrl_rotateX.o" "filingCabinetSet_v0001RN.phl[4]";
+connectAttr "drawer_ctrl_rotateY.o" "filingCabinetSet_v0001RN.phl[5]";
 connectAttr "drawer_ctrl_rotateZ.o" "filingCabinetSet_v0001RN.phl[6]";
 connectAttr "drawer_ctrl_visibility.o" "filingCabinetSet_v0001RN.phl[7]";
 connectAttr "drawer_ctrl_scaleX.o" "filingCabinetSet_v0001RN.phl[8]";
 connectAttr "drawer_ctrl_scaleY.o" "filingCabinetSet_v0001RN.phl[9]";
 connectAttr "drawer_ctrl_scaleZ.o" "filingCabinetSet_v0001RN.phl[10]";
-connectAttr "room_layer.di" "roomRN.phl[1]";
-connectAttr "room_layer.di" "roomRN.phl[2]";
-connectAttr "door_geo_rotateY.o" "sideDoor_WIP_0018RN.phl[1]";
-connectAttr "door_geo_rotateX.o" "sideDoor_WIP_0018RN.phl[2]";
-connectAttr "door_geo_rotateZ.o" "sideDoor_WIP_0018RN.phl[3]";
-connectAttr "door_geo_visibility.o" "sideDoor_WIP_0018RN.phl[4]";
-connectAttr "door_geo_translateX.o" "sideDoor_WIP_0018RN.phl[5]";
-connectAttr "door_geo_translateY.o" "sideDoor_WIP_0018RN.phl[6]";
-connectAttr "door_geo_translateZ.o" "sideDoor_WIP_0018RN.phl[7]";
-connectAttr "door_geo_scaleX.o" "sideDoor_WIP_0018RN.phl[8]";
-connectAttr "door_geo_scaleY.o" "sideDoor_WIP_0018RN.phl[9]";
-connectAttr "door_geo_scaleZ.o" "sideDoor_WIP_0018RN.phl[10]";
+connectAttr "door_ctrl_translateX.o" "sideDoor_WIP_0018RN.phl[11]";
+connectAttr "door_ctrl_translateY.o" "sideDoor_WIP_0018RN.phl[12]";
+connectAttr "door_ctrl_translateZ.o" "sideDoor_WIP_0018RN.phl[13]";
+connectAttr "door_ctrl_visibility.o" "sideDoor_WIP_0018RN.phl[14]";
+connectAttr "door_ctrl_rotateX.o" "sideDoor_WIP_0018RN.phl[15]";
+connectAttr "door_ctrl_rotateY.o" "sideDoor_WIP_0018RN.phl[16]";
+connectAttr "door_ctrl_rotateZ.o" "sideDoor_WIP_0018RN.phl[17]";
+connectAttr "door_ctrl_scaleX.o" "sideDoor_WIP_0018RN.phl[18]";
+connectAttr "door_ctrl_scaleY.o" "sideDoor_WIP_0018RN.phl[19]";
+connectAttr "door_ctrl_scaleZ.o" "sideDoor_WIP_0018RN.phl[20]";
 connectAttr "groupId462.id" "giantFlyTrap_geoShape.iog.og[0].gid";
 connectAttr ":initialShadingGroup.mwc" "giantFlyTrap_geoShape.iog.og[0].gco";
 connectAttr "groupId467.id" "bearRug_geoShape.ciog.cog[0].cgid";
@@ -72883,6 +73011,8 @@ connectAttr "sharedReferenceNode.sr" "bearRug_v0001RN.sr";
 connectAttr "sharedReferenceNode.sr" "bigEvilChair_v0001RN.sr";
 connectAttr "sharedReferenceNode.sr" "swivelChair_v0001RN.sr";
 connectAttr "layerManager.dli[2]" "room_layer.id";
+connectAttr "room_layer.di" "roomRN.phl[1]";
+connectAttr "room_layer.di" "roomRN.phl[2]";
 connectAttr "polyPipe1.out" "transformGeometry1.ig";
 connectAttr "humanBodySG.msg" "HumanBody_materialInfo1.sg";
 connectAttr "HumanBody_place2dTexture1.o" "ReflectionMap.uv";
@@ -72916,6 +73046,16 @@ connectAttr "pasted__HumanBody_blinn1SG1.msg" "pasted__HumanBody_materialInfo3.s
 		;
 connectAttr "pasted__blinn2.msg" "pasted__HumanBody_materialInfo3.m";
 connectAttr "pasted__blinn2.oc" "pasted__HumanBody_blinn1SG1.ss";
+connectAttr "door_geo_rotateY.o" "sideDoor_WIP_0018RN.phl[1]";
+connectAttr "door_geo_rotateX.o" "sideDoor_WIP_0018RN.phl[2]";
+connectAttr "door_geo_rotateZ.o" "sideDoor_WIP_0018RN.phl[3]";
+connectAttr "door_geo_visibility.o" "sideDoor_WIP_0018RN.phl[4]";
+connectAttr "door_geo_translateX.o" "sideDoor_WIP_0018RN.phl[5]";
+connectAttr "door_geo_translateY.o" "sideDoor_WIP_0018RN.phl[6]";
+connectAttr "door_geo_translateZ.o" "sideDoor_WIP_0018RN.phl[7]";
+connectAttr "door_geo_scaleX.o" "sideDoor_WIP_0018RN.phl[8]";
+connectAttr "door_geo_scaleY.o" "sideDoor_WIP_0018RN.phl[9]";
+connectAttr "door_geo_scaleZ.o" "sideDoor_WIP_0018RN.phl[10]";
 connectAttr ":defaultArnoldDisplayDriver.msg" ":defaultArnoldRenderOptions.drivers"
 		 -na;
 connectAttr ":defaultArnoldFilter.msg" ":defaultArnoldRenderOptions.filt";

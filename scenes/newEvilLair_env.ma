@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: newEvilLair_env.ma
-//Last modified: Thu, Nov 05, 2020 05:34:45 PM
+//Last modified: Thu, Nov 05, 2020 06:13:12 PM
 //Codeset: 1252
 file -rdi 1 -ns "filingCabinetSet" -rfn "filingCabinetSetRN" -op "v=0;" -typ
 		 "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/filingCabinetSet.ma";
@@ -21,17 +21,18 @@ file -rdi 1 -ns "giantFlyTrap" -rfn "giantFlyTrapRN" -op "v=0;" -typ "mayaAscii"
 		 "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/giantFlyTrap.ma";
 file -rdi 1 -ns "giantFlyTrap1" -rfn "giantFlyTrapRN1" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/giantFlyTrap.ma";
 file -rdi 1 -ns "giantMap" -rfn "giantMapRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/giantMap.ma";
-file -rdi 1 -ns "bearRug" -rfn "bearRugRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/bearRug.ma";
 file -rdi 1 -ns "painting" -rfn "paintingRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/painting.ma";
-file -rdi 1 -ns "flashlight" -rfn "flashlightRN" -op "v=0;" -typ "mayaAscii"
-		 "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/flashlight.ma";
-file -rdi 1 -ns "fileFolder" -rfn "fileFolderRN" -op "v=0;" -typ "mayaAscii"
-		 "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/fileFolder.ma";
+file -rdi 1 -ns "bearTrophy" -rfn "bearTrophyRN" -op "v=0;" -typ "mayaAscii"
+		 "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/bearTrophy.ma";
+file -rdi 1 -ns "bigDoor" -rfn "bigDoorRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/bigDoor.ma";
 file -rdi 1 -ns "sideDoor" -rfn "sideDoorRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/sideDoor.ma";
 file -rdi 1 -ns "window" -rfn "windowRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/window.ma";
 file -rdi 1 -ns "evilTablechairSet" -rfn "evilTablechairSetRN" -op "v=0;" -typ
 		 "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/evilTablechairSet.ma";
-file -rdi 1 -ns "bigDoor" -rfn "bigDoorRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/bigDoor.ma";
+file -rdi 1 -ns "flashlight" -rfn "flashlightRN" -op "v=0;" -typ "mayaAscii"
+		 "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/flashlight.ma";
+file -rdi 1 -ns "fileFolder" -rfn "fileFolderRN" -op "v=0;" -typ "mayaAscii"
+		 "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/fileFolder.ma";
 file -r -ns "filingCabinetSet" -dr 1 -rfn "filingCabinetSetRN" -op "v=0;" -typ "mayaAscii"
 		 "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/filingCabinetSet.ma";
 file -r -ns "filingCabinetSet1" -dr 1 -rfn "filingCabinetSetRN1" -typ "mayaAscii"
@@ -51,15 +52,15 @@ file -r -ns "giantFlyTrap" -dr 1 -rfn "giantFlyTrapRN" -op "v=0;" -typ "mayaAsci
 		 "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/giantFlyTrap.ma";
 file -r -ns "giantFlyTrap1" -dr 1 -rfn "giantFlyTrapRN1" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/giantFlyTrap.ma";
 file -r -ns "giantMap" -dr 1 -rfn "giantMapRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/giantMap.ma";
-file -r -ns "bearRug" -dr 1 -rfn "bearRugRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/bearRug.ma";
 file -r -ns "painting" -dr 1 -rfn "paintingRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/painting.ma";
-file -r -ns "flashlight" -dr 1 -rfn "flashlightRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/flashlight.ma";
-file -r -ns "fileFolder" -dr 1 -rfn "fileFolderRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/fileFolder.ma";
+file -r -ns "bearTrophy" -dr 1 -rfn "bearTrophyRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/bearTrophy.ma";
+file -r -ns "bigDoor" -dr 1 -rfn "bigDoorRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/bigDoor.ma";
 file -r -ns "sideDoor" -dr 1 -rfn "sideDoorRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/sideDoor.ma";
 file -r -ns "window" -dr 1 -rfn "windowRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/window.ma";
 file -r -ns "evilTablechairSet" -dr 1 -rfn "evilTablechairSetRN" -op "v=0;" -typ
 		 "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/evilTablechairSet.ma";
-file -r -ns "bigDoor" -dr 1 -rfn "bigDoorRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/bigDoor.ma";
+file -r -ns "flashlight" -dr 1 -rfn "flashlightRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/flashlight.ma";
+file -r -ns "fileFolder" -dr 1 -rfn "fileFolderRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/fileFolder.ma";
 requires maya "2020";
 requires "stereoCamera" "10.0";
 requires "mtoa" "4.0.0";
@@ -69,7 +70,7 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
-fileInfo "UUID" "E260365B-4B4D-D953-97A0-528BBC22AEE1";
+fileInfo "UUID" "EC874FDD-46EB-F583-6BD9-1FBF2C90507A";
 createNode transform -n "all_filingCabinets_grp";
 	rename -uid "F38DB9D4-4475-0CB4-BC6D-FC8125B89CA8";
 	setAttr ".rp" -type "double3" -7.3649602186594265 0 -7.3727007149350712 ;
@@ -93,6 +94,8 @@ createNode transform -n "all_giantFlyTraps_grp";
 	setAttr ".sp" -type "double3" 7.4998877123699881 0 -7.7012519871095613 ;
 createNode transform -n "all_wallArt_grp";
 	rename -uid "530ED81B-45EC-40E7-1A67-779DBC238A35";
+createNode transform -n "all_doorsWindows_grp";
+	rename -uid "D2469D12-4EF8-98E3-30C8-D09E15501AF9";
 createNode reference -n "filingCabinetSetRN";
 	rename -uid "79D2D009-4E18-06D6-5277-3890A12433F4";
 	setAttr ".ed" -type "dataReferenceEdits" 
@@ -1749,26 +1752,6 @@ createNode reference -n "giantMapRN";
 		"giantMapRN.placeHolderList[1]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
-createNode reference -n "bearRugRN";
-	rename -uid "67B1AF5F-4703-86B1-0904-72892BD7C22D";
-	setAttr ".phl[1]" 0;
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"bearRugRN"
-		"bearRugRN" 0
-		"bearRugRN" 6
-		0 "|bearRug:bearRug_grp" "|all_wallArt_grp" "-s -r "
-		2 "|all_wallArt_grp|bearRug:bearRug_grp" "translate" " -type \"double3\" -8.46762520071141722 3.20600758449931877 -8.08146598333121169"
-		
-		2 "|all_wallArt_grp|bearRug:bearRug_grp" "rotate" " -type \"double3\" 0 45 0"
-		
-		2 "|all_wallArt_grp|bearRug:bearRug_grp" "rotatePivot" " -type \"double3\" 0 0.45054918527603149 -0.17370871661754173"
-		
-		2 "|all_wallArt_grp|bearRug:bearRug_grp" "scalePivot" " -type \"double3\" 0 0.45054918527603149 -0.17370871661754173"
-		
-		5 4 "bearRugRN" "|all_wallArt_grp|bearRug:bearRug_grp.drawOverride" 
-		"bearRugRN.placeHolderList[1]" "";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
 createNode reference -n "paintingRN";
 	rename -uid "248F0260-4B65-3788-3AFF-AD94BA448C82";
 	setAttr ".phl[1]" 0;
@@ -1783,6 +1766,89 @@ createNode reference -n "paintingRN";
 		
 		5 4 "paintingRN" "|all_wallArt_grp|painting:painting_grp.drawOverride" 
 		"paintingRN.placeHolderList[1]" "";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "bearTrophyRN";
+	rename -uid "1E590474-46E5-50E6-4AF6-539A80AB3FB7";
+	setAttr ".phl[1]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"bearTrophyRN"
+		"bearTrophyRN" 0
+		"bearTrophyRN" 6
+		0 "|bearTrophy:bearTrophy_grp" "|all_wallArt_grp" "-s -r "
+		2 "|all_wallArt_grp|bearTrophy:bearTrophy_grp" "translate" " -type \"double3\" -8.5160154624598583 3.11976304575812957 -8.03079075358312977"
+		
+		2 "|all_wallArt_grp|bearTrophy:bearTrophy_grp" "rotate" " -type \"double3\" 0 45 0"
+		
+		2 "|all_wallArt_grp|bearTrophy:bearTrophy_grp" "rotatePivot" " -type \"double3\" 0 0 -0.17359308898448944"
+		
+		2 "|all_wallArt_grp|bearTrophy:bearTrophy_grp" "scalePivot" " -type \"double3\" 0 0 -0.17359308898448944"
+		
+		5 4 "bearTrophyRN" "|all_wallArt_grp|bearTrophy:bearTrophy_grp.drawOverride" 
+		"bearTrophyRN.placeHolderList[1]" "";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "bigDoorRN";
+	rename -uid "30742074-44D6-DF3F-10CC-F68CB8D2A58E";
+	setAttr ".phl[1]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"bigDoorRN"
+		"bigDoorRN" 0
+		"bigDoorRN" 4
+		0 "|bigDoor:bigDoor_grp" "|all_doorsWindows_grp" "-s -r "
+		2 "|all_doorsWindows_grp|bigDoor:bigDoor_grp" "translate" " -type \"double3\" 0 0 11.36585130380708719"
+		
+		2 "|all_doorsWindows_grp|bigDoor:bigDoor_grp" "rotate" " -type \"double3\" 0 179.99999999999994316 0"
+		
+		5 4 "bigDoorRN" "|all_doorsWindows_grp|bigDoor:bigDoor_grp.drawOverride" 
+		"bigDoorRN.placeHolderList[1]" "";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "sideDoorRN";
+	rename -uid "F61D0BF7-4C8B-C477-DA1E-1F826A8BC5B9";
+	setAttr ".phl[1]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"sideDoorRN"
+		"sideDoorRN" 0
+		"sideDoorRN" 5
+		0 "|sideDoor:sideDoor_grp" "|all_doorsWindows_grp" "-s -r "
+		2 "|all_doorsWindows_grp|sideDoor:sideDoor_grp" "translate" " -type \"double3\" -8.42272774128665169 0 8.23572492569871173"
+		
+		2 "|all_doorsWindows_grp|sideDoor:sideDoor_grp" "rotate" " -type \"double3\" 0 135 0"
+		
+		2 "|all_doorsWindows_grp|sideDoor:sideDoor_grp|sideDoor:POSITION|sideDoor:MOVEMENT|sideDoor:ADJUSTMENT|sideDoor:DO_NOT_TOUCH|sideDoor:door_ctrl" 
+		"rotate" " -type \"double3\" 0 0 0"
+		5 4 "sideDoorRN" "|all_doorsWindows_grp|sideDoor:sideDoor_grp.drawOverride" 
+		"sideDoorRN.placeHolderList[1]" "";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "windowRN";
+	rename -uid "21311F8D-43F6-07ED-8086-33AB157C74A8";
+	setAttr ".phl[1]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"windowRN"
+		"windowRN" 0
+		"windowRN" 4
+		0 "|window:window_grp" "|all_doorsWindows_grp" "-s -r "
+		2 "|all_doorsWindows_grp|window:window_grp" "translate" " -type \"double3\" 8.16046616307673389 0.85306899028269956 8.08400127643849586"
+		
+		2 "|all_doorsWindows_grp|window:window_grp" "rotate" " -type \"double3\" 0 45 0"
+		
+		5 4 "windowRN" "|all_doorsWindows_grp|window:window_grp.drawOverride" 
+		"windowRN.placeHolderList[1]" "";
+	setAttr ".ptag" -type "string" "";
+lockNode -l 1 ;
+createNode reference -n "evilTablechairSetRN";
+	rename -uid "D3845E83-4B14-C211-476F-938A9051185B";
+	setAttr ".phl[1]" 0;
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"evilTablechairSetRN"
+		"evilTablechairSetRN" 0
+		"evilTablechairSetRN" 2
+		2 "|evilTablechairSet:evilTableChairSet_grp" "translate" " -type \"double3\" 0 0 -4.64538426838528018"
+		
+		5 4 "evilTablechairSetRN" "|evilTablechairSet:evilTableChairSet_grp.drawOverride" 
+		"evilTablechairSetRN.placeHolderList[1]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode reference -n "flashlightRN";
@@ -1840,65 +1906,16 @@ createNode reference -n "fileFolderRN";
 		2 "fileFolder:file2" "colorSpace" " -type \"string\" \"sRGB\"";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
-createNode reference -n "sideDoorRN";
-	rename -uid "F61D0BF7-4C8B-C477-DA1E-1F826A8BC5B9";
-	setAttr ".phl[1]" 0;
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"sideDoorRN"
-		"sideDoorRN" 0
-		"sideDoorRN" 4
-		2 "|sideDoor:sideDoor_grp" "translate" " -type \"double3\" -8.42272774128665169 0 8.23572492569871173"
-		
-		2 "|sideDoor:sideDoor_grp" "rotate" " -type \"double3\" 0 135 0"
-		2 "|sideDoor:sideDoor_grp|sideDoor:POSITION|sideDoor:MOVEMENT|sideDoor:ADJUSTMENT|sideDoor:DO_NOT_TOUCH|sideDoor:door_ctrl" 
-		"rotate" " -type \"double3\" 0 0 0"
-		5 4 "sideDoorRN" "|sideDoor:sideDoor_grp.drawOverride" "sideDoorRN.placeHolderList[1]" 
-		"";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "windowRN";
-	rename -uid "21311F8D-43F6-07ED-8086-33AB157C74A8";
-	setAttr ".phl[1]" 0;
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"windowRN"
-		"windowRN" 0
-		"windowRN" 3
-		2 "|window:window_grp" "translate" " -type \"double3\" 8.16046616307673389 0.85306899028269956 8.08400127643849586"
-		
-		2 "|window:window_grp" "rotate" " -type \"double3\" 0 45 0"
-		5 4 "windowRN" "|window:window_grp.drawOverride" "windowRN.placeHolderList[1]" 
-		"";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "evilTablechairSetRN";
-	rename -uid "D3845E83-4B14-C211-476F-938A9051185B";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"evilTablechairSetRN"
-		"evilTablechairSetRN" 0
-		"evilTablechairSetRN" 1
-		2 "|evilTablechairSet:evilTableChairSet_grp" "translate" " -type \"double3\" 0 0 -4.64538426838528018";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
-createNode reference -n "bigDoorRN";
-	rename -uid "30742074-44D6-DF3F-10CC-F68CB8D2A58E";
-	setAttr ".ed" -type "dataReferenceEdits" 
-		"bigDoorRN"
-		"bigDoorRN" 0
-		"bigDoorRN" 2
-		2 "|bigDoor:bigDoor_grp" "translate" " -type \"double3\" 0 0 11.36585130380708719"
-		
-		2 "|bigDoor:bigDoor_grp" "rotate" " -type \"double3\" 0 179.99999999999994316 0";
-	setAttr ".ptag" -type "string" "";
-lockNode -l 1 ;
 createNode displayLayer -n "filingCabinet_layer";
 	rename -uid "FC18268A-411A-56DD-3254-7EB5A1A7E468";
 	setAttr ".c" 14;
 	setAttr ".do" 9;
 createNode displayLayerManager -n "layerManager";
-	rename -uid "50C2F6E4-4A39-3F26-B47F-709ECCFBA644";
-	setAttr ".cdl" 4;
-	setAttr -s 9 ".dli[1:8]"  1 2 3 4 5 6 7 8;
-	setAttr -s 9 ".dli";
+	rename -uid "14B77B0D-4C07-0929-2D61-0FB3ADFFFDDE";
+	setAttr ".cdl" 9;
+	setAttr -s 10 ".dli[1:9]"  1 2 3 4 5 6 7 8 
+		9;
+	setAttr -s 10 ".dli";
 createNode displayLayer -n "leftSide_bookcases_layer";
 	rename -uid "1A5D713B-4749-0B25-96DF-248D305DF849";
 	setAttr ".dt" 2;
@@ -1933,14 +1950,18 @@ createNode displayLayer -n "door_window_layer";
 	rename -uid "BFE4B52E-4B46-B859-B142-6D8A5F8236A5";
 	setAttr ".c" 14;
 	setAttr ".do" 10;
+createNode displayLayer -n "table_chair_layer";
+	rename -uid "78F40DC0-49BD-830E-3618-E8B3B106A620";
+	setAttr ".c" 14;
+	setAttr ".do" 11;
 createNode reference -n "sharedReferenceNode";
 	rename -uid "3ACB7149-4F14-3754-00B0-158704814CD2";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"sharedReferenceNode";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "789A4EB7-4829-0E4F-2FFE-36ADCBC19E38";
-	setAttr -s 52 ".lnk";
-	setAttr -s 52 ".slnk";
+	rename -uid "C4E0CC2C-4150-02C2-DF41-D9BF5E35AA84";
+	setAttr -s 51 ".lnk";
+	setAttr -s 51 ".slnk";
 select -ne :time1;
 	setAttr -k on ".cch";
 	setAttr -k on ".nds";
@@ -1969,12 +1990,11 @@ select -ne :postProcessList1;
 	setAttr -k on ".nds";
 	setAttr -s 2 ".p";
 select -ne :defaultRenderUtilityList1;
-	setAttr -s 80 ".u";
+	setAttr -s 79 ".u";
 select -ne :defaultRenderingList1;
-	setAttr -s 2 ".r";
 select -ne :lightList1;
 select -ne :defaultTextureList1;
-	setAttr -s 71 ".tx";
+	setAttr -s 70 ".tx";
 select -ne :initialShadingGroup;
 	setAttr -k on ".cch";
 	setAttr -k on ".nds";
@@ -2000,10 +2020,12 @@ select -ne :hardwareRenderGlobals;
 connectAttr "room_layer.di" "roomRN.phl[1]";
 connectAttr "lightGrid_layer.di" "allCeilingLightsRN.phl[1]";
 connectAttr "wallArt_layer.di" "giantMapRN.phl[1]";
-connectAttr "wallArt_layer.di" "bearRugRN.phl[1]";
 connectAttr "wallArt_layer.di" "paintingRN.phl[1]";
+connectAttr "wallArt_layer.di" "bearTrophyRN.phl[1]";
+connectAttr "door_window_layer.di" "bigDoorRN.phl[1]";
 connectAttr "door_window_layer.di" "sideDoorRN.phl[1]";
 connectAttr "door_window_layer.di" "windowRN.phl[1]";
+connectAttr "table_chair_layer.di" "evilTablechairSetRN.phl[1]";
 connectAttr "filingCabinet_layer.di" "all_filingCabinets_grp.do";
 connectAttr "leftSide_bookcases_layer.di" "leftSide_bookcases_grp.do";
 connectAttr "rightSide_bookcases_layer.di" "rightSide_bookcases_grp.do";
@@ -2017,6 +2039,7 @@ connectAttr "layerManager.dli[2]" "lightGrid_layer.id";
 connectAttr "layerManager.dli[7]" "giantFlyTraps_layer.id";
 connectAttr "layerManager.dli[6]" "wallArt_layer.id";
 connectAttr "layerManager.dli[5]" "door_window_layer.id";
+connectAttr "layerManager.dli[9]" "table_chair_layer.id";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "shadowLink" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";

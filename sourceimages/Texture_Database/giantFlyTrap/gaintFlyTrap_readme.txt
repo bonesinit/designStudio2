@@ -1,0 +1,1 @@
+Changing the names of these textures breaks them for whatever reason, so we're leaving them with these names instead of a name with _tex or _col at the end. Sorry about that.

@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: painting.ma
-//Last modified: Thu, Nov 05, 2020 02:02:28 PM
+//Last modified: Thu, Nov 05, 2020 04:57:09 PM
 //Codeset: 1252
 requires maya "2020";
 requires "stereoCamera" "10.0";
@@ -11,7 +11,7 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
-fileInfo "UUID" "8D5EFAD6-4ED6-43DB-1649-3F87903761A5";
+fileInfo "UUID" "B9E7B3ED-49EE-0BEC-0287-B5A0A05F04E7";
 createNode transform -n "painting_grp";
 	rename -uid "CC80252D-48E8-EE39-B4C4-CD99C7674269";
 	setAttr ".rp" -type "double3" -5.2073310996547661e-08 1.191719434245897e-07 0.063425809144973755 ;
@@ -7348,37 +7348,37 @@ createNode standardSurface -n "painting_mat";
 createNode file -n "painting_metalness_file";
 	rename -uid "A3EC8E65-4668-36AC-056A-2D973629B987";
 	setAttr ".ail" yes;
-	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//sourceimages/Texture_Database/painting_tex/painting_LP_lambert1_Metalness.tga";
+	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//sourceimages/Texture_Database/painting_tex/painting_metalness.tga";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "place2dTexture9";
 	rename -uid "1FCD725C-430B-DD5D-209F-E0A271342FA2";
 createNode file -n "painting_color_file";
 	rename -uid "FA42E393-4B81-3DBB-6DA4-9E8AFAE4618F";
-	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//sourceimages/Texture_Database/painting_tex/painting_LP_lambert1_BaseColor.tga";
+	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//sourceimages/Texture_Database/painting_tex/painting_color.tga";
 	setAttr ".cs" -type "string" "sRGB";
 createNode place2dTexture -n "place2dTexture8";
 	rename -uid "D611533C-4326-46DE-8600-3791409F45DD";
 createNode file -n "file8";
 	rename -uid "0A3768CE-41F9-C5FC-4BE4-5A885FF28AE0";
 	setAttr ".ail" yes;
-	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//sourceimages/Texture_Database/painting_tex/painting_LP_lambert1_Roughness.tga";
+	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//sourceimages/Texture_Database/painting_tex/painting_roughness.tga";
 	setAttr ".cs" -type "string" "Raw";
 createNode place2dTexture -n "place2dTexture10";
 	rename -uid "A71C251B-49F7-79CA-BB90-1EA27726BA57";
 createNode bump2d -n "bump2d1";
 	rename -uid "628614CD-416D-46B5-F672-83A808705346";
 	setAttr ".bi" 1;
-	setAttr ".vc1" -type "float3" 0 4.9999999e-05 0 ;
+	setAttr ".vc1" -type "float3" 0 2.9999999e-05 0 ;
 	setAttr ".vc2" -type "float3" 9.9999997e-06 9.9999997e-06 0 ;
 createNode file -n "painting_normal_file";
 	rename -uid "6672EA0C-4A1E-DE66-8A36-909BD2E35B19";
 	setAttr ".ail" yes;
-	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//sourceimages/Texture_Database/painting_tex/painting_LP_lambert1_Normal.tga";
+	setAttr ".ftn" -type "string" "E:/Users/Brandon/Documents/GitHub/designStudio2//sourceimages/Texture_Database/painting_tex/painting_normal.tga";
 	setAttr ".cs" -type "string" "Raw";
 createNode place2dTexture -n "place2dTexture11";
 	rename -uid "836FF7BF-4CBB-D1FC-7AB4-60AABC737C26";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "4F7CE34D-4F70-276E-69FB-36AA400E00F4";
+	rename -uid "5059FC05-4112-7013-9086-C6A750B622D3";
 	setAttr -s 3 ".lnk";
 	setAttr -s 3 ".slnk";
 select -ne :time1;

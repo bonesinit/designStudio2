@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
-//Name: newEvilLair_env.ma
-//Last modified: Fri, Nov 06, 2020 03:39:18 PM
+//Name: newEvilLair_ENV_WIP.0049.ma
+//Last modified: Fri, Nov 06, 2020 01:59:35 PM
 //Codeset: 1252
 file -rdi 1 -ns "room" -rfn "roomRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/room.ma";
 file -rdi 1 -ns "giantMap" -rfn "giantMapRN" -op "v=0;" -typ "mayaAscii" "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/Prop_Database/giantMap.ma";
@@ -75,18 +75,18 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
-fileInfo "UUID" "E33BFB10-474E-C66E-93E4-84805DC7D4A0";
+fileInfo "UUID" "C2A74D44-49E0-9C54-85F6-ABB984754A35";
 createNode transform -s -n "persp";
 	rename -uid "71DF941A-4172-4055-0B6C-0AAF6640B8FF";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.854748327848986 15.532733031094658 0.18933330236607504 ;
-	setAttr ".r" -type "double3" -36.938352750798778 -8224.9999999911433 -2.7725639344597071e-15 ;
+	setAttr ".t" -type "double3" 10.637787935227934 37.127429070191397 -14.29619564646962 ;
+	setAttr ".r" -type "double3" -59.73835274083978 -8498.6000000082731 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "369DB1E5-49FE-EC23-766C-85B92232F289";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
 	setAttr ".fcp" 1000000;
-	setAttr ".coi" 19.012282239869361;
+	setAttr ".coi" 34.068844953486995;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -260,7 +260,7 @@ createNode reference -n "roomRN";
 		"scale" " -type \"double3\" 1 0.59193474215084929 1"
 		2 "|all_room_ceilingLights_grp|room:room_grp|room:POSITION|room:MOVEMENT|room:ADJUSTMENTS|room:DO_NOT_TOUCH|room:Room_group|room:Frontall_geo" 
 		"translate" " -type \"double3\" 0 0 0"
-		"roomRN" 47
+		"roomRN" 45
 		0 "|room:room_grp" "|all_room_ceilingLights_grp" "-s -r "
 		2 "|all_room_ceilingLights_grp|room:room_grp|room:POSITION|room:MOVEMENT|room:ADJUSTMENTS|room:DO_NOT_TOUCH|room:pillar_grp|room:pillar_1_geo" 
 		"rotatePivot" " -type \"double3\" -1.6537039755348815e-06 -2.2189620966416024e-05 0"
@@ -362,12 +362,8 @@ createNode reference -n "roomRN";
 		"rotatePivot" " -type \"double3\" 3.5781121848753813e-05 0 0"
 		2 "|all_room_ceilingLights_grp|room:room_grp|room:POSITION|room:MOVEMENT|room:ADJUSTMENTS|room:DO_NOT_TOUCH|room:backWall_geo" 
 		"scalePivot" " -type \"double3\" 3.5781121848753813e-05 0 0"
-		2 "|all_room_ceilingLights_grp|room:room_grp|room:POSITION|room:MOVEMENT|room:ADJUSTMENTS|room:DO_NOT_TOUCH|room:backWall_geo|room:backWall_geoShape" 
-		"aiDispAutobump" " 0"
 		2 "|all_room_ceilingLights_grp|room:room_grp|room:POSITION|room:MOVEMENT|room:ADJUSTMENTS|room:DO_NOT_TOUCH|room:frontWall_geo" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "room:backWall_metalness_file" "colorSpace" " -type \"string\" \"sRGB\""
-		
 		5 4 "roomRN" "|all_room_ceilingLights_grp|room:room_grp.drawOverride" 
 		"roomRN.placeHolderList[1]" "";
 	setAttr ".ptag" -type "string" "";
@@ -505,7 +501,7 @@ createNode reference -n "filingCabinetSetRN1";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"filingCabinetSetRN1"
 		"filingCabinetSetRN1" 0
-		"filingCabinetSetRN1" 32
+		"filingCabinetSetRN1" 31
 		0 "|filingCabinetSet1:filingCabinetSet_grp" "|all_filingCabinets_grp" "-s -r "
 		
 		2 "|all_filingCabinets_grp|filingCabinetSet1:filingCabinetSet_grp" "translate" 
@@ -531,8 +527,7 @@ createNode reference -n "filingCabinetSetRN1";
 		"scalePivot" " -type \"double3\" -0.68922465097363617 1.39444839954376221 -0.27502429485321223"
 		
 		2 "|all_filingCabinets_grp|filingCabinetSet1:filingCabinetSet_grp|filingCabinetSet1:POSITION|filingCabinetSet1:MOVEMENT|filingCabinetSet1:ADJUSTMENTS|filingCabinetSet1:DO_NOT_TOUCH|filingCabinetSet1:drawer_ctrl|filingCabinetSet1:drawer_1_geo|filingCabinetSet1:cabinetStickers_geo" 
-		"translate" " -type \"double3\" 0.0071819913182033322 -0.010783833977473734 -0.0032597937430014416"
-		
+		"translate" " -type \"double3\" 0 0 0"
 		2 "|all_filingCabinets_grp|filingCabinetSet1:filingCabinetSet_grp|filingCabinetSet1:POSITION|filingCabinetSet1:MOVEMENT|filingCabinetSet1:ADJUSTMENTS|filingCabinetSet1:DO_NOT_TOUCH|filingCabinetSet1:drawer_ctrl|filingCabinetSet1:drawer_1_geo|filingCabinetSet1:cabinetStickers_geo" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|all_filingCabinets_grp|filingCabinetSet1:filingCabinetSet_grp|filingCabinetSet1:POSITION|filingCabinetSet1:MOVEMENT|filingCabinetSet1:ADJUSTMENTS|filingCabinetSet1:DO_NOT_TOUCH|filingCabinetSet1:drawer_ctrl|filingCabinetSet1:drawer_1_geo|filingCabinetSet1:cabinetStickers_geo" 
@@ -545,8 +540,6 @@ createNode reference -n "filingCabinetSetRN1";
 		"pt[0:23]" (" -s 24 -type \"float3\" -0.48977691000000001 1.1734195999999999 -0.16743889000000001 -0.89722614999999994 1.1734195999999999 -0.16743889000000001 -0.48977691000000001 1.61679539999999999 0.83256107999999995 -0.89722614999999994 1.61679539999999999 0.83256107999999995 -0.62663053999999996 1.1734195999999999 -0.16743889000000001 -0.62663053999999996 1.61679539999999999 0.83256107999999995 -0.48977691000000001 1.33584729999999996 0.19890411 -0.62663053999999996 1.33584729999999996 0.19890411 -0.89722614999999994 1.33584729999999996 0.19890411 -0.77011978999999997 1.1734195999999999 -0.16743889000000001 -0.77011978999999997 1.33584729999999996 0.19890411 -0.77011978999999997 1.61679539999999999 0.83256107999999995 -0.48977691000000001 1.29589749999999992 0.1088006 -0.62663053999999996 1.29589749999999992 0.1088006 -0.77011978999999997 1.29589749999999992 0.1088006 -0.89722614999999994 1.29589749999999992 0.1088006 -0.48977691000000001 1.46200639999999993 0.48344653999999998 -0.62663053999999996 1.46200639999999993 "
 		+ "0.48344653999999998 -0.77011978999999997 1.46200639999999993 0.48344653999999998 -0.89722614999999994 1.46200639999999993 0.48344653999999998 -0.48977691000000001 1.56679309999999994 0.71978450000000005 -0.62663053999999996 1.56679309999999994 0.71978450000000005 -0.77011978999999997 1.56679309999999994 0.71978450000000005 -0.89722614999999994 1.56679309999999994 0.71978450000000005"
 		)
-		2 "|all_filingCabinets_grp|filingCabinetSet1:filingCabinetSet_grp|filingCabinetSet1:POSITION|filingCabinetSet1:MOVEMENT|filingCabinetSet1:ADJUSTMENTS|filingCabinetSet1:DO_NOT_TOUCH|filingCabinetSet1:drawer_ctrl|filingCabinetSet1:drawer_1_geo|filingCabinetSet1:cabinetStickers_geo|filingCabinetSet1:cabinetStickers_geoShape" 
-		"aiDispAutobump" " 0"
 		2 "|all_filingCabinets_grp|filingCabinetSet1:filingCabinetSet_grp|filingCabinetSet1:POSITION|filingCabinetSet1:MOVEMENT|filingCabinetSet1:ADJUSTMENTS|filingCabinetSet1:DO_NOT_TOUCH|filingCabinetSet1:drawer_2_geo" 
 		"rotatePivot" " -type \"double3\" -0.0099750961460038923 1.39444839954376221 -0.27502429485321223"
 		
@@ -600,7 +593,7 @@ createNode reference -n "filingCabinetSetRN2";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"filingCabinetSetRN2"
 		"filingCabinetSetRN2" 0
-		"filingCabinetSetRN2" 32
+		"filingCabinetSetRN2" 31
 		0 "|filingCabinetSet2:filingCabinetSet_grp" "|all_filingCabinets_grp" "-s -r "
 		
 		2 "|all_filingCabinets_grp|filingCabinetSet2:filingCabinetSet_grp" "translate" 
@@ -611,8 +604,6 @@ createNode reference -n "filingCabinetSetRN2";
 		"rotatePivot" " -type \"double3\" 0 0.85150641202926636 0.19775579869747162"
 		2 "|all_filingCabinets_grp|filingCabinetSet2:filingCabinetSet_grp|filingCabinetSet2:POSITION|filingCabinetSet2:MOVEMENT|filingCabinetSet2:ADJUSTMENTS|filingCabinetSet2:DO_NOT_TOUCH|filingCabinetSet2:filingCabinetSet_geo" 
 		"scalePivot" " -type \"double3\" 0 0.85150641202926636 0.19775579869747162"
-		2 "|all_filingCabinets_grp|filingCabinetSet2:filingCabinetSet_grp|filingCabinetSet2:POSITION|filingCabinetSet2:MOVEMENT|filingCabinetSet2:ADJUSTMENTS|filingCabinetSet2:DO_NOT_TOUCH|filingCabinetSet2:filingCabinetSet_geo|filingCabinetSet2:filingCabinetSet_geoShape" 
-		"aiDispAutobump" " 0"
 		2 "|all_filingCabinets_grp|filingCabinetSet2:filingCabinetSet_grp|filingCabinetSet2:POSITION|filingCabinetSet2:MOVEMENT|filingCabinetSet2:ADJUSTMENTS|filingCabinetSet2:DO_NOT_TOUCH|filingCabinetSet2:drawer_ctrl" 
 		"visibility" " 1"
 		2 "|all_filingCabinets_grp|filingCabinetSet2:filingCabinetSet_grp|filingCabinetSet2:POSITION|filingCabinetSet2:MOVEMENT|filingCabinetSet2:ADJUSTMENTS|filingCabinetSet2:DO_NOT_TOUCH|filingCabinetSet2:drawer_ctrl" 
@@ -694,7 +685,7 @@ createNode reference -n "flashlightRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"flashlightRN"
 		"flashlightRN" 0
-		"flashlightRN" 12
+		"flashlightRN" 6
 		2 "|flashlight:flashlight_grp" "translate" " -type \"double3\" -8.32110863751144691 2.22443444372314802 -7.61291804691014384"
 		
 		2 "|flashlight:flashlight_grp" "rotatePivot" " -type \"double3\" 0 -0.52142161966461531 0"
@@ -703,18 +694,6 @@ createNode reference -n "flashlightRN";
 		
 		2 "|flashlight:flashlight_grp|flashlight:POSITION|flashlight:MOVEMENT|flashlight:ADJUSTMENTS|flashlight:DO_NOT_TOUCH|flashlight:flashlight_ctrl" 
 		"translate" " -type \"double3\" 0 -0.52550349866969803 0"
-		2 "|flashlight:flashlight_grp|flashlight:POSITION|flashlight:MOVEMENT|flashlight:ADJUSTMENTS|flashlight:DO_NOT_TOUCH|flashlight:flashlight_ctrl|flashlight:flashlight_light|flashlight:flashlight_lightShape" 
-		"intensity" " 6.83870983123779297"
-		2 "|flashlight:flashlight_grp|flashlight:POSITION|flashlight:MOVEMENT|flashlight:ADJUSTMENTS|flashlight:DO_NOT_TOUCH|flashlight:flashlight_ctrl|flashlight:flashlight_light|flashlight:flashlight_lightShape" 
-		"decayRate" " 1"
-		2 "|flashlight:flashlight_grp|flashlight:POSITION|flashlight:MOVEMENT|flashlight:ADJUSTMENTS|flashlight:DO_NOT_TOUCH|flashlight:flashlight_ctrl|flashlight:flashlight_light|flashlight:flashlight_lightShape" 
-		"aiSamples" " 4"
-		2 "|flashlight:flashlight_grp|flashlight:POSITION|flashlight:MOVEMENT|flashlight:ADJUSTMENTS|flashlight:DO_NOT_TOUCH|flashlight:flashlight_ctrl|flashlight:flashlight_light|flashlight:flashlight_lightShape" 
-		"aiSpecular" " 1"
-		2 "|flashlight:flashlight_grp|flashlight:POSITION|flashlight:MOVEMENT|flashlight:ADJUSTMENTS|flashlight:DO_NOT_TOUCH|flashlight:flashlight_ctrl|flashlight:flashlight_light|flashlight:flashlight_lightShape" 
-		"aiUseColorTemperature" " 0"
-		2 "|flashlight:flashlight_grp|flashlight:POSITION|flashlight:MOVEMENT|flashlight:ADJUSTMENTS|flashlight:DO_NOT_TOUCH|flashlight:flashlight_ctrl|flashlight:flashlight_light|flashlight:flashlight_lightShape" 
-		"aiColorTemperature" " 5287.5"
 		2 "|flashlight:flashlight_grp|flashlight:POSITION|flashlight:MOVEMENT|flashlight:ADJUSTMENTS|flashlight:DO_NOT_TOUCH|flashlight:flashlight_ctrl|flashlight:flashlight_geo" 
 		"rotatePivot" " -type \"double3\" 0 -0.49999995852119827 0.13146633259843465"
 		2 "|flashlight:flashlight_grp|flashlight:POSITION|flashlight:MOVEMENT|flashlight:ADJUSTMENTS|flashlight:DO_NOT_TOUCH|flashlight:flashlight_ctrl|flashlight:flashlight_geo" 
@@ -764,7 +743,7 @@ createNode aiOptions -s -n "defaultArnoldRenderOptions";
 	setAttr ".GI_specular_samples" 4;
 	setAttr ".GI_diffuse_depth" 5;
 	setAttr ".version" -type "string" "4.0.0";
-	setAttr ".ARV_options" -type "string" "Test Resolution=100%;Camera=envRender_lightsCams:bearTrophy_render_camShape;Color Management.Gamma=1;Color Management.Exposure=0;Background.BG=BG Color;Background.Color=0 0 0;Background.Image=;Background.Scale=1  1;Background.Offset=0  0;Background.Apply Color Management=1;Foreground.Enable FG=0;Foreground.Image=;Foreground.Scale=1  1;Foreground.Offset=0  0;Foreground.Apply Color Management=1;";
+	setAttr ".ARV_options" -type "string" "Test Resolution=100%;Color Management.Gamma=1;Color Management.Exposure=0;Background.BG=BG Color;Background.Color=0 0 0;Background.Image=;Background.Scale=1 1;Background.Offset=0 0;Background.Apply Color Management=1;Foreground.Enable FG=0;Foreground.Image=;Foreground.Scale=1 1;Foreground.Offset=0 0;Foreground.Apply Color Management=1;";
 createNode aiAOVFilter -s -n "defaultArnoldFilter";
 	rename -uid "AC5D20C5-4E94-66FC-6BFC-6FA5F2B1C71B";
 	setAttr ".ai_translator" -type "string" "gaussian";
@@ -950,12 +929,10 @@ createNode reference -n "envRender_lightsCamsRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"envRender_lightsCamsRN"
 		"envRender_lightsCamsRN" 0
-		"envRender_lightsCamsRN" 8
+		"envRender_lightsCamsRN" 7
 		0 "|envRender_lightsCams:lighting_grp" "|all_lightingCams_grp" "-s -r "
 		0 "|envRender_lightsCams:envRenderCams_grp" "|all_lightingCams_grp" "-s -r "
 		
-		2 "|all_lightingCams_grp|envRender_lightsCams:lighting_grp|envRender_lightsCams:objectLights_grp|envRender_lightsCams:filingCabinet_light|envRender_lightsCams:filingCabinet_lightShape" 
-		"aiSpecular" " 1"
 		2 "|all_lightingCams_grp|envRender_lightsCams:envRenderCams_grp|envRender_lightsCams:doorWindow_render_cam|envRender_lightsCams:doorWindow_render_camShape" 
 		"overscan" " 1.3"
 		2 "|all_lightingCams_grp|envRender_lightsCams:envRenderCams_grp|envRender_lightsCams:doorWindow_render_cam|envRender_lightsCams:doorWindow_render_camShape" 
@@ -1462,4 +1439,4 @@ connectAttr "transformGeometry7.og" "transformGeometry13.ig";
 connectAttr "transformGeometry8.og" "transformGeometry14.ig";
 connectAttr "transformGeometry9.og" "transformGeometry15.ig";
 connectAttr "defaultRenderLayer.msg" ":defaultRenderingList1.r" -na;
-// End of newEvilLair_env.ma
+// End of newEvilLair_ENV_WIP.0049.ma

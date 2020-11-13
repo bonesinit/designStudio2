@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
-//Name: shot4.ma
-//Last modified: Fri, Nov 13, 2020 01:29:39 PM
+//Name: shot4_WIP.0063.ma
+//Last modified: Fri, Nov 13, 2020 10:05:55 AM
 //Codeset: 1252
 file -rdi 1 -ns "newEvilLair_env" -rfn "newEvilLair_envRN" -op "v=0;" -typ "mayaAscii"
 		 "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/newEvilLair_env.ma";
@@ -67,18 +67,18 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
-fileInfo "UUID" "F8EAE3C7-462D-3658-FAD1-F2BB5FFD8073";
+fileInfo "UUID" "60981689-41CC-58F8-3D7D-3CAD52F907F1";
 createNode transform -s -n "persp";
 	rename -uid "589C33C5-4443-CDAD-A4C7-87A98D7BAD94";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 2.602214464694272 4.8014829327273967 0.70209187709819521 ;
-	setAttr ".r" -type "double3" -14.738352730326545 -297.79999999998984 0 ;
+	setAttr ".t" -type "double3" -4.031201359416869 4.5825863721647924 -4.6399540437165108 ;
+	setAttr ".r" -type "double3" -45.338352730436036 106.99999999995225 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3B2BE92D-4556-A4BB-3ABE-33B0F4C61043";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
 	setAttr ".fcp" 1000000;
-	setAttr ".coi" 10.792863709635435;
+	setAttr ".coi" 6.0406675206658154;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -139,14 +139,8 @@ createNode camera -s -n "sideShape" -p "side";
 	setAttr ".ai_translator" -type "string" "orthographic";
 createNode transform -n "shot4_cam";
 	rename -uid "8972C822-4149-8751-4FE4-8D8304F92011";
-	setAttr ".t" -type "double3" -0.76985591722801094 2.1306604921686336 -3.4831900500333433 ;
-	setAttr -l on ".tx";
-	setAttr -l on ".ty";
-	setAttr -l on ".tz";
+	setAttr ".t" -type "double3" -2.0299670112837416 1.9183334287484761 -3.813855261383619 ;
 	setAttr ".r" -type "double3" -4.2 75.199999999999548 3.1127495590109712e-15 ;
-	setAttr -l on ".rx";
-	setAttr -l on ".ry";
-	setAttr -l on ".rz";
 createNode camera -n "shot4_camShape" -p "shot4_cam";
 	rename -uid "CB003EBD-4816-2242-A69E-8A81D26545A2";
 	setAttr -k off ".v";
@@ -154,40 +148,30 @@ createNode camera -n "shot4_camShape" -p "shot4_cam";
 	setAttr ".cap" -type "double2" 1.41732 0.94488 ;
 	setAttr ".ff" 0;
 	setAttr ".ovr" 1.3;
-	setAttr -l on ".coi" 3.4490200661688615;
-	setAttr -l on ".ow" 30;
+	setAttr ".coi" 2.13419633495137;
+	setAttr ".ow" 30;
 	setAttr ".imn" -type "string" "camera1";
 	setAttr ".den" -type "string" "camera1_depth";
 	setAttr ".man" -type "string" "camera1_mask";
 	setAttr ".dfg" yes;
 	setAttr ".ai_translator" -type "string" "perspective";
-createNode fosterParent -n "goodGuy_rigRNfosterParent1";
-	rename -uid "B4CDEB3D-432E-072A-CBEA-EE943F53EE21";
-createNode transform -n "flashlight_loc" -p "goodGuy_rigRNfosterParent1";
-	rename -uid "D3C12009-45BE-9AC9-DC2F-30A94BC59A97";
-	setAttr ".t" -type "double3" 0.10237374431465961 -0.017376406732304537 0.00071514299138701479 ;
-	setAttr ".r" -type "double3" -185.40252642015557 -2.9931500226766468 88.139023480658707 ;
-	setAttr ".s" -type "double3" 0.21351490836544265 0.21351490836544268 0.21351490836544257 ;
-createNode locator -n "flashlight_locShape" -p "flashlight_loc";
-	rename -uid "26B2FAE9-4140-3595-590B-BC9209A2D35C";
-	setAttr -k off ".v";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "2213DFEB-4822-F597-3833-498597935F2C";
+	rename -uid "5EA8AC2B-4183-971E-56B7-2CABB07BE078";
 	setAttr -s 122 ".lnk";
 	setAttr -s 122 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "60014622-4B96-62A0-25CD-17965F299C34";
+	rename -uid "605DB44A-475A-EB27-D865-22B00D7171FA";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 1 0 ;
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "24D68820-4911-54DD-6FB2-11B6493E9570";
+	rename -uid "46922AFE-4062-896E-3A2E-07AD8AB27106";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "85BEAF2B-4678-76A3-CD92-49A056D93D49";
+	rename -uid "29A75EEB-425B-0334-D463-79A1B1B15F9B";
 	setAttr -s 2 ".dli[1]"  1;
 	setAttr -s 2 ".dli";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "7CEF1A4F-47B1-FDF9-4BFA-8A8A0C928C9A";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "11534F05-4A19-80F8-A929-238F6AE32C99";
+	rename -uid "4EEB44AE-4F84-E61B-B023-E6B794CDE60B";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "5F76C354-49BD-1BCD-BC43-93B534471F07";
 	setAttr ".g" yes;
@@ -198,8 +182,8 @@ createNode reference -n "newEvilLair_envRN";
 		"newEvilLair_env:bigDoorRN" 0
 		"newEvilLair_envRN" 0
 		"newEvilLair_env:sideDoorRN" 0
-		"newEvilLair_env:envRender_lightsCamsRN" 0
 		"newEvilLair_env:bearTrophyRN" 0
+		"newEvilLair_env:envRender_lightsCamsRN" 0
 		"newEvilLair_env:giantMapRN" 0
 		"newEvilLair_env:giantFlyTrapRN" 0
 		"newEvilLair_env:allCeilingLightsRN" 0
@@ -240,28 +224,11 @@ createNode reference -n "newEvilLair_envRN";
 		2 "|newEvilLair_env:all_wallArt_grp|newEvilLair_env:painting:painting_grp|newEvilLair_env:painting:POSITION|newEvilLair_env:painting:MOVEMENT|newEvilLair_env:painting:ADJUSTMENTS|newEvilLair_env:painting:DO_NOT_TOUCH|newEvilLair_env:painting:painting_geo|newEvilLair_env:painting:painting_geoShape" 
 		"instObjGroups.objectGroups[1].objectGrpCompList" " -type \"componentList\" 1 \"f[384:1415]\""
 		
-		"newEvilLair_env:flashlightRN" 8
-		0 "|newEvilLair_env:flashlight:flashlight_grp" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R|goodGuy_rig:FKXElbow_R|goodGuy_rig:FKOffsetWrist_R|goodGuy_rig:FKExtraWrist_R|goodGuy_rig:FKWrist_R|flashlight_loc" 
-		"-s -r "
-		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R|goodGuy_rig:FKXElbow_R|goodGuy_rig:FKOffsetWrist_R|goodGuy_rig:FKExtraWrist_R|goodGuy_rig:FKWrist_R|flashlight_loc|newEvilLair_env:flashlight:flashlight_grp" 
-		"translate" " -type \"double3\" -0.66518340328235581 2.39668311030844894 -28.45814889130991077"
+		"newEvilLair_env:flashlightRN" 2
+		2 "|newEvilLair_env:flashlight:flashlight_grp|newEvilLair_env:flashlight:POSITION|newEvilLair_env:flashlight:MOVEMENT|newEvilLair_env:flashlight:ADJUSTMENTS|newEvilLair_env:flashlight:DO_NOT_TOUCH|newEvilLair_env:flashlight:flashlight_ctrl" 
+		"translate" " -type \"double3\" 0.14091306506334433 -0.55590012737872119 9.53174036692450599"
 		
-		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R|goodGuy_rig:FKXElbow_R|goodGuy_rig:FKOffsetWrist_R|goodGuy_rig:FKExtraWrist_R|goodGuy_rig:FKWrist_R|flashlight_loc|newEvilLair_env:flashlight:flashlight_grp" 
-		"scale" " -type \"double3\" 4.68351370710116566 4.68351370710116566 4.68351370710116566"
-		
-		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R|goodGuy_rig:FKXElbow_R|goodGuy_rig:FKOffsetWrist_R|goodGuy_rig:FKExtraWrist_R|goodGuy_rig:FKWrist_R|flashlight_loc|newEvilLair_env:flashlight:flashlight_grp" 
-		"rotatePivot" " -type \"double3\" 0.61389920359586014 -2.44208530287811687 28.60392173659842285"
-		
-		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R|goodGuy_rig:FKXElbow_R|goodGuy_rig:FKOffsetWrist_R|goodGuy_rig:FKExtraWrist_R|goodGuy_rig:FKWrist_R|flashlight_loc|newEvilLair_env:flashlight:flashlight_grp" 
-		"scalePivot" " -type \"double3\" 0.13107663220138832 -0.52142161966461531 6.10736372848210429"
-		
-		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R|goodGuy_rig:FKXElbow_R|goodGuy_rig:FKOffsetWrist_R|goodGuy_rig:FKExtraWrist_R|goodGuy_rig:FKWrist_R|flashlight_loc|newEvilLair_env:flashlight:flashlight_grp" 
-		"scalePivotTranslate" " -type \"double3\" 0.48282257139447182 -1.92066368321350156 22.49655800811631678"
-		
-		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R|goodGuy_rig:FKXElbow_R|goodGuy_rig:FKOffsetWrist_R|goodGuy_rig:FKExtraWrist_R|goodGuy_rig:FKWrist_R|flashlight_loc|newEvilLair_env:flashlight:flashlight_grp|newEvilLair_env:flashlight:POSITION|newEvilLair_env:flashlight:MOVEMENT|newEvilLair_env:flashlight:ADJUSTMENTS|newEvilLair_env:flashlight:DO_NOT_TOUCH|newEvilLair_env:flashlight:flashlight_ctrl" 
-		"translate" " -type \"double3\" 0.14091306506334433 -0.55590012737872119 6.07593965875031738"
-		
-		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R|goodGuy_rig:FKXElbow_R|goodGuy_rig:FKOffsetWrist_R|goodGuy_rig:FKExtraWrist_R|goodGuy_rig:FKWrist_R|flashlight_loc|newEvilLair_env:flashlight:flashlight_grp|newEvilLair_env:flashlight:POSITION|newEvilLair_env:flashlight:MOVEMENT|newEvilLair_env:flashlight:ADJUSTMENTS|newEvilLair_env:flashlight:DO_NOT_TOUCH|newEvilLair_env:flashlight:flashlight_ctrl" 
+		2 "|newEvilLair_env:flashlight:flashlight_grp|newEvilLair_env:flashlight:POSITION|newEvilLair_env:flashlight:MOVEMENT|newEvilLair_env:flashlight:ADJUSTMENTS|newEvilLair_env:flashlight:DO_NOT_TOUCH|newEvilLair_env:flashlight:flashlight_ctrl" 
 		"translateX" " -av";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
@@ -336,7 +303,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
 		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
 		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
-		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"shot4_cam\" \n            -useInteractiveMode 0\n            -displayLights \"all\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
+		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
 		+ "            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n"
 		+ "            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n"
 		+ "            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1300\n            -height 532\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n"
@@ -346,7 +313,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -showContainerContents 1\n            -ignoreDagHierarchy 0\n            -expandConnections 0\n            -showUpstreamCurves 1\n            -showUnitlessCurves 1\n            -showCompounds 1\n            -showLeafs 1\n            -showNumericAttrsOnly 0\n            -highlightActive 1\n            -autoSelectNewObjects 0\n            -doNotSelectNewObjects 0\n            -dropIsParent 1\n            -transmitFilters 0\n            -setFilter \"defaultSetFilter\" \n            -showSetMembers 1\n            -allowMultiSelection 1\n            -alwaysToggleSelect 0\n            -directSelect 0\n            -displayMode \"DAG\" \n            -expandObjects 0\n            -setsIgnoreFilters 1\n            -containersIgnoreFilters 0\n            -editAttrName 0\n            -showAttrValues 0\n            -highlightSecondary 0\n            -showUVAttrsOnly 0\n            -showTextureNodesOnly 0\n            -attrAlphaOrder \"default\" \n            -animLayerFilterOptions \"allAffecting\" \n            -sortOrder \"none\" \n            -longNames 0\n"
 		+ "            -niceNames 1\n            -showNamespace 1\n            -showPinIcons 0\n            -mapMotionTrails 0\n            -ignoreHiddenAttribute 0\n            -ignoreOutlinerColor 0\n            -renderFilterVisible 0\n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"graphEditor\" (localizedPanelLabel(\"Graph Editor\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Graph Editor\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n"
 		+ "                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 1\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 1\n                -showCompounds 0\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 1\n                -doNotSelectNewObjects 0\n                -dropIsParent 1\n                -transmitFilters 1\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -isSet 0\n                -isSetMember 0\n                -displayMode \"DAG\" \n"
-		+ "                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -selectionOrder \"display\" \n                -expandAttribute 1\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"none\" \n                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n"
+		+ "                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 1\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                -selectionOrder \"display\" \n                -expandAttribute 1\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"GraphEd\");\n            animCurveEditor -e \n                -displayValues 0\n                -snapTime \"integer\" \n                -snapValue \"none\" \n                -showPlayRangeShades \"on\" \n"
 		+ "                -lockPlayRangeShades \"off\" \n                -smoothness \"fine\" \n                -resultSamples 1\n                -resultScreenSamples 0\n                -resultUpdate \"delayed\" \n                -showUpstreamCurves 1\n                -stackedCurvesMin -1\n                -stackedCurvesMax 1\n                -stackedCurvesSpace 0.2\n                -preSelectionHighlight 0\n                -constrainDrag 0\n                -valueLinesToggle 1\n                -outliner \"graphEditor1OutlineEd\" \n                -highlightAffectedCurves 0\n                $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextScriptedPanel \"dopeSheetPanel\" (localizedPanelLabel(\"Dope Sheet\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tscriptedPanel -edit -l (localizedPanelLabel(\"Dope Sheet\")) -mbv $menusOkayInPanels  $panelName;\n\n\t\t\t$editorName = ($panelName+\"OutlineEd\");\n            outlinerEditor -e \n                -showShapes 1\n"
 		+ "                -showAssignedMaterials 0\n                -showTimeEditor 1\n                -showReferenceNodes 0\n                -showReferenceMembers 0\n                -showAttributes 1\n                -showConnected 1\n                -showAnimCurvesOnly 1\n                -showMuteInfo 0\n                -organizeByLayer 1\n                -organizeByClip 1\n                -showAnimLayerWeight 1\n                -autoExpandLayers 1\n                -autoExpand 0\n                -showDagOnly 0\n                -showAssets 1\n                -showContainedOnly 0\n                -showPublishedAsConnected 0\n                -showParentContainers 0\n                -showContainerContents 0\n                -ignoreDagHierarchy 0\n                -expandConnections 1\n                -showUpstreamCurves 1\n                -showUnitlessCurves 0\n                -showCompounds 1\n                -showLeafs 1\n                -showNumericAttrsOnly 1\n                -highlightActive 0\n                -autoSelectNewObjects 0\n                -doNotSelectNewObjects 1\n"
 		+ "                -dropIsParent 1\n                -transmitFilters 0\n                -setFilter \"0\" \n                -showSetMembers 0\n                -allowMultiSelection 1\n                -alwaysToggleSelect 0\n                -directSelect 0\n                -displayMode \"DAG\" \n                -expandObjects 0\n                -setsIgnoreFilters 1\n                -containersIgnoreFilters 0\n                -editAttrName 0\n                -showAttrValues 0\n                -highlightSecondary 0\n                -showUVAttrsOnly 0\n                -showTextureNodesOnly 0\n                -attrAlphaOrder \"default\" \n                -animLayerFilterOptions \"allAffecting\" \n                -sortOrder \"none\" \n                -longNames 0\n                -niceNames 1\n                -showNamespace 1\n                -showPinIcons 0\n                -mapMotionTrails 1\n                -ignoreHiddenAttribute 0\n                -ignoreOutlinerColor 0\n                -renderFilterVisible 0\n                $editorName;\n\n\t\t\t$editorName = ($panelName+\"DopeSheetEd\");\n"
@@ -366,13 +333,13 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n"
 		+ "                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n"
 		+ "        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"shot4_cam\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"all\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1300\\n    -height 532\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"shot4_cam\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"all\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1300\\n    -height 532\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1300\\n    -height 532\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1300\\n    -height 532\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
 	rename -uid "4150C718-4BE5-4E97-8594-92BF0112CE03";
-	setAttr ".b" -type "string" "playbackOptions -min 0 -max 200 -ast -25 -aet 200 ";
+	setAttr ".b" -type "string" "playbackOptions -min 0 -max 201 -ast -25 -aet 201 ";
 	setAttr ".st" 6;
 createNode blinn -n "other_blinn";
 	rename -uid "002E6CAD-439A-185C-3CE5-479C8241590A";
@@ -814,7 +781,7 @@ createNode bump2d -n "bump2d4";
 	setAttr ".vc2" -type "float3" 9.9999997e-06 9.9999997e-06 0 ;
 createNode reference -n "goodGuy_rigRN";
 	rename -uid "75F0D6F2-448C-2335-2A8F-9E8B4DE9071D";
-	setAttr -s 52 ".phl";
+	setAttr -s 57 ".phl";
 	setAttr ".phl[1]" 0;
 	setAttr ".phl[2]" 0;
 	setAttr ".phl[3]" 0;
@@ -867,14 +834,17 @@ createNode reference -n "goodGuy_rigRN";
 	setAttr ".phl[50]" 0;
 	setAttr ".phl[51]" 0;
 	setAttr ".phl[52]" 0;
+	setAttr ".phl[53]" 0;
+	setAttr ".phl[54]" 0;
+	setAttr ".phl[55]" 0;
+	setAttr ".phl[56]" 0;
+	setAttr ".phl[57]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"goodGuy_rigRN"
 		"goodGuy_rigRN" 0
-		"goodGuy_rigRN" 763
-		0 "|goodGuy_rigRNfosterParent1|flashlight_loc" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R|goodGuy_rig:FKXElbow_R|goodGuy_rig:FKOffsetWrist_R|goodGuy_rig:FKExtraWrist_R|goodGuy_rig:FKWrist_R" 
-		"-s -r "
+		"goodGuy_rigRN" 766
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main" "visibility" " 1"
-		2 "|goodGuy_rig:Group|goodGuy_rig:Main" "translate" " -type \"double3\" -8.3251114861929576 0 -6.20206859010623646"
+		2 "|goodGuy_rig:Group|goodGuy_rig:Main" "translate" " -type \"double3\" -8.3251114861929576 0 -2.25860232724662158"
 		
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main" "translateX" " -av"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main" "translateZ" " -av"
@@ -992,8 +962,7 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToWrist_R|goodGuy_rig:FKOffsetThumbFinger1_R|goodGuy_rig:FKExtraThumbFinger1_R|goodGuy_rig:FKThumbFinger1_R" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToWrist_R|goodGuy_rig:FKOffsetThumbFinger1_R|goodGuy_rig:FKExtraThumbFinger1_R|goodGuy_rig:FKThumbFinger1_R" 
-		"rotate" " -type \"double3\" -62.31295042266919637 -9.11361544892164233 37.54281270954626137"
-		
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToWrist_R|goodGuy_rig:FKOffsetThumbFinger1_R|goodGuy_rig:FKExtraThumbFinger1_R|goodGuy_rig:FKThumbFinger1_R" 
 		"scale" " -type \"double3\" 1 1 1"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToWrist_R|goodGuy_rig:FKOffsetThumbFinger1_R|goodGuy_rig:FKExtraThumbFinger1_R|goodGuy_rig:FKThumbFinger1_R|goodGuy_rig:FKXThumbFinger1_R|goodGuy_rig:FKOffsetThumbFinger2_R|goodGuy_rig:SDKFKThumbFinger2_R|goodGuy_rig:FKExtraThumbFinger2_R|goodGuy_rig:FKThumbFinger2_R" 
@@ -1009,7 +978,7 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToWrist_R|goodGuy_rig:FKOffsetThumbFinger1_R|goodGuy_rig:FKExtraThumbFinger1_R|goodGuy_rig:FKThumbFinger1_R|goodGuy_rig:FKXThumbFinger1_R|goodGuy_rig:FKOffsetThumbFinger2_R|goodGuy_rig:SDKFKThumbFinger2_R|goodGuy_rig:FKExtraThumbFinger2_R|goodGuy_rig:FKThumbFinger2_R|goodGuy_rig:FKXThumbFinger2_R|goodGuy_rig:FKOffsetThumbFinger3_R|goodGuy_rig:SDKFKThumbFinger3_R|goodGuy_rig:FKExtraThumbFinger3_R|goodGuy_rig:FKThumbFinger3_R" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToWrist_R|goodGuy_rig:FKOffsetThumbFinger1_R|goodGuy_rig:FKExtraThumbFinger1_R|goodGuy_rig:FKThumbFinger1_R|goodGuy_rig:FKXThumbFinger1_R|goodGuy_rig:FKOffsetThumbFinger2_R|goodGuy_rig:SDKFKThumbFinger2_R|goodGuy_rig:FKExtraThumbFinger2_R|goodGuy_rig:FKThumbFinger2_R|goodGuy_rig:FKXThumbFinger2_R|goodGuy_rig:FKOffsetThumbFinger3_R|goodGuy_rig:SDKFKThumbFinger3_R|goodGuy_rig:FKExtraThumbFinger3_R|goodGuy_rig:FKThumbFinger3_R" 
-		"rotate" " -type \"double3\" 0 30.00065626484949988 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToWrist_R|goodGuy_rig:FKOffsetThumbFinger1_R|goodGuy_rig:FKExtraThumbFinger1_R|goodGuy_rig:FKThumbFinger1_R|goodGuy_rig:FKXThumbFinger1_R|goodGuy_rig:FKOffsetThumbFinger2_R|goodGuy_rig:SDKFKThumbFinger2_R|goodGuy_rig:FKExtraThumbFinger2_R|goodGuy_rig:FKThumbFinger2_R|goodGuy_rig:FKXThumbFinger2_R|goodGuy_rig:FKOffsetThumbFinger3_R|goodGuy_rig:SDKFKThumbFinger3_R|goodGuy_rig:FKExtraThumbFinger3_R|goodGuy_rig:FKThumbFinger3_R" 
 		"scale" " -type \"double3\" 1 1 1"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToWrist_R|goodGuy_rig:FKOffsetIndexFinger1_R|goodGuy_rig:SDKFKIndexFinger1_R|goodGuy_rig:FKExtraIndexFinger1_R|goodGuy_rig:FKIndexFinger1_R" 
@@ -1097,7 +1066,7 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R" 
-		"rotate" " -type \"double3\" 25.56011257156157868 32.00042316456742952 25.51538358848499399"
+		"rotate" " -type \"double3\" 24.82819112411467088 42.40287410521617062 58.66240326393420901"
 		
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R" 
 		"rotateX" " -av"
@@ -1112,7 +1081,7 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R" 
-		"rotate" " -type \"double3\" 0 0 106.6962562935751464"
+		"rotate" " -type \"double3\" 0 0 95.63999999999998636"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R" 
 		"rotateY" " -av"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R" 
@@ -1124,7 +1093,7 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R|goodGuy_rig:FKXElbow_R|goodGuy_rig:FKOffsetWrist_R|goodGuy_rig:FKExtraWrist_R|goodGuy_rig:FKWrist_R" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R|goodGuy_rig:FKXElbow_R|goodGuy_rig:FKOffsetWrist_R|goodGuy_rig:FKExtraWrist_R|goodGuy_rig:FKWrist_R" 
-		"rotate" " -type \"double3\" 39.01810552716466418 1.63865386537234325 0"
+		"rotate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R|goodGuy_rig:FKXElbow_R|goodGuy_rig:FKOffsetWrist_R|goodGuy_rig:FKExtraWrist_R|goodGuy_rig:FKWrist_R" 
 		"rotateX" " -av"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R|goodGuy_rig:FKXElbow_R|goodGuy_rig:FKOffsetWrist_R|goodGuy_rig:FKExtraWrist_R|goodGuy_rig:FKWrist_R" 
@@ -1156,7 +1125,7 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToChest_M|goodGuy_rig:FKOffsetNeck_M|goodGuy_rig:FKGlobalStaticNeck_M|goodGuy_rig:FKGlobalNeck_M|goodGuy_rig:FKExtraNeck_M|goodGuy_rig:FKXNeck_M|goodGuy_rig:FKOffsetNeckPart1_M|goodGuy_rig:FKExtraNeckPart1_M|goodGuy_rig:FKNeckPart1_M|goodGuy_rig:FKXNeckPart1_M|goodGuy_rig:FKOffsetNeck1_M|goodGuy_rig:FKGlobalStaticNeck1_M|goodGuy_rig:FKGlobalNeck1_M|goodGuy_rig:FKExtraNeck1_M|goodGuy_rig:FKNeck1_M" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToChest_M|goodGuy_rig:FKOffsetNeck_M|goodGuy_rig:FKGlobalStaticNeck_M|goodGuy_rig:FKGlobalNeck_M|goodGuy_rig:FKExtraNeck_M|goodGuy_rig:FKXNeck_M|goodGuy_rig:FKOffsetNeckPart1_M|goodGuy_rig:FKExtraNeckPart1_M|goodGuy_rig:FKNeckPart1_M|goodGuy_rig:FKXNeckPart1_M|goodGuy_rig:FKOffsetNeck1_M|goodGuy_rig:FKGlobalStaticNeck1_M|goodGuy_rig:FKGlobalNeck1_M|goodGuy_rig:FKExtraNeck1_M|goodGuy_rig:FKNeck1_M" 
-		"rotate" " -type \"double3\" -9.43290228120367225 3.33482185535736431 11.70669868742571396"
+		"rotate" " -type \"double3\" -9.43290228120367225 3.33482185535736386 -18.41226472374012602"
 		
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToChest_M|goodGuy_rig:FKOffsetNeck_M|goodGuy_rig:FKGlobalStaticNeck_M|goodGuy_rig:FKGlobalNeck_M|goodGuy_rig:FKExtraNeck_M|goodGuy_rig:FKXNeck_M|goodGuy_rig:FKOffsetNeckPart1_M|goodGuy_rig:FKExtraNeckPart1_M|goodGuy_rig:FKNeckPart1_M|goodGuy_rig:FKXNeckPart1_M|goodGuy_rig:FKOffsetNeck1_M|goodGuy_rig:FKGlobalStaticNeck1_M|goodGuy_rig:FKGlobalNeck1_M|goodGuy_rig:FKExtraNeck1_M|goodGuy_rig:FKNeck1_M" 
 		"rotateX" " -av"
@@ -1223,7 +1192,8 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKOffsetRoot_M|goodGuy_rig:FKExtraRoot_M|goodGuy_rig:FKRoot_M|goodGuy_rig:HipSwingerOffset_M|goodGuy_rig:HipSwinger_M" 
 		"visibility" " 1"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKOffsetRoot_M|goodGuy_rig:FKExtraRoot_M|goodGuy_rig:FKRoot_M|goodGuy_rig:HipSwingerOffset_M|goodGuy_rig:HipSwinger_M" 
-		"rotate" " -type \"double3\" 0 0 2.76640859782415838"
+		"rotate" " -type \"double3\" -8.5199999999999978 6.81600000000000072 2.76640859782415838"
+		
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKOffsetRoot_M|goodGuy_rig:FKExtraRoot_M|goodGuy_rig:FKRoot_M|goodGuy_rig:HipSwingerOffset_M|goodGuy_rig:HipSwinger_M" 
 		"rotateX" " -av"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKOffsetRoot_M|goodGuy_rig:FKExtraRoot_M|goodGuy_rig:FKRoot_M|goodGuy_rig:HipSwingerOffset_M|goodGuy_rig:HipSwinger_M" 
@@ -1235,7 +1205,7 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKOffsetRoot_M|goodGuy_rig:FKExtraRoot_M|goodGuy_rig:FKXRoot_M|goodGuy_rig:FKOffsetRootPart1_M|goodGuy_rig:FKExtraRootPart1_M|goodGuy_rig:FKRootPart1_M|goodGuy_rig:FKXRootPart1_M|goodGuy_rig:FKOffsetRootPart2_M|goodGuy_rig:FKExtraRootPart2_M|goodGuy_rig:FKRootPart2_M|goodGuy_rig:FKXRootPart2_M|goodGuy_rig:HipSwingerStabilizer|goodGuy_rig:FKOffsetSpine1_M|goodGuy_rig:FKExtraSpine1_M|goodGuy_rig:FKSpine1_M" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKOffsetRoot_M|goodGuy_rig:FKExtraRoot_M|goodGuy_rig:FKXRoot_M|goodGuy_rig:FKOffsetRootPart1_M|goodGuy_rig:FKExtraRootPart1_M|goodGuy_rig:FKRootPart1_M|goodGuy_rig:FKXRootPart1_M|goodGuy_rig:FKOffsetRootPart2_M|goodGuy_rig:FKExtraRootPart2_M|goodGuy_rig:FKRootPart2_M|goodGuy_rig:FKXRootPart2_M|goodGuy_rig:HipSwingerStabilizer|goodGuy_rig:FKOffsetSpine1_M|goodGuy_rig:FKExtraSpine1_M|goodGuy_rig:FKSpine1_M" 
-		"rotate" " -type \"double3\" 0 0 0"
+		"rotate" " -type \"double3\" 0 0 7.39999999999999414"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKOffsetRoot_M|goodGuy_rig:FKExtraRoot_M|goodGuy_rig:FKXRoot_M|goodGuy_rig:FKOffsetRootPart1_M|goodGuy_rig:FKExtraRootPart1_M|goodGuy_rig:FKRootPart1_M|goodGuy_rig:FKXRootPart1_M|goodGuy_rig:FKOffsetRootPart2_M|goodGuy_rig:FKExtraRootPart2_M|goodGuy_rig:FKRootPart2_M|goodGuy_rig:FKXRootPart2_M|goodGuy_rig:HipSwingerStabilizer|goodGuy_rig:FKOffsetSpine1_M|goodGuy_rig:FKExtraSpine1_M|goodGuy_rig:FKSpine1_M" 
 		"rotateX" " -av"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKOffsetRoot_M|goodGuy_rig:FKExtraRoot_M|goodGuy_rig:FKXRoot_M|goodGuy_rig:FKOffsetRootPart1_M|goodGuy_rig:FKExtraRootPart1_M|goodGuy_rig:FKRootPart1_M|goodGuy_rig:FKXRootPart1_M|goodGuy_rig:FKOffsetRootPart2_M|goodGuy_rig:FKExtraRootPart2_M|goodGuy_rig:FKRootPart2_M|goodGuy_rig:FKXRootPart2_M|goodGuy_rig:HipSwingerStabilizer|goodGuy_rig:FKOffsetSpine1_M|goodGuy_rig:FKExtraSpine1_M|goodGuy_rig:FKSpine1_M" 
@@ -1465,7 +1435,7 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_L|goodGuy_rig:FKOffsetShoulder_L|goodGuy_rig:FKGlobalStaticShoulder_L|goodGuy_rig:FKGlobalShoulder_L|goodGuy_rig:FKExtraShoulder_L|goodGuy_rig:FKShoulder_L" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_L|goodGuy_rig:FKOffsetShoulder_L|goodGuy_rig:FKGlobalStaticShoulder_L|goodGuy_rig:FKGlobalShoulder_L|goodGuy_rig:FKExtraShoulder_L|goodGuy_rig:FKShoulder_L" 
-		"rotate" " -type \"double3\" 0 33.14041983929546831 11.42403246018747787"
+		"rotate" " -type \"double3\" -12.184 7.0400000000000027 11.42403246018747787"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_L|goodGuy_rig:FKOffsetShoulder_L|goodGuy_rig:FKGlobalStaticShoulder_L|goodGuy_rig:FKGlobalShoulder_L|goodGuy_rig:FKExtraShoulder_L|goodGuy_rig:FKShoulder_L" 
 		"rotateX" " -av"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_L|goodGuy_rig:FKOffsetShoulder_L|goodGuy_rig:FKGlobalStaticShoulder_L|goodGuy_rig:FKGlobalShoulder_L|goodGuy_rig:FKExtraShoulder_L|goodGuy_rig:FKShoulder_L" 
@@ -1503,7 +1473,7 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_R|goodGuy_rig:IKExtraLeg_R|goodGuy_rig:IKLeg_R" 
 		"visibility" " 1"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_R|goodGuy_rig:IKExtraLeg_R|goodGuy_rig:IKLeg_R" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" 0 0.0026849734039427762 -0.083296085660168828"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_R|goodGuy_rig:IKExtraLeg_R|goodGuy_rig:IKLeg_R" 
 		"translateX" " -av"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_R|goodGuy_rig:IKExtraLeg_R|goodGuy_rig:IKLeg_R" 
@@ -1559,7 +1529,8 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L" 
 		"visibility" " 1"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L" 
-		"translate" " -type \"double3\" -0.022130849044537181 -0.004919988901497141 0"
+		"translate" " -type \"double3\" -0.022130849044533635 0.070428001128631124 0.25887701301021138"
+		
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L" 
 		"translateX" " -av"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L" 
@@ -1755,7 +1726,7 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:RootSystem|goodGuy_rig:RootCenterBtwLegsBlended_M|goodGuy_rig:RootOffsetX_M|goodGuy_rig:RootExtraX_M|goodGuy_rig:RootX_M" 
 		"visibility" " 1"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:RootSystem|goodGuy_rig:RootCenterBtwLegsBlended_M|goodGuy_rig:RootOffsetX_M|goodGuy_rig:RootExtraX_M|goodGuy_rig:RootX_M" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" 0 -0.049090457579842518 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:RootSystem|goodGuy_rig:RootCenterBtwLegsBlended_M|goodGuy_rig:RootOffsetX_M|goodGuy_rig:RootExtraX_M|goodGuy_rig:RootX_M" 
 		"translateX" " -av"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:RootSystem|goodGuy_rig:RootCenterBtwLegsBlended_M|goodGuy_rig:RootOffsetX_M|goodGuy_rig:RootExtraX_M|goodGuy_rig:RootX_M" 
@@ -1767,15 +1738,13 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_R" 
 		"spread" " -av -k 1 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_R" 
-		"cup" " -av -k 1 0"
+		"indexCurl" " -av -k 1 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_R" 
-		"indexCurl" " -av -k 1 6"
+		"middleCurl" " -av -k 1 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_R" 
-		"middleCurl" " -av -k 1 6"
+		"ringCurl" " -av -k 1 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_R" 
-		"ringCurl" " -av -k 1 6"
-		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_R" 
-		"pinkyCurl" " -av -k 1 4"
+		"pinkyCurl" " -av -k 1 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_R" 
 		"thumbCurl" " -av -k 1 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_L" 
@@ -1870,13 +1839,13 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:FaceMotionFollowHead|goodGuy_rig:ctrlBoxOffset|goodGuy_rig:ctrlBox|goodGuy_rig:ctrlBoxMouth_M|goodGuy_rig:ctrlMouth_M" 
 		"translateY" " 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:FaceMotionFollowHead|goodGuy_rig:ctrlBoxOffset|goodGuy_rig:ctrlBox|goodGuy_rig:ctrlBoxMouthCorner_R|goodGuy_rig:ctrlMouthCorner_R" 
-		"translateX" " 0"
+		"translateX" " -0.0030107083547595581"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:FaceMotionFollowHead|goodGuy_rig:ctrlBoxOffset|goodGuy_rig:ctrlBox|goodGuy_rig:ctrlBoxMouthCorner_R|goodGuy_rig:ctrlMouthCorner_R" 
-		"translateY" " 0"
+		"translateY" " -0.20383027729686298"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:FaceMotionFollowHead|goodGuy_rig:ctrlBoxOffset|goodGuy_rig:ctrlBox|goodGuy_rig:ctrlBoxMouthCorner_L|goodGuy_rig:ctrlMouthCorner_L" 
-		"translateX" " 0"
+		"translateX" " -0.0052565166241022648"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:FaceMotionFollowHead|goodGuy_rig:ctrlBoxOffset|goodGuy_rig:ctrlBox|goodGuy_rig:ctrlBoxMouthCorner_L|goodGuy_rig:ctrlMouthCorner_L" 
-		"translateY" " 0"
+		"translateY" " -0.35587546680795556"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:FaceMotionFollowHead|goodGuy_rig:FKOffsetLips_M|goodGuy_rig:FKLips_M" 
 		"visibility" " 1"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:FaceMotionFollowHead|goodGuy_rig:FKOffsetLips_M|goodGuy_rig:FKLips_M" 
@@ -2064,7 +2033,8 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Bcontrols|goodGuy_rig:Lip6Attach_L|goodGuy_rig:Lip6Offset_L|goodGuy_rig:Lip6Subtract_L|goodGuy_rig:Lip6_L" 
 		"visibility" " 1"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Bcontrols|goodGuy_rig:Lip6Attach_L|goodGuy_rig:Lip6Offset_L|goodGuy_rig:Lip6Subtract_L|goodGuy_rig:Lip6_L" 
-		"translate" " -type \"double3\" 3.8635437041516467e-05 0 0"
+		"translate" " -type \"double3\" 3.8635437041516467e-05 0.0026156873791893321 -1.6069134441166944e-05"
+		
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Bcontrols|goodGuy_rig:Lip6Attach_L|goodGuy_rig:Lip6Offset_L|goodGuy_rig:Lip6Subtract_L|goodGuy_rig:Lip6_L" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Bcontrols|goodGuy_rig:Lip6Attach_L|goodGuy_rig:Lip6Offset_L|goodGuy_rig:Lip6Subtract_L|goodGuy_rig:Lip6_L" 
@@ -2072,7 +2042,8 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Bcontrols|goodGuy_rig:upperLip0Attach_M|goodGuy_rig:upperLip0Offset_M|goodGuy_rig:upperLip0Subtract_M|goodGuy_rig:upperLip0_M" 
 		"visibility" " 1"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Bcontrols|goodGuy_rig:upperLip0Attach_M|goodGuy_rig:upperLip0Offset_M|goodGuy_rig:upperLip0Subtract_M|goodGuy_rig:upperLip0_M" 
-		"translate" " -type \"double3\" 9.7949371369697235e-05 0 0"
+		"translate" " -type \"double3\" 9.7949371369697235e-05 0.0066313455759626468 -4.0738807103336843e-05"
+		
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Bcontrols|goodGuy_rig:upperLip0Attach_M|goodGuy_rig:upperLip0Offset_M|goodGuy_rig:upperLip0Subtract_M|goodGuy_rig:upperLip0_M" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Bcontrols|goodGuy_rig:upperLip0Attach_M|goodGuy_rig:upperLip0Offset_M|goodGuy_rig:upperLip0Subtract_M|goodGuy_rig:upperLip0_M" 
@@ -2080,7 +2051,8 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Bcontrols|goodGuy_rig:Lip6Attach_R|goodGuy_rig:Lip6Offset_R|goodGuy_rig:Lip6Subtract_R|goodGuy_rig:Lip6_R" 
 		"visibility" " 1"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Bcontrols|goodGuy_rig:Lip6Attach_R|goodGuy_rig:Lip6Offset_R|goodGuy_rig:Lip6Subtract_R|goodGuy_rig:Lip6_R" 
-		"translate" " -type \"double3\" 6.252944461716711e-05 0 0"
+		"translate" " -type \"double3\" 6.252944461716711e-05 0.0042333539267903446 -2.6007058001205018e-05"
+		
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Bcontrols|goodGuy_rig:Lip6Attach_R|goodGuy_rig:Lip6Offset_R|goodGuy_rig:Lip6Subtract_R|goodGuy_rig:Lip6_R" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Bcontrols|goodGuy_rig:Lip6Attach_R|goodGuy_rig:Lip6Offset_R|goodGuy_rig:Lip6Subtract_R|goodGuy_rig:Lip6_R" 
@@ -2088,7 +2060,8 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Bcontrols|goodGuy_rig:lowerLip0Attach_M|goodGuy_rig:lowerLip0Offset_M|goodGuy_rig:lowerLip0Subtract_M|goodGuy_rig:lowerLip0_M" 
 		"visibility" " 1"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Bcontrols|goodGuy_rig:lowerLip0Attach_M|goodGuy_rig:lowerLip0Offset_M|goodGuy_rig:lowerLip0Subtract_M|goodGuy_rig:lowerLip0_M" 
-		"translate" " -type \"double3\" 0 0 4.0891914621568679e-05"
+		"translate" " -type \"double3\" -9.8317491756343139e-05 -0.0066562679764631521 4.0891914621568679e-05"
+		
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Bcontrols|goodGuy_rig:lowerLip0Attach_M|goodGuy_rig:lowerLip0Offset_M|goodGuy_rig:lowerLip0Subtract_M|goodGuy_rig:lowerLip0_M" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Bcontrols|goodGuy_rig:lowerLip0Attach_M|goodGuy_rig:lowerLip0Offset_M|goodGuy_rig:lowerLip0Subtract_M|goodGuy_rig:lowerLip0_M" 
@@ -2176,7 +2149,8 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Ccontrols|goodGuy_rig:lowerLip3Attach_L|goodGuy_rig:lowerLip3Offset_L|goodGuy_rig:lowerLip3Subtract_L|goodGuy_rig:lowerLip3_L" 
 		"visibility" " 1"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Ccontrols|goodGuy_rig:lowerLip3Attach_L|goodGuy_rig:lowerLip3Offset_L|goodGuy_rig:lowerLip3Subtract_L|goodGuy_rig:lowerLip3_L" 
-		"translate" " -type \"double3\" 0 0 0.00023636415924519069"
+		"translate" " -type \"double3\" 0.0051333612546546449 -0.0044149359633526694 0.00023636415924519069"
+		
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Ccontrols|goodGuy_rig:lowerLip3Attach_L|goodGuy_rig:lowerLip3Offset_L|goodGuy_rig:lowerLip3Subtract_L|goodGuy_rig:lowerLip3_L" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Ccontrols|goodGuy_rig:lowerLip3Attach_L|goodGuy_rig:lowerLip3Offset_L|goodGuy_rig:lowerLip3Subtract_L|goodGuy_rig:lowerLip3_L" 
@@ -2184,7 +2158,8 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Ccontrols|goodGuy_rig:lowerLip3Attach_R|goodGuy_rig:lowerLip3Offset_R|goodGuy_rig:lowerLip3Subtract_R|goodGuy_rig:lowerLip3_R" 
 		"visibility" " 1"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Ccontrols|goodGuy_rig:lowerLip3Attach_R|goodGuy_rig:lowerLip3Offset_R|goodGuy_rig:lowerLip3Subtract_R|goodGuy_rig:lowerLip3_R" 
-		"translate" " -type \"double3\" 0 0 0"
+		"translate" " -type \"double3\" -0.0060709664701538964 -0.0057267838252851285 -0.00020576884030646067"
+		
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Ccontrols|goodGuy_rig:lowerLip3Attach_R|goodGuy_rig:lowerLip3Offset_R|goodGuy_rig:lowerLip3Subtract_R|goodGuy_rig:lowerLip3_R" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:ControlsSetup|goodGuy_rig:Ccontrols|goodGuy_rig:lowerLip3Attach_R|goodGuy_rig:lowerLip3Offset_R|goodGuy_rig:lowerLip3Subtract_R|goodGuy_rig:lowerLip3_R" 
@@ -2232,7 +2207,8 @@ createNode reference -n "goodGuy_rigRN";
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:JawSetup|goodGuy_rig:JawSetupFollowHead|goodGuy_rig:FKOffsetJaw_M|goodGuy_rig:FKSDK1Jaw_M|goodGuy_rig:FKJaw_M" 
 		"visibility" " 1"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:JawSetup|goodGuy_rig:JawSetupFollowHead|goodGuy_rig:FKOffsetJaw_M|goodGuy_rig:FKSDK1Jaw_M|goodGuy_rig:FKJaw_M" 
-		"translate" " -type \"double3\" 7.0856277545551565e-05 0 0"
+		"translate" " -type \"double3\" 7.0856277545551565e-05 0.004797095234438619 -2.9470329237525231e-05"
+		
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:JawSetup|goodGuy_rig:JawSetupFollowHead|goodGuy_rig:FKOffsetJaw_M|goodGuy_rig:FKSDK1Jaw_M|goodGuy_rig:FKJaw_M" 
 		"rotate" " -type \"double3\" 0 0 0"
 		2 "|goodGuy_rig:Group|goodGuy_rig:FaceGroup|goodGuy_rig:FaceMotionSystem|goodGuy_rig:JawSetup|goodGuy_rig:JawSetupFollowHead|goodGuy_rig:FKOffsetJaw_M|goodGuy_rig:FKSDK1Jaw_M|goodGuy_rig:FKJaw_M" 
@@ -2297,106 +2273,116 @@ createNode reference -n "goodGuy_rigRN";
 		"goodGuy_rigRN.placeHolderList[1]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R.rotateZ" 
 		"goodGuy_rigRN.placeHolderList[2]" ""
-		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R|goodGuy_rig:FKXElbow_R|goodGuy_rig:FKOffsetWrist_R|goodGuy_rig:FKExtraWrist_R|goodGuy_rig:FKWrist_R.rotateX" 
-		"goodGuy_rigRN.placeHolderList[3]" ""
-		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_R|goodGuy_rig:FKOffsetShoulder_R|goodGuy_rig:FKGlobalStaticShoulder_R|goodGuy_rig:FKGlobalShoulder_R|goodGuy_rig:FKExtraShoulder_R|goodGuy_rig:FKShoulder_R|goodGuy_rig:FKXShoulder_R|goodGuy_rig:FKOffsetElbow_R|goodGuy_rig:FKExtraElbow_R|goodGuy_rig:FKElbow_R|goodGuy_rig:FKXElbow_R|goodGuy_rig:FKOffsetWrist_R|goodGuy_rig:FKExtraWrist_R|goodGuy_rig:FKWrist_R.rotateY" 
-		"goodGuy_rigRN.placeHolderList[4]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToChest_M|goodGuy_rig:FKOffsetNeck_M|goodGuy_rig:FKGlobalStaticNeck_M|goodGuy_rig:FKGlobalNeck_M|goodGuy_rig:FKExtraNeck_M|goodGuy_rig:FKXNeck_M|goodGuy_rig:FKOffsetNeckPart1_M|goodGuy_rig:FKExtraNeckPart1_M|goodGuy_rig:FKNeckPart1_M|goodGuy_rig:FKXNeckPart1_M|goodGuy_rig:FKOffsetNeck1_M|goodGuy_rig:FKGlobalStaticNeck1_M|goodGuy_rig:FKGlobalNeck1_M|goodGuy_rig:FKExtraNeck1_M|goodGuy_rig:FKNeck1_M.rotateZ" 
-		"goodGuy_rigRN.placeHolderList[5]" ""
+		"goodGuy_rigRN.placeHolderList[3]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKOffsetRoot_M|goodGuy_rig:FKExtraRoot_M|goodGuy_rig:FKRoot_M|goodGuy_rig:HipSwingerOffset_M|goodGuy_rig:HipSwinger_M.rotateX" 
-		"goodGuy_rigRN.placeHolderList[6]" ""
+		"goodGuy_rigRN.placeHolderList[4]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKOffsetRoot_M|goodGuy_rig:FKExtraRoot_M|goodGuy_rig:FKRoot_M|goodGuy_rig:HipSwingerOffset_M|goodGuy_rig:HipSwinger_M.rotateY" 
-		"goodGuy_rigRN.placeHolderList[7]" ""
+		"goodGuy_rigRN.placeHolderList[5]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKOffsetRoot_M|goodGuy_rig:FKExtraRoot_M|goodGuy_rig:FKXRoot_M|goodGuy_rig:FKOffsetRootPart1_M|goodGuy_rig:FKExtraRootPart1_M|goodGuy_rig:FKRootPart1_M|goodGuy_rig:FKXRootPart1_M|goodGuy_rig:FKOffsetRootPart2_M|goodGuy_rig:FKExtraRootPart2_M|goodGuy_rig:FKRootPart2_M|goodGuy_rig:FKXRootPart2_M|goodGuy_rig:HipSwingerStabilizer|goodGuy_rig:FKOffsetSpine1_M|goodGuy_rig:FKExtraSpine1_M|goodGuy_rig:FKSpine1_M.rotateZ" 
-		"goodGuy_rigRN.placeHolderList[8]" ""
+		"goodGuy_rigRN.placeHolderList[6]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToToes_L|goodGuy_rig:FKOffsetmiddleToe1_L|goodGuy_rig:FKExtramiddleToe1_L|goodGuy_rig:FKmiddleToe1_L|goodGuy_rig:FKXmiddleToe1_L|goodGuy_rig:FKOffsetmiddleToe2_L|goodGuy_rig:FKExtramiddleToe2_L|goodGuy_rig:FKmiddleToe2_L.rotateX" 
-		"goodGuy_rigRN.placeHolderList[9]" ""
+		"goodGuy_rigRN.placeHolderList[7]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToToes_L|goodGuy_rig:FKOffsetmiddleToe1_L|goodGuy_rig:FKExtramiddleToe1_L|goodGuy_rig:FKmiddleToe1_L|goodGuy_rig:FKXmiddleToe1_L|goodGuy_rig:FKOffsetmiddleToe2_L|goodGuy_rig:FKExtramiddleToe2_L|goodGuy_rig:FKmiddleToe2_L.rotateY" 
-		"goodGuy_rigRN.placeHolderList[10]" ""
+		"goodGuy_rigRN.placeHolderList[8]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToToes_L|goodGuy_rig:FKOffsetmiddleToe1_L|goodGuy_rig:FKExtramiddleToe1_L|goodGuy_rig:FKmiddleToe1_L|goodGuy_rig:FKXmiddleToe1_L|goodGuy_rig:FKOffsetmiddleToe2_L|goodGuy_rig:FKExtramiddleToe2_L|goodGuy_rig:FKmiddleToe2_L.rotateZ" 
-		"goodGuy_rigRN.placeHolderList[11]" ""
+		"goodGuy_rigRN.placeHolderList[9]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToToes_L|goodGuy_rig:FKOffsetringToe1_L|goodGuy_rig:FKExtraringToe1_L|goodGuy_rig:FKringToe1_L.rotateX" 
-		"goodGuy_rigRN.placeHolderList[12]" ""
+		"goodGuy_rigRN.placeHolderList[10]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToToes_L|goodGuy_rig:FKOffsetringToe1_L|goodGuy_rig:FKExtraringToe1_L|goodGuy_rig:FKringToe1_L|goodGuy_rig:FKXringToe1_L|goodGuy_rig:FKOffsetringToe2_L|goodGuy_rig:FKExtraringToe2_L|goodGuy_rig:FKringToe2_L.rotateX" 
-		"goodGuy_rigRN.placeHolderList[13]" ""
+		"goodGuy_rigRN.placeHolderList[11]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToToes_L|goodGuy_rig:FKOffsetringToe1_L|goodGuy_rig:FKExtraringToe1_L|goodGuy_rig:FKringToe1_L|goodGuy_rig:FKXringToe1_L|goodGuy_rig:FKOffsetringToe2_L|goodGuy_rig:FKExtraringToe2_L|goodGuy_rig:FKringToe2_L.rotateY" 
-		"goodGuy_rigRN.placeHolderList[14]" ""
+		"goodGuy_rigRN.placeHolderList[12]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToToes_L|goodGuy_rig:FKOffsetringToe1_L|goodGuy_rig:FKExtraringToe1_L|goodGuy_rig:FKringToe1_L|goodGuy_rig:FKXringToe1_L|goodGuy_rig:FKOffsetringToe2_L|goodGuy_rig:FKExtraringToe2_L|goodGuy_rig:FKringToe2_L.rotateZ" 
-		"goodGuy_rigRN.placeHolderList[15]" ""
+		"goodGuy_rigRN.placeHolderList[13]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_L|goodGuy_rig:FKOffsetShoulder_L|goodGuy_rig:FKGlobalStaticShoulder_L|goodGuy_rig:FKGlobalShoulder_L|goodGuy_rig:FKExtraShoulder_L|goodGuy_rig:FKShoulder_L.rotateX" 
-		"goodGuy_rigRN.placeHolderList[16]" ""
+		"goodGuy_rigRN.placeHolderList[14]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:FKSystem|goodGuy_rig:FKParentConstraintToScapula_L|goodGuy_rig:FKOffsetShoulder_L|goodGuy_rig:FKGlobalStaticShoulder_L|goodGuy_rig:FKGlobalShoulder_L|goodGuy_rig:FKExtraShoulder_L|goodGuy_rig:FKShoulder_L.rotateY" 
-		"goodGuy_rigRN.placeHolderList[17]" ""
+		"goodGuy_rigRN.placeHolderList[15]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_R|goodGuy_rig:IKExtraLeg_R|goodGuy_rig:IKLeg_R.translateY" 
-		"goodGuy_rigRN.placeHolderList[18]" ""
+		"goodGuy_rigRN.placeHolderList[16]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_R|goodGuy_rig:IKExtraLeg_R|goodGuy_rig:IKLeg_R.translateZ" 
-		"goodGuy_rigRN.placeHolderList[19]" ""
+		"goodGuy_rigRN.placeHolderList[17]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_R|goodGuy_rig:IKExtraLeg_R|goodGuy_rig:IKLeg_R.roll" 
-		"goodGuy_rigRN.placeHolderList[20]" ""
+		"goodGuy_rigRN.placeHolderList[18]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_R|goodGuy_rig:IKExtraLeg_R|goodGuy_rig:IKLeg_R|goodGuy_rig:IKLegFootRockInnerPivot_R|goodGuy_rig:IKLegFootRockOuterPivot_R|goodGuy_rig:RollOffsetHeel_R|goodGuy_rig:RollRollerHeel_R|goodGuy_rig:RollExtraHeel_R|goodGuy_rig:RollHeel_R.translateX" 
-		"goodGuy_rigRN.placeHolderList[21]" ""
+		"goodGuy_rigRN.placeHolderList[19]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_R|goodGuy_rig:IKExtraLeg_R|goodGuy_rig:IKLeg_R|goodGuy_rig:IKLegFootRockInnerPivot_R|goodGuy_rig:IKLegFootRockOuterPivot_R|goodGuy_rig:RollOffsetHeel_R|goodGuy_rig:RollRollerHeel_R|goodGuy_rig:RollExtraHeel_R|goodGuy_rig:RollHeel_R.translateY" 
-		"goodGuy_rigRN.placeHolderList[22]" ""
+		"goodGuy_rigRN.placeHolderList[20]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_R|goodGuy_rig:IKExtraLeg_R|goodGuy_rig:IKLeg_R|goodGuy_rig:IKLegFootRockInnerPivot_R|goodGuy_rig:IKLegFootRockOuterPivot_R|goodGuy_rig:RollOffsetHeel_R|goodGuy_rig:RollRollerHeel_R|goodGuy_rig:RollExtraHeel_R|goodGuy_rig:RollHeel_R.translateZ" 
-		"goodGuy_rigRN.placeHolderList[23]" ""
+		"goodGuy_rigRN.placeHolderList[21]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_R|goodGuy_rig:IKExtraLeg_R|goodGuy_rig:IKLeg_R|goodGuy_rig:IKLegFootRockInnerPivot_R|goodGuy_rig:IKLegFootRockOuterPivot_R|goodGuy_rig:RollOffsetHeel_R|goodGuy_rig:RollRollerHeel_R|goodGuy_rig:RollExtraHeel_R|goodGuy_rig:RollHeel_R|goodGuy_rig:RollOffsetToesEnd_R|goodGuy_rig:RollRollerToesEnd_R|goodGuy_rig:RollExtraToesEnd_R|goodGuy_rig:RollToesEnd_R.translateY" 
-		"goodGuy_rigRN.placeHolderList[24]" ""
+		"goodGuy_rigRN.placeHolderList[22]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_R|goodGuy_rig:IKExtraLeg_R|goodGuy_rig:IKLeg_R|goodGuy_rig:IKLegFootRockInnerPivot_R|goodGuy_rig:IKLegFootRockOuterPivot_R|goodGuy_rig:RollOffsetHeel_R|goodGuy_rig:RollRollerHeel_R|goodGuy_rig:RollExtraHeel_R|goodGuy_rig:RollHeel_R|goodGuy_rig:RollOffsetToesEnd_R|goodGuy_rig:RollRollerToesEnd_R|goodGuy_rig:RollExtraToesEnd_R|goodGuy_rig:RollToesEnd_R|goodGuy_rig:IKOffsetToes_R|goodGuy_rig:IKExtraToes_R|goodGuy_rig:IKToes_R.rotateX" 
-		"goodGuy_rigRN.placeHolderList[25]" ""
+		"goodGuy_rigRN.placeHolderList[23]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:PoleOffsetLeg_R|goodGuy_rig:PoleExtraLeg_R|goodGuy_rig:PoleLeg_R.translateX" 
-		"goodGuy_rigRN.placeHolderList[26]" ""
+		"goodGuy_rigRN.placeHolderList[24]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:PoleOffsetLeg_R|goodGuy_rig:PoleExtraLeg_R|goodGuy_rig:PoleLeg_R.translateY" 
-		"goodGuy_rigRN.placeHolderList[27]" ""
+		"goodGuy_rigRN.placeHolderList[25]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:PoleOffsetLeg_R|goodGuy_rig:PoleExtraLeg_R|goodGuy_rig:PoleLeg_R.translateZ" 
-		"goodGuy_rigRN.placeHolderList[28]" ""
+		"goodGuy_rigRN.placeHolderList[26]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L.translateY" 
-		"goodGuy_rigRN.placeHolderList[29]" ""
+		"goodGuy_rigRN.placeHolderList[27]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L.translateZ" 
-		"goodGuy_rigRN.placeHolderList[30]" ""
+		"goodGuy_rigRN.placeHolderList[28]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L.roll" 
-		"goodGuy_rigRN.placeHolderList[31]" ""
+		"goodGuy_rigRN.placeHolderList[29]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L|goodGuy_rig:IKLegFootRockInnerPivot_L|goodGuy_rig:IKLegFootRockOuterPivot_L|goodGuy_rig:RollOffsetHeel_L|goodGuy_rig:RollRollerHeel_L|goodGuy_rig:RollExtraHeel_L|goodGuy_rig:RollHeel_L.translateX" 
-		"goodGuy_rigRN.placeHolderList[32]" ""
+		"goodGuy_rigRN.placeHolderList[30]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L|goodGuy_rig:IKLegFootRockInnerPivot_L|goodGuy_rig:IKLegFootRockOuterPivot_L|goodGuy_rig:RollOffsetHeel_L|goodGuy_rig:RollRollerHeel_L|goodGuy_rig:RollExtraHeel_L|goodGuy_rig:RollHeel_L.translateY" 
-		"goodGuy_rigRN.placeHolderList[33]" ""
+		"goodGuy_rigRN.placeHolderList[31]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L|goodGuy_rig:IKLegFootRockInnerPivot_L|goodGuy_rig:IKLegFootRockOuterPivot_L|goodGuy_rig:RollOffsetHeel_L|goodGuy_rig:RollRollerHeel_L|goodGuy_rig:RollExtraHeel_L|goodGuy_rig:RollHeel_L.translateZ" 
-		"goodGuy_rigRN.placeHolderList[34]" ""
+		"goodGuy_rigRN.placeHolderList[32]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L|goodGuy_rig:IKLegFootRockInnerPivot_L|goodGuy_rig:IKLegFootRockOuterPivot_L|goodGuy_rig:RollOffsetHeel_L|goodGuy_rig:RollRollerHeel_L|goodGuy_rig:RollExtraHeel_L|goodGuy_rig:RollHeel_L.rotateX" 
-		"goodGuy_rigRN.placeHolderList[35]" ""
+		"goodGuy_rigRN.placeHolderList[33]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L|goodGuy_rig:IKLegFootRockInnerPivot_L|goodGuy_rig:IKLegFootRockOuterPivot_L|goodGuy_rig:RollOffsetHeel_L|goodGuy_rig:RollRollerHeel_L|goodGuy_rig:RollExtraHeel_L|goodGuy_rig:RollHeel_L.rotateY" 
-		"goodGuy_rigRN.placeHolderList[36]" ""
+		"goodGuy_rigRN.placeHolderList[34]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L|goodGuy_rig:IKLegFootRockInnerPivot_L|goodGuy_rig:IKLegFootRockOuterPivot_L|goodGuy_rig:RollOffsetHeel_L|goodGuy_rig:RollRollerHeel_L|goodGuy_rig:RollExtraHeel_L|goodGuy_rig:RollHeel_L.rotateZ" 
-		"goodGuy_rigRN.placeHolderList[37]" ""
+		"goodGuy_rigRN.placeHolderList[35]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L|goodGuy_rig:IKLegFootRockInnerPivot_L|goodGuy_rig:IKLegFootRockOuterPivot_L|goodGuy_rig:RollOffsetHeel_L|goodGuy_rig:RollRollerHeel_L|goodGuy_rig:RollExtraHeel_L|goodGuy_rig:RollHeel_L|goodGuy_rig:RollOffsetToesEnd_L|goodGuy_rig:RollRollerToesEnd_L|goodGuy_rig:RollExtraToesEnd_L|goodGuy_rig:RollToesEnd_L.translateX" 
-		"goodGuy_rigRN.placeHolderList[38]" ""
+		"goodGuy_rigRN.placeHolderList[36]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L|goodGuy_rig:IKLegFootRockInnerPivot_L|goodGuy_rig:IKLegFootRockOuterPivot_L|goodGuy_rig:RollOffsetHeel_L|goodGuy_rig:RollRollerHeel_L|goodGuy_rig:RollExtraHeel_L|goodGuy_rig:RollHeel_L|goodGuy_rig:RollOffsetToesEnd_L|goodGuy_rig:RollRollerToesEnd_L|goodGuy_rig:RollExtraToesEnd_L|goodGuy_rig:RollToesEnd_L.translateY" 
-		"goodGuy_rigRN.placeHolderList[39]" ""
+		"goodGuy_rigRN.placeHolderList[37]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L|goodGuy_rig:IKLegFootRockInnerPivot_L|goodGuy_rig:IKLegFootRockOuterPivot_L|goodGuy_rig:RollOffsetHeel_L|goodGuy_rig:RollRollerHeel_L|goodGuy_rig:RollExtraHeel_L|goodGuy_rig:RollHeel_L|goodGuy_rig:RollOffsetToesEnd_L|goodGuy_rig:RollRollerToesEnd_L|goodGuy_rig:RollExtraToesEnd_L|goodGuy_rig:RollToesEnd_L.translateZ" 
-		"goodGuy_rigRN.placeHolderList[40]" ""
+		"goodGuy_rigRN.placeHolderList[38]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L|goodGuy_rig:IKLegFootRockInnerPivot_L|goodGuy_rig:IKLegFootRockOuterPivot_L|goodGuy_rig:RollOffsetHeel_L|goodGuy_rig:RollRollerHeel_L|goodGuy_rig:RollExtraHeel_L|goodGuy_rig:RollHeel_L|goodGuy_rig:RollOffsetToesEnd_L|goodGuy_rig:RollRollerToesEnd_L|goodGuy_rig:RollExtraToesEnd_L|goodGuy_rig:RollToesEnd_L.rotateX" 
-		"goodGuy_rigRN.placeHolderList[41]" ""
+		"goodGuy_rigRN.placeHolderList[39]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L|goodGuy_rig:IKLegFootRockInnerPivot_L|goodGuy_rig:IKLegFootRockOuterPivot_L|goodGuy_rig:RollOffsetHeel_L|goodGuy_rig:RollRollerHeel_L|goodGuy_rig:RollExtraHeel_L|goodGuy_rig:RollHeel_L|goodGuy_rig:RollOffsetToesEnd_L|goodGuy_rig:RollRollerToesEnd_L|goodGuy_rig:RollExtraToesEnd_L|goodGuy_rig:RollToesEnd_L.rotateY" 
-		"goodGuy_rigRN.placeHolderList[42]" ""
+		"goodGuy_rigRN.placeHolderList[40]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L|goodGuy_rig:IKLegFootRockInnerPivot_L|goodGuy_rig:IKLegFootRockOuterPivot_L|goodGuy_rig:RollOffsetHeel_L|goodGuy_rig:RollRollerHeel_L|goodGuy_rig:RollExtraHeel_L|goodGuy_rig:RollHeel_L|goodGuy_rig:RollOffsetToesEnd_L|goodGuy_rig:RollRollerToesEnd_L|goodGuy_rig:RollExtraToesEnd_L|goodGuy_rig:RollToesEnd_L.rotateZ" 
-		"goodGuy_rigRN.placeHolderList[43]" ""
+		"goodGuy_rigRN.placeHolderList[41]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:IKSystem|goodGuy_rig:IKHandle|goodGuy_rig:IKOffsetLeg_L|goodGuy_rig:IKExtraLeg_L|goodGuy_rig:IKLeg_L|goodGuy_rig:IKLegFootRockInnerPivot_L|goodGuy_rig:IKLegFootRockOuterPivot_L|goodGuy_rig:RollOffsetHeel_L|goodGuy_rig:RollRollerHeel_L|goodGuy_rig:RollExtraHeel_L|goodGuy_rig:RollHeel_L|goodGuy_rig:RollOffsetToesEnd_L|goodGuy_rig:RollRollerToesEnd_L|goodGuy_rig:RollExtraToesEnd_L|goodGuy_rig:RollToesEnd_L|goodGuy_rig:IKOffsetToes_L|goodGuy_rig:IKExtraToes_L|goodGuy_rig:IKToes_L.rotateX" 
-		"goodGuy_rigRN.placeHolderList[44]" ""
+		"goodGuy_rigRN.placeHolderList[42]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:RootSystem|goodGuy_rig:RootCenterBtwLegsBlended_M|goodGuy_rig:RootOffsetX_M|goodGuy_rig:RootExtraX_M|goodGuy_rig:RootX_M.translateY" 
+		"goodGuy_rigRN.placeHolderList[43]" ""
+		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_R.indexCurl" 
+		"goodGuy_rigRN.placeHolderList[44]" ""
+		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_R.middleCurl" 
 		"goodGuy_rigRN.placeHolderList[45]" ""
-		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_L.indexCurl" 
+		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_R.ringCurl" 
 		"goodGuy_rigRN.placeHolderList[46]" ""
-		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_L.middleCurl" 
+		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_R.pinkyCurl" 
 		"goodGuy_rigRN.placeHolderList[47]" ""
-		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_L.ringCurl" 
+		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_R.thumbCurl" 
 		"goodGuy_rigRN.placeHolderList[48]" ""
-		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_L.pinkyCurl" 
+		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_R.spread" 
 		"goodGuy_rigRN.placeHolderList[49]" ""
-		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_L.thumbCurl" 
+		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_R.cup" 
 		"goodGuy_rigRN.placeHolderList[50]" ""
-		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_L.spread" 
+		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_L.indexCurl" 
 		"goodGuy_rigRN.placeHolderList[51]" ""
+		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_L.middleCurl" 
+		"goodGuy_rigRN.placeHolderList[52]" ""
+		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_L.ringCurl" 
+		"goodGuy_rigRN.placeHolderList[53]" ""
+		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_L.pinkyCurl" 
+		"goodGuy_rigRN.placeHolderList[54]" ""
+		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_L.thumbCurl" 
+		"goodGuy_rigRN.placeHolderList[55]" ""
+		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_L.spread" 
+		"goodGuy_rigRN.placeHolderList[56]" ""
 		5 4 "goodGuy_rigRN" "|goodGuy_rig:Group|goodGuy_rig:Main|goodGuy_rig:MotionSystem|goodGuy_rig:DrivingSystem|goodGuy_rig:Fingers_L.cup" 
-		"goodGuy_rigRN.placeHolderList[52]" "";
+		"goodGuy_rigRN.placeHolderList[57]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode animCurveTL -n "IKLeg_R_translateZ";
@@ -2417,22 +2403,19 @@ createNode animCurveTL -n "IKLeg_R_translateZ";
 createNode animCurveTL -n "IKLeg_L_translateZ";
 	rename -uid "C2DC099B-4797-622F-FCDD-A38ABB1F5BAE";
 	setAttr ".tan" 18;
-	setAttr -s 12 ".ktv[0:11]"  1 0.25 25 -0.30797841130854875 40 0.26451753507136794
+	setAttr -s 11 ".ktv[0:10]"  1 0.25 25 -0.30797841130854875 40 0.26451753507136794
 		 65 -0.29033994038179867 80 0.26601175383909237 105 -0.31100957596555523 120 0.26601175383909237
-		 145 -0.31517169703299863 160 0.22968778815958679 172 -0.0096293380154499619 181 -0.19154356272891276
-		 194 0;
-	setAttr -s 12 ".kit[2:11]"  1 18 18 18 18 18 18 1 
-		18 18;
-	setAttr -s 12 ".kot[2:11]"  1 18 18 18 18 18 18 1 
-		18 18;
-	setAttr -s 12 ".kix[2:11]"  0.66187180634831089 1.0416666666666667 
-		0.625 1.0416666666666665 0.625 1.041666666666667 0.625 1.0273782828892786 0.375 0.54166666666666696;
-	setAttr -s 12 ".kiy[2:11]"  -0.0011792076416709632 0 0 0 0 0 0 -0.45824675179457458 
-		0 0;
-	setAttr -s 12 ".kox[2:11]"  0.66187183127834182 0.625 1.0416666666666665 
-		0.625 1.041666666666667 0.625 0.5 1.0678205244864021 0.54166666666666696 0.54166666666666696;
-	setAttr -s 12 ".koy[2:11]"  -0.0011791635491831701 0 0 0 0 0 0 -0.47628544261220906 
-		0 0;
+		 145 -0.31517169703299863 160 0.22968778815958679 179 -0.23580803949318446 190 0;
+	setAttr -s 11 ".kit[2:10]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 11 ".kot[2:10]"  1 18 18 18 18 18 18 18 
+		18;
+	setAttr -s 11 ".kix[2:10]"  0.66187180634831089 1.0416666666666667 
+		0.625 1.0416666666666665 0.625 1.041666666666667 0.625 0.79166666666666607 0.45833333333333393;
+	setAttr -s 11 ".kiy[2:10]"  -0.0011792076416709632 0 0 0 0 0 0 0 0;
+	setAttr -s 11 ".kox[2:10]"  0.66187183127834182 0.625 1.0416666666666665 
+		0.625 1.041666666666667 0.625 0.79166666666666607 0.45833333333333393 0.45833333333333393;
+	setAttr -s 11 ".koy[2:10]"  -0.0011791635491831701 0 0 0 0 0 0 0 0;
 createNode animCurveTA -n "IKToes_L_rotateX";
 	rename -uid "DBC3C487-43C7-E8AD-3E0F-7DAEA2D28A17";
 	setAttr ".tan" 18;
@@ -2463,8 +2446,28 @@ createNode animCurveTU -n "Fingers_L_spread";
 	setAttr -s 2 ".kiy[1]"  0;
 	setAttr -s 2 ".kox[1]"  1.2083333333333333;
 	setAttr -s 2 ".koy[1]"  0;
+createNode animCurveTU -n "Fingers_R_spread";
+	rename -uid "B614CDCA-46C3-081A-C98B-28AD4B37755A";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  1 0 30 0;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  1.2083333333333333;
+	setAttr -s 2 ".kiy[1]"  0;
+	setAttr -s 2 ".kox[1]"  1.2083333333333333;
+	setAttr -s 2 ".koy[1]"  0;
 createNode animCurveTU -n "Fingers_L_cup";
 	rename -uid "EF989EC3-437C-7F04-445E-4B9EC9A6D484";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  1 0 30 0;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  1.2083333333333333;
+	setAttr -s 2 ".kiy[1]"  0;
+	setAttr -s 2 ".kox[1]"  1.2083333333333333;
+	setAttr -s 2 ".koy[1]"  0;
+createNode animCurveTU -n "Fingers_R_cup";
+	rename -uid "7BF296EF-4F0C-3C7B-8FBF-5E8C4E67DCE7";
 	setAttr ".tan" 18;
 	setAttr -s 2 ".ktv[0:1]"  1 0 30 0;
 	setAttr -s 2 ".kit[1]"  1;
@@ -2483,10 +2486,30 @@ createNode animCurveTU -n "Fingers_L_indexCurl";
 	setAttr -s 2 ".kiy[1]"  0;
 	setAttr -s 2 ".kox[1]"  1.2083333333333333;
 	setAttr -s 2 ".koy[1]"  0;
+createNode animCurveTU -n "Fingers_R_indexCurl";
+	rename -uid "68A6B879-48C3-373A-B85A-26AB1D71ED0D";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  1 0 30 0;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  1.2083333333333333;
+	setAttr -s 2 ".kiy[1]"  0;
+	setAttr -s 2 ".kox[1]"  1.2083333333333333;
+	setAttr -s 2 ".koy[1]"  0;
 createNode animCurveTU -n "Fingers_L_middleCurl";
 	rename -uid "7AFC4137-4B67-FD03-6FA7-889F352EF03C";
 	setAttr ".tan" 18;
 	setAttr -s 2 ".ktv[0:1]"  1 2 30 2;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  1.2083333333333333;
+	setAttr -s 2 ".kiy[1]"  0;
+	setAttr -s 2 ".kox[1]"  1.2083333333333333;
+	setAttr -s 2 ".koy[1]"  0;
+createNode animCurveTU -n "Fingers_R_middleCurl";
+	rename -uid "A30ED759-4BC6-18F7-82B2-35B8077BC874";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  1 0 30 0;
 	setAttr -s 2 ".kit[1]"  1;
 	setAttr -s 2 ".kot[1]"  1;
 	setAttr -s 2 ".kix[1]"  1.2083333333333333;
@@ -2503,6 +2526,16 @@ createNode animCurveTU -n "Fingers_L_ringCurl";
 	setAttr -s 2 ".kiy[1]"  0;
 	setAttr -s 2 ".kox[1]"  1.2083333333333333;
 	setAttr -s 2 ".koy[1]"  0;
+createNode animCurveTU -n "Fingers_R_ringCurl";
+	rename -uid "753F98BA-4D50-28D1-7C44-4BB1D078FE91";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  1 0 30 0;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  1.2083333333333333;
+	setAttr -s 2 ".kiy[1]"  0;
+	setAttr -s 2 ".kox[1]"  1.2083333333333333;
+	setAttr -s 2 ".koy[1]"  0;
 createNode animCurveTU -n "Fingers_L_pinkyCurl";
 	rename -uid "99047266-4C18-86E4-442B-5EA07CA22807";
 	setAttr ".tan" 18;
@@ -2513,10 +2546,30 @@ createNode animCurveTU -n "Fingers_L_pinkyCurl";
 	setAttr -s 2 ".kiy[1]"  0;
 	setAttr -s 2 ".kox[1]"  1.2083333333333333;
 	setAttr -s 2 ".koy[1]"  0;
+createNode animCurveTU -n "Fingers_R_pinkyCurl";
+	rename -uid "D736848B-4B0F-D98D-9D03-30A2094A7941";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  1 0 30 0;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  1.2083333333333333;
+	setAttr -s 2 ".kiy[1]"  0;
+	setAttr -s 2 ".kox[1]"  1.2083333333333333;
+	setAttr -s 2 ".koy[1]"  0;
 createNode animCurveTU -n "Fingers_L_thumbCurl";
 	rename -uid "6058FA5B-4579-AB5B-79AF-46A0B414A105";
 	setAttr ".tan" 18;
 	setAttr -s 2 ".ktv[0:1]"  1 2 30 2;
+	setAttr -s 2 ".kit[1]"  1;
+	setAttr -s 2 ".kot[1]"  1;
+	setAttr -s 2 ".kix[1]"  1.2083333333333333;
+	setAttr -s 2 ".kiy[1]"  0;
+	setAttr -s 2 ".kox[1]"  1.2083333333333333;
+	setAttr -s 2 ".koy[1]"  0;
+createNode animCurveTU -n "Fingers_R_thumbCurl";
+	rename -uid "2CD5DB18-4347-F3F6-F402-15A8E4C0B06D";
+	setAttr ".tan" 18;
+	setAttr -s 2 ".ktv[0:1]"  1 0 30 0;
 	setAttr -s 2 ".kit[1]"  1;
 	setAttr -s 2 ".kot[1]"  1;
 	setAttr -s 2 ".kix[1]"  1.2083333333333333;
@@ -2747,8 +2800,8 @@ createNode animCurveTL -n "IKLeg_L_translateY";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
 	setAttr -s 16 ".ktv[0:15]"  1 0 20 0 35 0.20007954866088384 45 0 60 0
-		 75 0.20007954866088373 85 0 100 0 115 0.2 125 0 140 0 155 0.2 165 0 185 0 188 0.051659883465720022
-		 194 -0.004919988901497141;
+		 75 0.20007954866088373 85 0 100 0 115 0.2 125 0 140 0 155 0.2 165 0 175 0 184 0.056579872367217163
+		 190 0;
 	setAttr -s 16 ".kot[13:15]"  1 18 18;
 	setAttr -s 16 ".kox[13:15]"  1 1 1;
 	setAttr -s 16 ".koy[13:15]"  0 0 0;
@@ -2794,23 +2847,10 @@ createNode animCurveTL -n "RootX_M_translateY";
 	rename -uid "1C18354E-40E7-F01F-5D2A-09B93722D405";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 22 ".ktv[0:21]"  1 -0.075214349248950985 15 0 27 -0.083430422631804502
-		 35 0 47 -0.081512036719163003 55 0 67 -0.082673543650566034 75 0 86 -0.082673543650566034
-		 95 0 106 -0.080755157737924521 115 0 128 -0.082673543650566034 135 0 147 -0.082193947172405663
-		 155 0 167 -0.082193947172405649 175 0 180 -0.035 184 -0.02326627411000759 186 -0.012130412878628441
-		 190 0;
-	setAttr -s 22 ".kit[12:21]"  1 18 1 18 18 18 18 18 
-		18 18;
-	setAttr -s 22 ".kot[12:21]"  1 18 1 18 18 18 18 18 
-		18 18;
-	setAttr -s 22 ".kix[12:21]"  0.99999968021894936 1 0.99999995042725809 
-		1 1 1 1 0.99584193467294602 0.99569737297809513 1;
-	setAttr -s 22 ".kiy[12:21]"  -0.00079972620249466151 0 -0.00031487375490771042 
-		0 0 0 0 0.091097975536472586 0.092664672041291307 0;
-	setAttr -s 22 ".kox[12:21]"  0.9999996802189558 1 0.99999995042725032 
-		1 1 1 1 0.99584193467294613 0.99569737297809513 1;
-	setAttr -s 22 ".koy[12:21]"  -0.00079972619455022126 0 -0.00031487377939630029 
-		0 0 0 0 0.0910979755364726 0.092664672041291293 0;
+	setAttr -s 22 ".ktv[0:21]"  1 -0.075214349248950985 15 0 25 -0.075756878981238465
+		 35 0 45 -0.075756878981238479 55 0 65 -0.075 75 0 85 -0.075 95 0 105 -0.075 115 0
+		 125 -0.075 135 0 145 -0.075 155 0 165 -0.075 175 0 180 -0.035 184 0.0022574814661828757
+		 186 -0.012130412878628441 190 0;
 createNode animCurveTL -n "Main_translateZ";
 	rename -uid "1958D44A-4F60-AB48-D710-D9A29EF8AFD8";
 	setAttr ".tan" 1;
@@ -2824,38 +2864,16 @@ createNode animCurveTA -n "FKSpine1_M_rotateZ";
 	rename -uid "618C60CA-4ADF-6461-C14C-898B3E79448C";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 19 ".ktv[0:18]"  1 13.676431066917495 15 -15.489402196659633
-		 25 13.676431066917495 35 -15.489402196659633 45 13.676431066917495 55 -15.489402196659633
-		 65 13.676431066917495 75 -15.489402196659633 85 13.676431066917495 95 -15.489402196659633
-		 105 13.676431066917495 115 -15.489402196659633 125 13.676431066917495 135 -15.489402196659633
-		 145 13.676431066917495 155 -15.489402196659633 165 13.676431066917495 175 -15.489402196659633
-		 185 0;
+	setAttr -s 19 ".ktv[0:18]"  1 25 15 -25 25 25 35 -25 45 25 55 -25 65 25
+		 75 -25 85 25 95 -25 105 25 115 -25 125 25 135 -25 145 25 155 -25 165 25 175 -25 185 0;
 createNode animCurveTA -n "FKNeck1_M_rotateZ";
 	rename -uid "EF5AA50F-4C2D-C8E2-9D27-C78BC52A7976";
 	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 19 ".ktv[0:18]"  1 -12.05186777747917 15 17.409855685226336
-		 25 -16.123023512981259 35 17.409855685226336 46 -14.893515316259938 55 17.409855685226336
-		 66 -13.664007119538638 75 17.409855685226336 87 -14.155810398227171 95 17.409855685226336
-		 106 -14.155810398227171 115 17.409855685226336 126 -12.434498922817328 135 17.409855685226336
-		 145 -12.434498922817324 155 17.409855685226336 165 -10.897613676915684 175 17.409855685226336
-		 185 11.706698687425714;
-	setAttr -s 19 ".kit[2:18]"  1 18 1 18 1 18 1 18 
-		1 18 1 18 1 18 1 18 18;
-	setAttr -s 19 ".kot[2:18]"  1 18 1 18 1 18 1 18 
-		1 18 1 18 1 18 1 18 18;
-	setAttr -s 19 ".kix[2:18]"  0.99999169839713575 1 0.99973536251638229 
-		1 0.99998563378625172 1 0.99998701868466422 1 0.99998702905026526 1 0.99992642469134418 
-		1 0.99992648357677472 1 0.99999753913752254 1 1;
-	setAttr -s 19 ".kiy[2:18]"  -0.0040746946894369574 0 -0.023004454660735276 
-		0 -0.0053602445008260865 0 -0.0050953372957013195 0 -0.0050933025851517084 0 -0.012130342286411952 
-		0 -0.012125487280352152 0 -0.0022184947372269567 0 0;
-	setAttr -s 19 ".kox[2:18]"  0.99999169839651991 1 0.99973536245221295 
-		1 0.9999856337855626 1 0.9999870186835923 1 0.99998702904934766 1 0.99992642468323989 
-		1 0.99992648358284797 1 0.99999753913734524 1 1;
-	setAttr -s 19 ".koy[2:18]"  -0.0040746948405473039 0 -0.023004457449424653 
-		0 -0.00536024462937351 0 -0.0050953375060942075 0 -0.0050933027653264898 0 -0.012130342954469976 
-		0 -0.012125486779526521 0 -0.002218494817147696 0 0;
+	setAttr -s 19 ".ktv[0:18]"  1 -25 15 25 23 -34.83606557377049 35 25
+		 44 -33.606557377049171 55 25 64 -32.377049180327873 75 25 85 -32.868852459016395
+		 95 25 104 -32.868852459016402 115 25 124 -31.147540983606561 135 25 143 -31.147540983606554
+		 155 25 163 -29.610655737704917 175 25 185 19.296843002199381;
 createNode animCurveTA -n "FKShoulder_L_rotateY";
 	rename -uid "C29668B8-411D-296B-AC6B-2B9CC729A280";
 	setAttr ".tan" 18;
@@ -2872,41 +2890,15 @@ createNode animCurveTA -n "FKShoulder_L_rotateX";
 		 155 -7 165 -14.999999999999998 175 -7 185 0;
 createNode animCurveTA -n "FKElbow_R_rotateZ";
 	rename -uid "4898E0CD-4292-95C2-8AFE-5AAE4A4A357C";
-	setAttr ".tan" 9;
+	setAttr ".tan" 18;
 	setAttr ".wgt" no;
-	setAttr -s 19 ".ktv[0:18]"  1 115 17 93.35785255832252 27 121.09344265336379
-		 37 93.35785255832252 46 119.57008199002284 57 93.35785255832252 66 122.61680331670473
-		 77 93.35785255832252 87 121.09344265336381 97 93.35785255832252 106 118.04672132668189
-		 117 93.35785255832252 127 118.04672132668186 137 93.35785255832252 147 117.13832388194375
-		 157 93.35785255832252 166 117.13832388194376 177 86.407852249123877 186 106.69625629357515;
-createNode animCurveTA -n "FKWrist_R_rotateX";
-	rename -uid "277C61A5-46F8-7594-2B05-09A2DF268F1E";
-	setAttr ".tan" 2;
-	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  1 19.309604985951534 190.50661020408162 39.018105527164664;
-createNode animCurveTA -n "FKWrist_R_rotateY";
-	rename -uid "9F853208-47CE-C38C-3ADB-F7831E5DFE26";
-	setAttr ".tan" 9;
-	setAttr ".wgt" no;
-	setAttr -s 37 ".ktv[0:36]"  1 14.999999999999998 10 9.1113834465171841
-		 15 7.1210372961554613 20 14.448744854692601 25 12.142366860070137 30 2.350357593601986
-		 35 5.7367780581825372 40 14.636360900719541 45 14.220099565419135 50 2.119992255914338
-		 55 1.9125890346368444 60 11.888266185027547 65 9.6538429233335208 70 2.2007018432212981
-		 75 3.3844325712461436 80 15.017833547515194 85 16.696130369766891 90 0.71394615068466272
-		 95 2.50467258821344 100 14.164940139143788 105 15.879513851626619 110 2.9210659469398501
-		 115 1.2808561023096483 120 15.670349661982259 125 15.386828291511716 130 5.3464191528694105
-		 135 4.9762419520314136 140 16.879607323504199 145 15.559878400178297 150 4.309772234635874
-		 155 0.97570143781848273 160 11.226425599660301 165 13.642742340947706 170 4.2510634629973154
-		 175 2.3896993219154754 180 4.3657189979966002 190.06338469387754 1.6386538653723433;
-	setAttr -s 37 ".kit[2:36]"  18 9 18 9 18 9 18 9 
-		18 9 18 9 18 9 18 9 18 9 18 9 18 9 18 9 18 
-		9 18 9 18 9 18 9 18 9 9;
-	setAttr -s 37 ".kot[2:36]"  18 9 18 9 18 9 18 9 
-		18 9 18 9 18 9 18 9 18 9 18 9 18 9 18 9 18 
-		9 18 9 18 9 18 9 18 9 9;
+	setAttr -s 19 ".ktv[0:18]"  1 115 15 59.999999999999993 25 115 35 59.999999999999993
+		 45 115 55 59.999999999999993 65 115 75 59.999999999999993 85 115 95 59.999999999999993
+		 105 115 115 59.999999999999993 125 115 135 59.999999999999993 145 115 155 59.999999999999993
+		 165 115 175 53.04999969080135 185 73.338403735252612;
 select -ne :time1;
-	setAttr ".o" 200;
-	setAttr ".unw" 200;
+	setAttr ".o" 41;
+	setAttr ".unw" 41;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -2949,56 +2941,61 @@ select -ne :ikSystem;
 	setAttr -s 3 ".sol";
 connectAttr "Main_translateZ.o" "goodGuy_rigRN.phl[1]";
 connectAttr "FKElbow_R_rotateZ.o" "goodGuy_rigRN.phl[2]";
-connectAttr "FKWrist_R_rotateX.o" "goodGuy_rigRN.phl[3]";
-connectAttr "FKWrist_R_rotateY.o" "goodGuy_rigRN.phl[4]";
-connectAttr "FKNeck1_M_rotateZ.o" "goodGuy_rigRN.phl[5]";
-connectAttr "HipSwinger_M_rotateX.o" "goodGuy_rigRN.phl[6]";
-connectAttr "HipSwinger_M_rotateY.o" "goodGuy_rigRN.phl[7]";
-connectAttr "FKSpine1_M_rotateZ.o" "goodGuy_rigRN.phl[8]";
-connectAttr "FKmiddleToe2_L_rotateX.o" "goodGuy_rigRN.phl[9]";
-connectAttr "FKmiddleToe2_L_rotateY.o" "goodGuy_rigRN.phl[10]";
-connectAttr "FKmiddleToe2_L_rotateZ.o" "goodGuy_rigRN.phl[11]";
-connectAttr "FKringToe1_L_rotateX.o" "goodGuy_rigRN.phl[12]";
-connectAttr "FKringToe2_L_rotateX.o" "goodGuy_rigRN.phl[13]";
-connectAttr "FKringToe2_L_rotateY.o" "goodGuy_rigRN.phl[14]";
-connectAttr "FKringToe2_L_rotateZ.o" "goodGuy_rigRN.phl[15]";
-connectAttr "FKShoulder_L_rotateX.o" "goodGuy_rigRN.phl[16]";
-connectAttr "FKShoulder_L_rotateY.o" "goodGuy_rigRN.phl[17]";
-connectAttr "IKLeg_R_translateY.o" "goodGuy_rigRN.phl[18]";
-connectAttr "IKLeg_R_translateZ.o" "goodGuy_rigRN.phl[19]";
-connectAttr "IKLeg_R_roll.o" "goodGuy_rigRN.phl[20]";
-connectAttr "RollHeel_R_translateX.o" "goodGuy_rigRN.phl[21]";
-connectAttr "RollHeel_R_translateY.o" "goodGuy_rigRN.phl[22]";
-connectAttr "RollHeel_R_translateZ.o" "goodGuy_rigRN.phl[23]";
-connectAttr "RollToesEnd_R_translateY.o" "goodGuy_rigRN.phl[24]";
-connectAttr "IKToes_R_rotateX.o" "goodGuy_rigRN.phl[25]";
-connectAttr "PoleLeg_R_translateX.o" "goodGuy_rigRN.phl[26]";
-connectAttr "PoleLeg_R_translateY.o" "goodGuy_rigRN.phl[27]";
-connectAttr "PoleLeg_R_translateZ.o" "goodGuy_rigRN.phl[28]";
-connectAttr "IKLeg_L_translateY.o" "goodGuy_rigRN.phl[29]";
-connectAttr "IKLeg_L_translateZ.o" "goodGuy_rigRN.phl[30]";
-connectAttr "IKLeg_L_roll.o" "goodGuy_rigRN.phl[31]";
-connectAttr "RollHeel_L_translateX.o" "goodGuy_rigRN.phl[32]";
-connectAttr "RollHeel_L_translateY.o" "goodGuy_rigRN.phl[33]";
-connectAttr "RollHeel_L_translateZ.o" "goodGuy_rigRN.phl[34]";
-connectAttr "RollHeel_L_rotateX.o" "goodGuy_rigRN.phl[35]";
-connectAttr "RollHeel_L_rotateY.o" "goodGuy_rigRN.phl[36]";
-connectAttr "RollHeel_L_rotateZ.o" "goodGuy_rigRN.phl[37]";
-connectAttr "RollToesEnd_L_translateX.o" "goodGuy_rigRN.phl[38]";
-connectAttr "RollToesEnd_L_translateY.o" "goodGuy_rigRN.phl[39]";
-connectAttr "RollToesEnd_L_translateZ.o" "goodGuy_rigRN.phl[40]";
-connectAttr "RollToesEnd_L_rotateX.o" "goodGuy_rigRN.phl[41]";
-connectAttr "RollToesEnd_L_rotateY.o" "goodGuy_rigRN.phl[42]";
-connectAttr "RollToesEnd_L_rotateZ.o" "goodGuy_rigRN.phl[43]";
-connectAttr "IKToes_L_rotateX.o" "goodGuy_rigRN.phl[44]";
-connectAttr "RootX_M_translateY.o" "goodGuy_rigRN.phl[45]";
-connectAttr "Fingers_L_indexCurl.o" "goodGuy_rigRN.phl[46]";
-connectAttr "Fingers_L_middleCurl.o" "goodGuy_rigRN.phl[47]";
-connectAttr "Fingers_L_ringCurl.o" "goodGuy_rigRN.phl[48]";
-connectAttr "Fingers_L_pinkyCurl.o" "goodGuy_rigRN.phl[49]";
-connectAttr "Fingers_L_thumbCurl.o" "goodGuy_rigRN.phl[50]";
-connectAttr "Fingers_L_spread.o" "goodGuy_rigRN.phl[51]";
-connectAttr "Fingers_L_cup.o" "goodGuy_rigRN.phl[52]";
+connectAttr "FKNeck1_M_rotateZ.o" "goodGuy_rigRN.phl[3]";
+connectAttr "HipSwinger_M_rotateX.o" "goodGuy_rigRN.phl[4]";
+connectAttr "HipSwinger_M_rotateY.o" "goodGuy_rigRN.phl[5]";
+connectAttr "FKSpine1_M_rotateZ.o" "goodGuy_rigRN.phl[6]";
+connectAttr "FKmiddleToe2_L_rotateX.o" "goodGuy_rigRN.phl[7]";
+connectAttr "FKmiddleToe2_L_rotateY.o" "goodGuy_rigRN.phl[8]";
+connectAttr "FKmiddleToe2_L_rotateZ.o" "goodGuy_rigRN.phl[9]";
+connectAttr "FKringToe1_L_rotateX.o" "goodGuy_rigRN.phl[10]";
+connectAttr "FKringToe2_L_rotateX.o" "goodGuy_rigRN.phl[11]";
+connectAttr "FKringToe2_L_rotateY.o" "goodGuy_rigRN.phl[12]";
+connectAttr "FKringToe2_L_rotateZ.o" "goodGuy_rigRN.phl[13]";
+connectAttr "FKShoulder_L_rotateX.o" "goodGuy_rigRN.phl[14]";
+connectAttr "FKShoulder_L_rotateY.o" "goodGuy_rigRN.phl[15]";
+connectAttr "IKLeg_R_translateY.o" "goodGuy_rigRN.phl[16]";
+connectAttr "IKLeg_R_translateZ.o" "goodGuy_rigRN.phl[17]";
+connectAttr "IKLeg_R_roll.o" "goodGuy_rigRN.phl[18]";
+connectAttr "RollHeel_R_translateX.o" "goodGuy_rigRN.phl[19]";
+connectAttr "RollHeel_R_translateY.o" "goodGuy_rigRN.phl[20]";
+connectAttr "RollHeel_R_translateZ.o" "goodGuy_rigRN.phl[21]";
+connectAttr "RollToesEnd_R_translateY.o" "goodGuy_rigRN.phl[22]";
+connectAttr "IKToes_R_rotateX.o" "goodGuy_rigRN.phl[23]";
+connectAttr "PoleLeg_R_translateX.o" "goodGuy_rigRN.phl[24]";
+connectAttr "PoleLeg_R_translateY.o" "goodGuy_rigRN.phl[25]";
+connectAttr "PoleLeg_R_translateZ.o" "goodGuy_rigRN.phl[26]";
+connectAttr "IKLeg_L_translateY.o" "goodGuy_rigRN.phl[27]";
+connectAttr "IKLeg_L_translateZ.o" "goodGuy_rigRN.phl[28]";
+connectAttr "IKLeg_L_roll.o" "goodGuy_rigRN.phl[29]";
+connectAttr "RollHeel_L_translateX.o" "goodGuy_rigRN.phl[30]";
+connectAttr "RollHeel_L_translateY.o" "goodGuy_rigRN.phl[31]";
+connectAttr "RollHeel_L_translateZ.o" "goodGuy_rigRN.phl[32]";
+connectAttr "RollHeel_L_rotateX.o" "goodGuy_rigRN.phl[33]";
+connectAttr "RollHeel_L_rotateY.o" "goodGuy_rigRN.phl[34]";
+connectAttr "RollHeel_L_rotateZ.o" "goodGuy_rigRN.phl[35]";
+connectAttr "RollToesEnd_L_translateX.o" "goodGuy_rigRN.phl[36]";
+connectAttr "RollToesEnd_L_translateY.o" "goodGuy_rigRN.phl[37]";
+connectAttr "RollToesEnd_L_translateZ.o" "goodGuy_rigRN.phl[38]";
+connectAttr "RollToesEnd_L_rotateX.o" "goodGuy_rigRN.phl[39]";
+connectAttr "RollToesEnd_L_rotateY.o" "goodGuy_rigRN.phl[40]";
+connectAttr "RollToesEnd_L_rotateZ.o" "goodGuy_rigRN.phl[41]";
+connectAttr "IKToes_L_rotateX.o" "goodGuy_rigRN.phl[42]";
+connectAttr "RootX_M_translateY.o" "goodGuy_rigRN.phl[43]";
+connectAttr "Fingers_R_indexCurl.o" "goodGuy_rigRN.phl[44]";
+connectAttr "Fingers_R_middleCurl.o" "goodGuy_rigRN.phl[45]";
+connectAttr "Fingers_R_ringCurl.o" "goodGuy_rigRN.phl[46]";
+connectAttr "Fingers_R_pinkyCurl.o" "goodGuy_rigRN.phl[47]";
+connectAttr "Fingers_R_thumbCurl.o" "goodGuy_rigRN.phl[48]";
+connectAttr "Fingers_R_spread.o" "goodGuy_rigRN.phl[49]";
+connectAttr "Fingers_R_cup.o" "goodGuy_rigRN.phl[50]";
+connectAttr "Fingers_L_indexCurl.o" "goodGuy_rigRN.phl[51]";
+connectAttr "Fingers_L_middleCurl.o" "goodGuy_rigRN.phl[52]";
+connectAttr "Fingers_L_ringCurl.o" "goodGuy_rigRN.phl[53]";
+connectAttr "Fingers_L_pinkyCurl.o" "goodGuy_rigRN.phl[54]";
+connectAttr "Fingers_L_thumbCurl.o" "goodGuy_rigRN.phl[55]";
+connectAttr "Fingers_L_spread.o" "goodGuy_rigRN.phl[56]";
+connectAttr "Fingers_L_cup.o" "goodGuy_rigRN.phl[57]";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "defaultMat2.message" ":defaultLightSet.message";
@@ -3515,7 +3512,6 @@ connectAttr "place2dTexture15.vc1" "file15.vc1";
 connectAttr "place2dTexture15.o" "file15.uv";
 connectAttr "place2dTexture15.ofs" "file15.fs";
 connectAttr "file15.oa" "bump2d4.bv";
-connectAttr "goodGuy_rigRNfosterParent1.msg" "goodGuy_rigRN.fp";
 connectAttr "defaultMat2.pa" ":renderPartition.st" -na;
 connectAttr "defaultMat.pa" ":renderPartition.st" -na;
 connectAttr "blinn1SG.pa" ":renderPartition.st" -na;
@@ -3620,4 +3616,4 @@ connectAttr "file12.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file13.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file14.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file15.msg" ":defaultTextureList1.tx" -na;
-// End of shot4.ma
+// End of shot4_WIP.0063.ma

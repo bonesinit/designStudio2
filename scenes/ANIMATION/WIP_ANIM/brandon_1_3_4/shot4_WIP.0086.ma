@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
-//Name: shot4.ma
-//Last modified: Fri, Nov 13, 2020 01:29:39 PM
+//Name: shot4_WIP.0086.ma
+//Last modified: Fri, Nov 13, 2020 01:29:27 PM
 //Codeset: 1252
 file -rdi 1 -ns "newEvilLair_env" -rfn "newEvilLair_envRN" -op "v=0;" -typ "mayaAscii"
 		 "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/newEvilLair_env.ma";
@@ -67,7 +67,7 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
-fileInfo "UUID" "F8EAE3C7-462D-3658-FAD1-F2BB5FFD8073";
+fileInfo "UUID" "F3057A25-40AD-B9DC-3543-77856FC7FA96";
 createNode transform -s -n "persp";
 	rename -uid "589C33C5-4443-CDAD-A4C7-87A98D7BAD94";
 	setAttr ".v" no;
@@ -162,7 +162,7 @@ createNode camera -n "shot4_camShape" -p "shot4_cam";
 	setAttr ".dfg" yes;
 	setAttr ".ai_translator" -type "string" "perspective";
 createNode fosterParent -n "goodGuy_rigRNfosterParent1";
-	rename -uid "B4CDEB3D-432E-072A-CBEA-EE943F53EE21";
+	rename -uid "C8A6F1C5-4EC7-7980-3A5C-DB9E4BA3662D";
 createNode transform -n "flashlight_loc" -p "goodGuy_rigRNfosterParent1";
 	rename -uid "D3C12009-45BE-9AC9-DC2F-30A94BC59A97";
 	setAttr ".t" -type "double3" 0.10237374431465961 -0.017376406732304537 0.00071514299138701479 ;
@@ -3620,4 +3620,4 @@ connectAttr "file12.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file13.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file14.msg" ":defaultTextureList1.tx" -na;
 connectAttr "file15.msg" ":defaultTextureList1.tx" -na;
-// End of shot4.ma
+// End of shot4_WIP.0086.ma

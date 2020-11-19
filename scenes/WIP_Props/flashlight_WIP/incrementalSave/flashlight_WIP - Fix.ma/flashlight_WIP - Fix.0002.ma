@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: flashlight_WIP - Fix.ma
-//Last modified: Thu, Nov 19, 2020 04:58:14 PM
+//Last modified: Thu, Nov 19, 2020 03:37:59 PM
 //Codeset: 1252
 requires maya "2020";
 requires "stereoCamera" "10.0";
@@ -14,12 +14,12 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
-fileInfo "UUID" "6CC754FD-4A30-7F78-A149-7BB59AA63031";
+fileInfo "UUID" "8A0D2554-4C83-2972-BB3B-19B5050DA7C0";
 createNode transform -s -n "persp";
 	rename -uid "61E432B4-498D-020C-CFC4-DD8DAD4C7B6D";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -0.83408431460837085 0.48059054796247735 -0.26561235104891479 ;
-	setAttr ".r" -type "double3" 2852.6616472424867 4933.7999999990679 0 ;
+	setAttr ".t" -type "double3" -0.94382960398312787 0.28267086918749851 -0.0555043666800209 ;
+	setAttr ".r" -type "double3" 2865.2616472424802 4948.1999999989903 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1BC7F99A-4CC5-D016-B361-1F9590540FA6";
 	setAttr -k off ".v" no;

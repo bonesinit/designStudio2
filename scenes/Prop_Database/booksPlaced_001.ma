@@ -1,19 +1,17 @@
-//Maya ASCII 2019 scene
+//Maya ASCII 2020 scene
 //Name: booksPlaced_001.ma
-//Last modified: Sun, Nov 15, 2020 02:48:37 PM
+//Last modified: Thu, Nov 19, 2020 08:04:32 PM
 //Codeset: 1252
-requires maya "2019";
-requires -nodeType "aiStandardSurface" "mtoa" "3.1.2";
-requires "stereoCamera" "10.0";
-requires "mtoa" "3.1.2";
+requires maya "2020";
+requires -nodeType "aiStandardSurface" "mtoa" "4.0.0";
 requires "stereoCamera" "10.0";
 currentUnit -l centimeter -a degree -t film;
 fileInfo "application" "maya";
-fileInfo "product" "Maya 2019";
-fileInfo "version" "2019";
-fileInfo "cutIdentifier" "201812112215-434d8d9c04";
-fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 19041)\n";
-fileInfo "license" "student";
+fileInfo "product" "Maya 2020";
+fileInfo "version" "2020";
+fileInfo "cutIdentifier" "201911140446-42a737a01c";
+fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
+fileInfo "UUID" "176FB238-41CA-6877-46F8-1A85C3C649BD";
 createNode transform -n "booksPlaced_grp";
 	rename -uid "FFEF457F-49EE-0BCF-9C8A-368182BA11DC";
 createNode transform -n "book_grp" -p "booksPlaced_grp";
@@ -68102,11 +68100,11 @@ createNode displayLayer -n "book_layer";
 	rename -uid "74BC6DC6-41DB-3787-3D27-F9B35E39D3C8";
 	setAttr ".do" 1;
 createNode displayLayerManager -n "layerManager";
-	rename -uid "E1E84B00-43F1-E586-FCCB-FC8C60B466C5";
+	rename -uid "C2D6DD0D-47A9-A42A-14BA-9880E10ABA59";
 	setAttr ".cdl" 12;
 	setAttr -s 13 ".dli[1:12]"  1 2 3 4 5 6 7 8 
 		9 10 11 12;
-	setAttr -s 3 ".dli";
+	setAttr -s 2 ".dli";
 createNode materialInfo -n "materialInfo1";
 	rename -uid "7F9C4ECF-49AF-D555-1BDD-5287504D5FF9";
 createNode shadingEngine -n "aiStandardSurface1SG";
@@ -68117,9 +68115,9 @@ createNode shadingEngine -n "aiStandardSurface1SG";
 createNode aiStandardSurface -n "book_mat";
 	rename -uid "9C1FD2C9-442B-797E-F8D3-ACAB97A25D0C";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "FCAAFFAB-4385-206B-D476-188FF6E72C58";
-	setAttr -s 4 ".lnk";
-	setAttr -s 4 ".slnk";
+	rename -uid "B570D977-4A45-62BB-27B7-5CBCA613D8F7";
+	setAttr -s 3 ".lnk";
+	setAttr -s 3 ".slnk";
 select -ne :time1;
 	setAttr -k on ".cch";
 	setAttr -k on ".nds";
@@ -68135,7 +68133,7 @@ select -ne :hardwareRenderingGlobals;
 select -ne :renderPartition;
 	setAttr -k on ".cch";
 	setAttr -k on ".nds";
-	setAttr -s 4 ".st";
+	setAttr -s 3 ".st";
 select -ne :renderGlobalsList1;
 	setAttr -k on ".cch";
 	setAttr -k on ".nds";
@@ -68147,9 +68145,7 @@ select -ne :postProcessList1;
 	setAttr -k on ".cch";
 	setAttr -k on ".nds";
 	setAttr -s 2 ".p";
-select -ne :defaultRenderUtilityList1;
 select -ne :defaultRenderingList1;
-select -ne :defaultTextureList1;
 select -ne :initialShadingGroup;
 	setAttr -k on ".cch";
 	setAttr -k on ".nds";
@@ -68176,8 +68172,6 @@ select -ne :hardwareRenderGlobals;
 	setAttr -k on ".nds";
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :ikSystem;
-	setAttr -s 4 ".sol";
 connectAttr "book_layer.di" "|booksPlaced_grp|book_grp|POSITION|MOVEMENT|ADJUSTMENTS|DO_NOT_TOUCH|book_geo.do"
 		;
 connectAttr "book_layer.di" "|booksPlaced_grp|book_grp1|POSITION|MOVEMENT|ADJUSTMENTS|DO_NOT_TOUCH|book_geo.do"

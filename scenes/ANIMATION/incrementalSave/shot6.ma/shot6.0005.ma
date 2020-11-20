@@ -1,6 +1,6 @@
 //Maya ASCII 2020 scene
 //Name: shot6.ma
-//Last modified: Fri, Nov 20, 2020 02:02:53 PM
+//Last modified: Fri, Nov 20, 2020 02:00:24 PM
 //Codeset: 1252
 file -rdi 1 -ns "newEvilLair_env" -rfn "newEvilLair_envRN" -op "v=0;" -typ "mayaAscii"
 		 "E:/Users/Brandon/Documents/GitHub/designStudio2//scenes/newEvilLair_env.ma";
@@ -93,18 +93,18 @@ fileInfo "product" "Maya 2020";
 fileInfo "version" "2020";
 fileInfo "cutIdentifier" "201911140446-42a737a01c";
 fileInfo "osv" "Microsoft Windows 10 Technical Preview  (Build 18363)\n";
-fileInfo "UUID" "1A803309-4464-95E0-6FB7-6A84AE754304";
+fileInfo "UUID" "A49CFAB3-459F-6B34-73BE-0D92301231C7";
 createNode transform -s -n "persp";
 	rename -uid "589C33C5-4443-CDAD-A4C7-87A98D7BAD94";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.64695614766856302 3.4487906105083148 3.238116495759046 ;
-	setAttr ".r" -type "double3" -17.138352733125661 -1078.5999999997875 -9.9422012282385537e-17 ;
+	setAttr ".t" -type "double3" 15.203801582782203 10.481834731832677 3.7023043917532892 ;
+	setAttr ".r" -type "double3" -29.138352733122655 -1017.7999999997924 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "3B2BE92D-4556-A4BB-3ABE-33B0F4C61043";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
 	setAttr ".fcp" 1000000;
-	setAttr ".coi" 7.6466147428362996;
+	setAttr ".coi" 19.071605010390989;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -298,12 +298,12 @@ createNode reference -n "newEvilLair_envRN";
 		"translateX" " -av"
 		"newEvilLair_env:bookcaseRN1" 0
 		"newEvilLair_envRN" 13
-		2 "newEvilLair_env:room_layer" "visibility" " 1"
-		2 "newEvilLair_env:lightGrid_layer" "visibility" " 1"
-		2 "newEvilLair_env:leftSide_bookcases_layer" "visibility" " 1"
-		2 "newEvilLair_env:rightSide_bookcases_layer" "visibility" " 1"
+		2 "newEvilLair_env:room_layer" "visibility" " 0"
+		2 "newEvilLair_env:lightGrid_layer" "visibility" " 0"
+		2 "newEvilLair_env:leftSide_bookcases_layer" "visibility" " 0"
+		2 "newEvilLair_env:rightSide_bookcases_layer" "visibility" " 0"
 		2 "newEvilLair_env:door_window_layer" "displayType" " 0"
-		2 "newEvilLair_env:door_window_layer" "visibility" " 1"
+		2 "newEvilLair_env:door_window_layer" "visibility" " 0"
 		2 "newEvilLair_env:wallArt_layer" "visibility" " 1"
 		2 "newEvilLair_env:giantFlyTraps_layer" "visibility" " 1"
 		2 "newEvilLair_env:filingCabinet_layer" "displayType" " 0"
@@ -312,13 +312,13 @@ createNode reference -n "newEvilLair_envRN";
 		2 "newEvilLair_env:lights_layer" "displayType" " 0"
 		2 "newEvilLair_env:lights_layer" "visibility" " 1"
 		"newEvilLair_env:bigEvilChairRN" 13
-		2 "|newEvilLair_env:bigEvilChair:bigEvilChair_grp" "translate" " -type \"double3\" -0.01324271145572925 0 -5.0758612783393291"
+		2 "|newEvilLair_env:bigEvilChair:bigEvilChair_grp" "translate" " -type \"double3\" -0.056701121504279861 0 -4.72095524953139023"
 		
 		2 "|newEvilLair_env:bigEvilChair:bigEvilChair_grp" "translateX" " -av"
 		2 "|newEvilLair_env:bigEvilChair:bigEvilChair_grp" "translateY" " -av"
 		2 "|newEvilLair_env:bigEvilChair:bigEvilChair_grp" "translateZ" " -av"
 		2 "|newEvilLair_env:bigEvilChair:bigEvilChair_grp|newEvilLair_env:bigEvilChair:POSITION|newEvilLair_env:bigEvilChair:MOVEMENT|newEvilLair_env:bigEvilChair:ADJUSTMENTS|newEvilLair_env:bigEvilChair:DO_NOT_TOUCH|newEvilLair_env:bigEvilChair:rotate_upperchair" 
-		"rotate" " -type \"double3\" 0 0.7076849267634161 0"
+		"rotate" " -type \"double3\" 0 134.85695635977421603 0"
 		2 "|newEvilLair_env:bigEvilChair:bigEvilChair_grp|newEvilLair_env:bigEvilChair:POSITION|newEvilLair_env:bigEvilChair:MOVEMENT|newEvilLair_env:bigEvilChair:ADJUSTMENTS|newEvilLair_env:bigEvilChair:DO_NOT_TOUCH|newEvilLair_env:bigEvilChair:rotate_upperchair" 
 		"rotateY" " -av"
 		2 "|newEvilLair_env:bigEvilChair:bigEvilChair_grp|newEvilLair_env:bigEvilChair:POSITION|newEvilLair_env:bigEvilChair:MOVEMENT|newEvilLair_env:bigEvilChair:ADJUSTMENTS|newEvilLair_env:bigEvilChair:DO_NOT_TOUCH|newEvilLair_env:bigEvilChair:rotate_upperchair" 
@@ -392,13 +392,9 @@ createNode aiOptions -s -n "defaultArnoldRenderOptions";
 	rename -uid "16DF2A58-415C-8669-9437-26AA4DA1E81B";
 	addAttr -ci true -sn "ARV_options" -ln "ARV_options" -dt "string";
 	setAttr ".AA_samples" 4;
-	setAttr ".GI_diffuse_samples" 5;
-	setAttr ".GI_specular_samples" 5;
-	setAttr ".GI_volume_samples" 0;
+	setAttr ".GI_diffuse_samples" 4;
+	setAttr ".GI_specular_samples" 4;
 	setAttr ".GI_diffuse_depth" 5;
-	setAttr ".GI_specular_depth" 2;
-	setAttr ".GI_transmission_depth" 2;
-	setAttr ".auto_transparency_depth" 5;
 	setAttr ".version" -type "string" "4.0.0";
 	setAttr ".ARV_options" -type "string" "Test Resolution=100%;Camera=envRender_lightsCams:bearTrophy_render_camShape;Color Management.Gamma=1;Color Management.Exposure=0;Background.BG=BG Color;Background.Color=0 0 0;Background.Image=;Background.Scale=1   1;Background.Offset=0   0;Background.Apply Color Management=1;Foreground.Enable FG=0;Foreground.Image=;Foreground.Scale=1   1;Foreground.Offset=0   0;Foreground.Apply Color Management=1;";
 createNode aiAOVFilter -s -n "defaultArnoldFilter";
@@ -407,7 +403,7 @@ createNode aiAOVFilter -s -n "defaultArnoldFilter";
 createNode aiAOVDriver -s -n "defaultArnoldDriver";
 	rename -uid "D34E96DA-48D9-9F36-06E2-9CA50B89515B";
 	setAttr ".color_management" 1;
-	setAttr ".ai_translator" -type "string" "png";
+	setAttr ".ai_translator" -type "string" "tif";
 createNode aiAOVDriver -s -n "defaultArnoldDisplayDriver";
 	rename -uid "DFD95D6B-42A7-9FE9-3C6E-44BA1397C47D";
 	setAttr ".output_mode" 0;
@@ -463,7 +459,7 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Front View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Front View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"front\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n"
 		+ "            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 0\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n"
 		+ "            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n"
-		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"shot6_cam\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
+		+ "            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1\n            -height 1\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"modelPanel\" (localizedPanelLabel(\"Persp View\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\tmodelPanel -edit -l (localizedPanelLabel(\"Persp View\")) -mbv $menusOkayInPanels  $panelName;\n\t\t$editorName = $panelName;\n        modelEditor -e \n            -camera \"persp\" \n            -useInteractiveMode 0\n            -displayLights \"default\" \n            -displayAppearance \"smoothShaded\" \n            -activeOnly 0\n            -ignorePanZoom 0\n"
 		+ "            -wireframeOnShaded 0\n            -headsUpDisplay 1\n            -holdOuts 1\n            -selectionHiliteDisplay 1\n            -useDefaultMaterial 0\n            -bufferMode \"double\" \n            -twoSidedLighting 0\n            -backfaceCulling 0\n            -xray 0\n            -jointXray 0\n            -activeComponentsXray 0\n            -displayTextures 1\n            -smoothWireframe 0\n            -lineWidth 1\n            -textureAnisotropic 0\n            -textureHilight 1\n            -textureSampling 2\n            -textureDisplay \"modulate\" \n            -textureMaxSize 16384\n            -fogging 0\n            -fogSource \"fragment\" \n            -fogMode \"linear\" \n            -fogStart 0\n            -fogEnd 100\n            -fogDensity 0.1\n            -fogColor 0.5 0.5 0.5 1 \n            -depthOfFieldPreview 1\n            -maxConstantTransparency 1\n            -rendererName \"vp2Renderer\" \n            -objectFilterShowInHUD 1\n            -isFiltered 0\n            -colorResolution 256 256 \n            -bumpResolution 512 512 \n"
 		+ "            -textureCompression 0\n            -transparencyAlgorithm \"frontAndBackCull\" \n            -transpInShadows 0\n            -cullingOverride \"none\" \n            -lowQualityLighting 0\n            -maximumNumHardwareLights 1\n            -occlusionCulling 0\n            -shadingModel 0\n            -useBaseRenderer 0\n            -useReducedRenderer 0\n            -smallObjectCulling 0\n            -smallObjectThreshold -1 \n            -interactiveDisableShadows 0\n            -interactiveBackFaceCull 0\n            -sortTransparent 1\n            -controllers 1\n            -nurbsCurves 1\n            -nurbsSurfaces 1\n            -polymeshes 1\n            -subdivSurfaces 1\n            -planes 1\n            -lights 1\n            -cameras 1\n            -controlVertices 1\n            -hulls 1\n            -grid 1\n            -imagePlane 1\n            -joints 1\n            -ikHandles 1\n            -deformers 1\n            -dynamics 1\n            -particleInstancers 1\n            -fluids 1\n            -hairSystems 1\n            -follicles 1\n"
 		+ "            -nCloths 1\n            -nParticles 1\n            -nRigids 1\n            -dynamicConstraints 1\n            -locators 1\n            -manipulators 1\n            -pluginShapes 1\n            -dimensions 1\n            -handles 1\n            -pivots 1\n            -textures 1\n            -strokes 1\n            -motionTrails 1\n            -clipGhosts 1\n            -greasePencils 1\n            -shadows 0\n            -captureSequenceNumber -1\n            -width 1313\n            -height 524\n            -sceneRenderFilter 0\n            $editorName;\n        modelEditor -e -viewSelected 0 $editorName;\n        modelEditor -e \n            -pluginObjects \"gpuCacheDisplayFilter\" 1 \n            $editorName;\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\t$panelName = `sceneUIReplacement -getNextPanel \"outlinerPanel\" (localizedPanelLabel(\"ToggledOutliner\")) `;\n\tif (\"\" != $panelName) {\n\t\t$label = `panel -q -label $panelName`;\n\t\toutlinerPanel -edit -l (localizedPanelLabel(\"ToggledOutliner\")) -mbv $menusOkayInPanels  $panelName;\n"
@@ -493,8 +489,8 @@ createNode script -n "uiConfigurationScriptNode";
 		+ "                -lowQualityLighting 0\n                -maximumNumHardwareLights 0\n                -occlusionCulling 0\n                -shadingModel 0\n                -useBaseRenderer 0\n                -useReducedRenderer 0\n                -smallObjectCulling 0\n                -smallObjectThreshold -1 \n                -interactiveDisableShadows 0\n                -interactiveBackFaceCull 0\n                -sortTransparent 1\n                -controllers 1\n                -nurbsCurves 1\n                -nurbsSurfaces 1\n                -polymeshes 1\n                -subdivSurfaces 1\n                -planes 1\n                -lights 1\n                -cameras 1\n                -controlVertices 1\n                -hulls 1\n                -grid 1\n                -imagePlane 1\n                -joints 1\n                -ikHandles 1\n                -deformers 1\n                -dynamics 1\n                -particleInstancers 1\n                -fluids 1\n                -hairSystems 1\n                -follicles 1\n                -nCloths 1\n"
 		+ "                -nParticles 1\n                -nRigids 1\n                -dynamicConstraints 1\n                -locators 1\n                -manipulators 1\n                -pluginShapes 1\n                -dimensions 1\n                -handles 1\n                -pivots 1\n                -textures 1\n                -strokes 1\n                -motionTrails 1\n                -clipGhosts 1\n                -greasePencils 1\n                -shadows 0\n                -captureSequenceNumber -1\n                -width 0\n                -height 0\n                -sceneRenderFilter 0\n                -displayMode \"centerEye\" \n                -viewColor 0 0 0 1 \n                -useCustomBackground 1\n                $editorName;\n            stereoCameraView -e -viewSelected 0 $editorName;\n            stereoCameraView -e \n                -pluginObjects \"gpuCacheDisplayFilter\" 1 \n                $editorName; };\n\t\tif (!$useSceneConfig) {\n\t\t\tpanel -e -l $label $panelName;\n\t\t}\n\t}\n\n\n\tif ($useSceneConfig) {\n        string $configName = `getPanel -cwl (localizedPanelLabel(\"Current Layout\"))`;\n"
 		+ "        if (\"\" != $configName) {\n\t\t\tpanelConfiguration -edit -label (localizedPanelLabel(\"Current Layout\")) \n\t\t\t\t-userCreated false\n\t\t\t\t-defaultImage \"vacantCell.xP:/\"\n\t\t\t\t-image \"\"\n\t\t\t\t-sc false\n\t\t\t\t-configString \"global string $gMainPane; paneLayout -e -cn \\\"single\\\" -ps 1 100 100 $gMainPane;\"\n\t\t\t\t-removeAllPanels\n\t\t\t\t-ap false\n\t\t\t\t\t(localizedPanelLabel(\"Persp View\")) \n\t\t\t\t\t\"modelPanel\"\n"
-		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"shot6_cam\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1313\\n    -height 524\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
-		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -camera \\\"shot6_cam\\\" \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1313\\n    -height 524\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"$panelName = `modelPanel -unParent -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels `;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1313\\n    -height 524\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
+		+ "\t\t\t\t\t\"modelPanel -edit -l (localizedPanelLabel(\\\"Persp View\\\")) -mbv $menusOkayInPanels  $panelName;\\n$editorName = $panelName;\\nmodelEditor -e \\n    -cam `findStartUpCamera persp` \\n    -useInteractiveMode 0\\n    -displayLights \\\"default\\\" \\n    -displayAppearance \\\"smoothShaded\\\" \\n    -activeOnly 0\\n    -ignorePanZoom 0\\n    -wireframeOnShaded 0\\n    -headsUpDisplay 1\\n    -holdOuts 1\\n    -selectionHiliteDisplay 1\\n    -useDefaultMaterial 0\\n    -bufferMode \\\"double\\\" \\n    -twoSidedLighting 0\\n    -backfaceCulling 0\\n    -xray 0\\n    -jointXray 0\\n    -activeComponentsXray 0\\n    -displayTextures 1\\n    -smoothWireframe 0\\n    -lineWidth 1\\n    -textureAnisotropic 0\\n    -textureHilight 1\\n    -textureSampling 2\\n    -textureDisplay \\\"modulate\\\" \\n    -textureMaxSize 16384\\n    -fogging 0\\n    -fogSource \\\"fragment\\\" \\n    -fogMode \\\"linear\\\" \\n    -fogStart 0\\n    -fogEnd 100\\n    -fogDensity 0.1\\n    -fogColor 0.5 0.5 0.5 1 \\n    -depthOfFieldPreview 1\\n    -maxConstantTransparency 1\\n    -rendererName \\\"vp2Renderer\\\" \\n    -objectFilterShowInHUD 1\\n    -isFiltered 0\\n    -colorResolution 256 256 \\n    -bumpResolution 512 512 \\n    -textureCompression 0\\n    -transparencyAlgorithm \\\"frontAndBackCull\\\" \\n    -transpInShadows 0\\n    -cullingOverride \\\"none\\\" \\n    -lowQualityLighting 0\\n    -maximumNumHardwareLights 1\\n    -occlusionCulling 0\\n    -shadingModel 0\\n    -useBaseRenderer 0\\n    -useReducedRenderer 0\\n    -smallObjectCulling 0\\n    -smallObjectThreshold -1 \\n    -interactiveDisableShadows 0\\n    -interactiveBackFaceCull 0\\n    -sortTransparent 1\\n    -controllers 1\\n    -nurbsCurves 1\\n    -nurbsSurfaces 1\\n    -polymeshes 1\\n    -subdivSurfaces 1\\n    -planes 1\\n    -lights 1\\n    -cameras 1\\n    -controlVertices 1\\n    -hulls 1\\n    -grid 1\\n    -imagePlane 1\\n    -joints 1\\n    -ikHandles 1\\n    -deformers 1\\n    -dynamics 1\\n    -particleInstancers 1\\n    -fluids 1\\n    -hairSystems 1\\n    -follicles 1\\n    -nCloths 1\\n    -nParticles 1\\n    -nRigids 1\\n    -dynamicConstraints 1\\n    -locators 1\\n    -manipulators 1\\n    -pluginShapes 1\\n    -dimensions 1\\n    -handles 1\\n    -pivots 1\\n    -textures 1\\n    -strokes 1\\n    -motionTrails 1\\n    -clipGhosts 1\\n    -greasePencils 1\\n    -shadows 0\\n    -captureSequenceNumber -1\\n    -width 1313\\n    -height 524\\n    -sceneRenderFilter 0\\n    $editorName;\\nmodelEditor -e -viewSelected 0 $editorName;\\nmodelEditor -e \\n    -pluginObjects \\\"gpuCacheDisplayFilter\\\" 1 \\n    $editorName\"\n"
 		+ "\t\t\t\t$configName;\n\n            setNamedPanelLayout (localizedPanelLabel(\"Current Layout\"));\n        }\n\n        panelHistory -e -clear mainPanelHistory;\n        sceneUIReplacement -clear;\n\t}\n\n\ngrid -spacing 5 -size 12 -divisions 5 -displayAxes yes -displayGridLines yes -displayDivisionLines yes -displayPerspectiveLabels no -displayOrthographicLabels no -displayAxesBold yes -perspectiveLabelPosition axis -orthographicLabelPosition edge;\nviewManip -drawCompass 0 -compassAngle 0 -frontParameters \"\" -homeParameters \"\" -selectionLockParameters \"\";\n}\n");
 	setAttr ".st" 3;
 createNode script -n "sceneConfigurationScriptNode";
@@ -1221,14 +1217,14 @@ createNode reference -n "Villain_rigRN";
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"Villain_rigRN"
 		"Villain_rigRN" 0
-		"Villain_rigRN" 403
+		"Villain_rigRN" 402
 		2 "|Villain_rig:Group|Villain_rig:Main" "visibility" " 1"
-		2 "|Villain_rig:Group|Villain_rig:Main" "translate" " -type \"double3\" -0.13559555784110086 -0.073556536433870293 -4.31361086431688356"
+		2 "|Villain_rig:Group|Villain_rig:Main" "translate" " -type \"double3\" 0.34180786065304358 -0.046768480801271384 -4.91066682504933461"
 		
 		2 "|Villain_rig:Group|Villain_rig:Main" "translateX" " -av"
 		2 "|Villain_rig:Group|Villain_rig:Main" "translateY" " -av"
 		2 "|Villain_rig:Group|Villain_rig:Main" "translateZ" " -av"
-		2 "|Villain_rig:Group|Villain_rig:Main" "rotate" " -type \"double3\" 180.93779948007343705 175.00088249306406851 172.6531434628881243"
+		2 "|Villain_rig:Group|Villain_rig:Main" "rotate" " -type \"double3\" 178.42377471400499189 38.68261065060305981 184.65479342770439075"
 		
 		2 "|Villain_rig:Group|Villain_rig:Main" "rotateX" " -av"
 		2 "|Villain_rig:Group|Villain_rig:Main" "rotateY" " -av"
@@ -1236,7 +1232,7 @@ createNode reference -n "Villain_rigRN";
 		2 "|Villain_rig:Group|Villain_rig:Main" "scale" " -type \"double3\" 1.2 1.2 1.2"
 		
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetMiddleFinger1_R|Villain_rig:SDKFKMiddleFinger1_R|Villain_rig:FKExtraMiddleFinger1_R|Villain_rig:FKMiddleFinger1_R" 
-		"rotate" " -type \"double3\" -0.23433606804133411 1.90673852479650052 -6.51960972473137357"
+		"rotate" " -type \"double3\" -0.57755153869556708 -1.06721469338671238 -6.48456988383543287"
 		
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetMiddleFinger1_R|Villain_rig:SDKFKMiddleFinger1_R|Villain_rig:FKExtraMiddleFinger1_R|Villain_rig:FKMiddleFinger1_R" 
 		"rotateX" " -av"
@@ -1245,15 +1241,15 @@ createNode reference -n "Villain_rigRN";
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetMiddleFinger1_R|Villain_rig:SDKFKMiddleFinger1_R|Villain_rig:FKExtraMiddleFinger1_R|Villain_rig:FKMiddleFinger1_R" 
 		"rotateZ" " -av"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetMiddleFinger1_R|Villain_rig:SDKFKMiddleFinger1_R|Villain_rig:FKExtraMiddleFinger1_R|Villain_rig:FKMiddleFinger1_R|Villain_rig:FKXMiddleFinger1_R|Villain_rig:FKOffsetMiddleFinger2_R|Villain_rig:SDKFKMiddleFinger2_R|Villain_rig:FKExtraMiddleFinger2_R|Villain_rig:FKMiddleFinger2_R" 
-		"rotate" " -type \"double3\" 0 23.48323888193714026 0"
+		"rotate" " -type \"double3\" 0 20.77648139706176877 0"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetMiddleFinger1_R|Villain_rig:SDKFKMiddleFinger1_R|Villain_rig:FKExtraMiddleFinger1_R|Villain_rig:FKMiddleFinger1_R|Villain_rig:FKXMiddleFinger1_R|Villain_rig:FKOffsetMiddleFinger2_R|Villain_rig:SDKFKMiddleFinger2_R|Villain_rig:FKExtraMiddleFinger2_R|Villain_rig:FKMiddleFinger2_R" 
 		"rotateY" " -av"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetMiddleFinger1_R|Villain_rig:SDKFKMiddleFinger1_R|Villain_rig:FKExtraMiddleFinger1_R|Villain_rig:FKMiddleFinger1_R|Villain_rig:FKXMiddleFinger1_R|Villain_rig:FKOffsetMiddleFinger2_R|Villain_rig:SDKFKMiddleFinger2_R|Villain_rig:FKExtraMiddleFinger2_R|Villain_rig:FKMiddleFinger2_R|Villain_rig:FKXMiddleFinger2_R|Villain_rig:FKOffsetMiddleFinger3_R|Villain_rig:SDKFKMiddleFinger3_R|Villain_rig:FKExtraMiddleFinger3_R|Villain_rig:FKMiddleFinger3_R" 
-		"rotate" " -type \"double3\" 0 34.80891532430938184 0"
+		"rotate" " -type \"double3\" 0 29.58748019706611387 0"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetMiddleFinger1_R|Villain_rig:SDKFKMiddleFinger1_R|Villain_rig:FKExtraMiddleFinger1_R|Villain_rig:FKMiddleFinger1_R|Villain_rig:FKXMiddleFinger1_R|Villain_rig:FKOffsetMiddleFinger2_R|Villain_rig:SDKFKMiddleFinger2_R|Villain_rig:FKExtraMiddleFinger2_R|Villain_rig:FKMiddleFinger2_R|Villain_rig:FKXMiddleFinger2_R|Villain_rig:FKOffsetMiddleFinger3_R|Villain_rig:SDKFKMiddleFinger3_R|Villain_rig:FKExtraMiddleFinger3_R|Villain_rig:FKMiddleFinger3_R" 
 		"rotateY" " -av"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetIndexFinger1_R|Villain_rig:SDKFKIndexFinger1_R|Villain_rig:FKExtraIndexFinger1_R|Villain_rig:FKIndexFinger1_R" 
-		"rotate" " -type \"double3\" -0.79423190420208933 11.58345608289797468 -9.59188435028532638"
+		"rotate" " -type \"double3\" -1.54665341599472428 7.43485055593565569 -9.36822291508501337"
 		
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetIndexFinger1_R|Villain_rig:SDKFKIndexFinger1_R|Villain_rig:FKExtraIndexFinger1_R|Villain_rig:FKIndexFinger1_R" 
 		"rotateX" " -av"
@@ -1262,15 +1258,15 @@ createNode reference -n "Villain_rigRN";
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetIndexFinger1_R|Villain_rig:SDKFKIndexFinger1_R|Villain_rig:FKExtraIndexFinger1_R|Villain_rig:FKIndexFinger1_R" 
 		"rotateZ" " -av"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetIndexFinger1_R|Villain_rig:SDKFKIndexFinger1_R|Villain_rig:FKExtraIndexFinger1_R|Villain_rig:FKIndexFinger1_R|Villain_rig:FKXIndexFinger1_R|Villain_rig:FKOffsetIndexFinger2_R|Villain_rig:SDKFKIndexFinger2_R|Villain_rig:FKExtraIndexFinger2_R|Villain_rig:FKIndexFinger2_R" 
-		"rotate" " -type \"double3\" 0 18.26789848274591677 0"
+		"rotate" " -type \"double3\" 0 15.54449168118543056 0"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetIndexFinger1_R|Villain_rig:SDKFKIndexFinger1_R|Villain_rig:FKExtraIndexFinger1_R|Villain_rig:FKIndexFinger1_R|Villain_rig:FKXIndexFinger1_R|Villain_rig:FKOffsetIndexFinger2_R|Villain_rig:SDKFKIndexFinger2_R|Villain_rig:FKExtraIndexFinger2_R|Villain_rig:FKIndexFinger2_R" 
 		"rotateY" " -av"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetIndexFinger1_R|Villain_rig:SDKFKIndexFinger1_R|Villain_rig:FKExtraIndexFinger1_R|Villain_rig:FKIndexFinger1_R|Villain_rig:FKXIndexFinger1_R|Villain_rig:FKOffsetIndexFinger2_R|Villain_rig:SDKFKIndexFinger2_R|Villain_rig:FKExtraIndexFinger2_R|Villain_rig:FKIndexFinger2_R|Villain_rig:FKXIndexFinger2_R|Villain_rig:FKOffsetIndexFinger3_R|Villain_rig:SDKFKIndexFinger3_R|Villain_rig:FKExtraIndexFinger3_R|Villain_rig:FKIndexFinger3_R" 
-		"rotate" " -type \"double3\" 0 27.98587546761288536 0"
+		"rotate" " -type \"double3\" 0 26.13884158222059284 0"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetIndexFinger1_R|Villain_rig:SDKFKIndexFinger1_R|Villain_rig:FKExtraIndexFinger1_R|Villain_rig:FKIndexFinger1_R|Villain_rig:FKXIndexFinger1_R|Villain_rig:FKOffsetIndexFinger2_R|Villain_rig:SDKFKIndexFinger2_R|Villain_rig:FKExtraIndexFinger2_R|Villain_rig:FKIndexFinger2_R|Villain_rig:FKXIndexFinger2_R|Villain_rig:FKOffsetIndexFinger3_R|Villain_rig:SDKFKIndexFinger3_R|Villain_rig:FKExtraIndexFinger3_R|Villain_rig:FKIndexFinger3_R" 
 		"rotateY" " -av"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetCup_R|Villain_rig:SDKFKCup_R|Villain_rig:FKExtraCup_R|Villain_rig:FKCup_R|Villain_rig:FKXCup_R|Villain_rig:FKOffsetPinkyFinger1_R|Villain_rig:SDKFKPinkyFinger1_R|Villain_rig:FKExtraPinkyFinger1_R|Villain_rig:FKPinkyFinger1_R" 
-		"rotate" " -type \"double3\" 8.65713433467215054 26.45181290613270164 2.52415496216011315"
+		"rotate" " -type \"double3\" 8.51489329600720168 29.53036222908558628 2.57879075881853304"
 		
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetCup_R|Villain_rig:SDKFKCup_R|Villain_rig:FKExtraCup_R|Villain_rig:FKCup_R|Villain_rig:FKXCup_R|Villain_rig:FKOffsetPinkyFinger1_R|Villain_rig:SDKFKPinkyFinger1_R|Villain_rig:FKExtraPinkyFinger1_R|Villain_rig:FKPinkyFinger1_R" 
 		"rotateX" " -av"
@@ -1279,7 +1275,7 @@ createNode reference -n "Villain_rigRN";
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetCup_R|Villain_rig:SDKFKCup_R|Villain_rig:FKExtraCup_R|Villain_rig:FKCup_R|Villain_rig:FKXCup_R|Villain_rig:FKOffsetPinkyFinger1_R|Villain_rig:SDKFKPinkyFinger1_R|Villain_rig:FKExtraPinkyFinger1_R|Villain_rig:FKPinkyFinger1_R" 
 		"rotateZ" " -av"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetCup_R|Villain_rig:SDKFKCup_R|Villain_rig:FKExtraCup_R|Villain_rig:FKCup_R|Villain_rig:FKXCup_R|Villain_rig:FKOffsetRingFinger1_R|Villain_rig:SDKFKRingFinger1_R|Villain_rig:FKExtraRingFinger1_R|Villain_rig:FKRingFinger1_R" 
-		"rotate" " -type \"double3\" 1.63450562821803413 6.86085863336726387 -0.1647392910357581"
+		"rotate" " -type \"double3\" 1.63040920502382924 5.45874473233970647 -0.16411835725199733"
 		
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetCup_R|Villain_rig:SDKFKCup_R|Villain_rig:FKExtraCup_R|Villain_rig:FKCup_R|Villain_rig:FKXCup_R|Villain_rig:FKOffsetRingFinger1_R|Villain_rig:SDKFKRingFinger1_R|Villain_rig:FKExtraRingFinger1_R|Villain_rig:FKRingFinger1_R" 
 		"rotateX" " -av"
@@ -1288,11 +1284,11 @@ createNode reference -n "Villain_rigRN";
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetCup_R|Villain_rig:SDKFKCup_R|Villain_rig:FKExtraCup_R|Villain_rig:FKCup_R|Villain_rig:FKXCup_R|Villain_rig:FKOffsetRingFinger1_R|Villain_rig:SDKFKRingFinger1_R|Villain_rig:FKExtraRingFinger1_R|Villain_rig:FKRingFinger1_R" 
 		"rotateZ" " -av"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetCup_R|Villain_rig:SDKFKCup_R|Villain_rig:FKExtraCup_R|Villain_rig:FKCup_R|Villain_rig:FKXCup_R|Villain_rig:FKOffsetRingFinger1_R|Villain_rig:SDKFKRingFinger1_R|Villain_rig:FKExtraRingFinger1_R|Villain_rig:FKRingFinger1_R|Villain_rig:FKXRingFinger1_R|Villain_rig:FKOffsetRingFinger2_R|Villain_rig:SDKFKRingFinger2_R|Villain_rig:FKExtraRingFinger2_R|Villain_rig:FKRingFinger2_R" 
-		"rotate" " -type \"double3\" 0 15.06989789405290381 0"
+		"rotate" " -type \"double3\" 0 11.80055845822255556 0"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetCup_R|Villain_rig:SDKFKCup_R|Villain_rig:FKExtraCup_R|Villain_rig:FKCup_R|Villain_rig:FKXCup_R|Villain_rig:FKOffsetRingFinger1_R|Villain_rig:SDKFKRingFinger1_R|Villain_rig:FKExtraRingFinger1_R|Villain_rig:FKRingFinger1_R|Villain_rig:FKXRingFinger1_R|Villain_rig:FKOffsetRingFinger2_R|Villain_rig:SDKFKRingFinger2_R|Villain_rig:FKExtraRingFinger2_R|Villain_rig:FKRingFinger2_R" 
 		"rotateY" " -av"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetCup_R|Villain_rig:SDKFKCup_R|Villain_rig:FKExtraCup_R|Villain_rig:FKCup_R|Villain_rig:FKXCup_R|Villain_rig:FKOffsetRingFinger1_R|Villain_rig:SDKFKRingFinger1_R|Villain_rig:FKExtraRingFinger1_R|Villain_rig:FKRingFinger1_R|Villain_rig:FKXRingFinger1_R|Villain_rig:FKOffsetRingFinger2_R|Villain_rig:SDKFKRingFinger2_R|Villain_rig:FKExtraRingFinger2_R|Villain_rig:FKRingFinger2_R|Villain_rig:FKXRingFinger2_R|Villain_rig:FKOffsetRingFinger3_R|Villain_rig:SDKFKRingFinger3_R|Villain_rig:FKExtraRingFinger3_R|Villain_rig:FKRingFinger3_R" 
-		"rotate" " -type \"double3\" 0 10.25718913742496596 0"
+		"rotate" " -type \"double3\" 0 7.10896887955158086 0"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToWrist_R|Villain_rig:FKOffsetCup_R|Villain_rig:SDKFKCup_R|Villain_rig:FKExtraCup_R|Villain_rig:FKCup_R|Villain_rig:FKXCup_R|Villain_rig:FKOffsetRingFinger1_R|Villain_rig:SDKFKRingFinger1_R|Villain_rig:FKExtraRingFinger1_R|Villain_rig:FKRingFinger1_R|Villain_rig:FKXRingFinger1_R|Villain_rig:FKOffsetRingFinger2_R|Villain_rig:SDKFKRingFinger2_R|Villain_rig:FKExtraRingFinger2_R|Villain_rig:FKRingFinger2_R|Villain_rig:FKXRingFinger2_R|Villain_rig:FKOffsetRingFinger3_R|Villain_rig:SDKFKRingFinger3_R|Villain_rig:FKExtraRingFinger3_R|Villain_rig:FKRingFinger3_R" 
 		"rotateY" " -av"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToScapula_R|Villain_rig:FKOffsetShoulder_R|Villain_rig:FKGlobalStaticShoulder_R|Villain_rig:FKGlobalShoulder_R|Villain_rig:FKExtraShoulder_R|Villain_rig:FKShoulder_R" 
@@ -1314,7 +1310,7 @@ createNode reference -n "Villain_rigRN";
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToScapula_R|Villain_rig:FKOffsetShoulder_R|Villain_rig:FKGlobalStaticShoulder_R|Villain_rig:FKGlobalShoulder_R|Villain_rig:FKExtraShoulder_R|Villain_rig:FKShoulder_R" 
 		"rotateZ" " -av"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToScapula_R|Villain_rig:FKOffsetShoulder_R|Villain_rig:FKGlobalStaticShoulder_R|Villain_rig:FKGlobalShoulder_R|Villain_rig:FKExtraShoulder_R|Villain_rig:FKShoulder_R|Villain_rig:FKXShoulder_R|Villain_rig:FKOffsetElbow_R|Villain_rig:FKExtraElbow_R|Villain_rig:FKElbow_R" 
-		"rotate" " -type \"double3\" -1.61707653263940676 1.94257625048536942 54.12472900682711696"
+		"rotate" " -type \"double3\" 6.44095616326526077 -4.84015617436577283 58.0403286601527526"
 		
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToScapula_R|Villain_rig:FKOffsetShoulder_R|Villain_rig:FKGlobalStaticShoulder_R|Villain_rig:FKGlobalShoulder_R|Villain_rig:FKExtraShoulder_R|Villain_rig:FKShoulder_R|Villain_rig:FKXShoulder_R|Villain_rig:FKOffsetElbow_R|Villain_rig:FKExtraElbow_R|Villain_rig:FKElbow_R" 
 		"rotateX" " -av"
@@ -1323,7 +1319,7 @@ createNode reference -n "Villain_rigRN";
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToScapula_R|Villain_rig:FKOffsetShoulder_R|Villain_rig:FKGlobalStaticShoulder_R|Villain_rig:FKGlobalShoulder_R|Villain_rig:FKExtraShoulder_R|Villain_rig:FKShoulder_R|Villain_rig:FKXShoulder_R|Villain_rig:FKOffsetElbow_R|Villain_rig:FKExtraElbow_R|Villain_rig:FKElbow_R" 
 		"rotateZ" " -av"
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToScapula_R|Villain_rig:FKOffsetShoulder_R|Villain_rig:FKGlobalStaticShoulder_R|Villain_rig:FKGlobalShoulder_R|Villain_rig:FKExtraShoulder_R|Villain_rig:FKShoulder_R|Villain_rig:FKXShoulder_R|Villain_rig:FKOffsetElbow_R|Villain_rig:FKExtraElbow_R|Villain_rig:FKElbow_R|Villain_rig:FKXElbow_R|Villain_rig:FKOffsetWrist_R|Villain_rig:FKExtraWrist_R|Villain_rig:FKWrist_R" 
-		"rotate" " -type \"double3\" -66.04692105220892984 14.70499109576775609 -0.59681801448978233"
+		"rotate" " -type \"double3\" -62.64165022522455928 14.41740880316476137 0.038739273043228606"
 		
 		2 "|Villain_rig:Group|Villain_rig:Main|Villain_rig:MotionSystem|Villain_rig:FKSystem|Villain_rig:FKParentConstraintToScapula_R|Villain_rig:FKOffsetShoulder_R|Villain_rig:FKGlobalStaticShoulder_R|Villain_rig:FKGlobalShoulder_R|Villain_rig:FKExtraShoulder_R|Villain_rig:FKShoulder_R|Villain_rig:FKXShoulder_R|Villain_rig:FKOffsetElbow_R|Villain_rig:FKExtraElbow_R|Villain_rig:FKElbow_R|Villain_rig:FKXElbow_R|Villain_rig:FKOffsetWrist_R|Villain_rig:FKExtraWrist_R|Villain_rig:FKWrist_R" 
 		"rotateX" " -av"
@@ -1453,8 +1449,6 @@ createNode reference -n "Villain_rigRN";
 		"translateX" " 0"
 		2 "|Villain_rig:Group|Villain_rig:FaceGroup|Villain_rig:FaceMotionSystem|Villain_rig:FaceMotionFollowHead|Villain_rig:ctrlBoxOffset|Villain_rig:ctrlBox|Villain_rig:ctrlBoxMouthCorner_L|Villain_rig:ctrlMouthCorner_L" 
 		"translateY" " 0"
-		2 "|Villain_rig:Group|Villain_rig:FaceGroup|Villain_rig:FaceMotionSystem|Villain_rig:ControlsSetup" 
-		"visibility" " 0"
 		2 "|Villain_rig:Group|Villain_rig:FaceGroup|Villain_rig:FaceMotionSystem|Villain_rig:ControlsSetup|Villain_rig:Acontrols|Villain_rig:cheekAttach_R|Villain_rig:cheekOffset_R|Villain_rig:cheekSubtract_R|Villain_rig:cheek_R" 
 		"translate" " -type \"double3\" 0 0 0"
 		2 "|Villain_rig:Group|Villain_rig:FaceGroup|Villain_rig:FaceMotionSystem|Villain_rig:ControlsSetup|Villain_rig:Acontrols|Villain_rig:cheekAttach_R|Villain_rig:cheekOffset_R|Villain_rig:cheekSubtract_R|Villain_rig:cheek_R" 
@@ -3576,8 +3570,8 @@ createNode animCurveTL -n "bigEvilChair_grp_translateZ";
 select -ne :time1;
 	setAttr -k on ".cch";
 	setAttr -k on ".nds";
-	setAttr ".o" 98;
-	setAttr ".unw" 98;
+	setAttr ".o" 80;
+	setAttr ".unw" 80;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -3624,7 +3618,7 @@ select -ne :defaultRenderGlobals;
 	addAttr -ci true -h true -sn "dss" -ln "defaultSurfaceShader" -dt "string";
 	setAttr ".ren" -type "string" "arnold";
 	setAttr ".outf" 51;
-	setAttr ".imfkey" -type "string" "png";
+	setAttr ".imfkey" -type "string" "tif";
 	setAttr ".dss" -type "string" "lambert1";
 select -ne :defaultResolution;
 	setAttr ".pa" 1;
@@ -3636,7 +3630,7 @@ select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
 select -ne :ikSystem;
-	setAttr -s 4 ".sol";
+	setAttr -s 3 ".sol";
 connectAttr "bigEvilChair_grp_translateX.o" "newEvilLair_envRN.phl[11]";
 connectAttr "bigEvilChair_grp_translateY.o" "newEvilLair_envRN.phl[12]";
 connectAttr "bigEvilChair_grp_translateZ.o" "newEvilLair_envRN.phl[13]";
